@@ -242,7 +242,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row">
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="assets/img/index/offee Drink.jpg" alt="">
+                        <img src="assets/img/index/Coffee Drink.jpg" alt="">
                         <div class="inner-text">
                             <h4>Coffee Drink</h4>
                         </div>
@@ -275,7 +275,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row">
                 <div class="col-lg-3">
                     <div class="product-large set-bg" data-setbg="assets/img/index/Bg2.jpg">
-                        <h2>Women’s</h2>
+                        <h2>Coffee Drink</h2>
                         <a href="#">Discover More</a>
                     </div>
                 </div>
@@ -291,7 +291,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="product-slider owl-carousel">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/women-1.jpg" alt="">
+                                <img src="assets/img/index/coffee1.jpg" alt="">
                                 <div class="sale">Sale</div>
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
@@ -303,19 +303,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
+                                <div class="catagory-name">Coffee Drink</div>
                                 <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                    <h5>Americano</h5>
                                 </a>
                                 <div class="product-price">
-                                    $14.00
-                                    <span>$35.00</span>
+                                    ฿40.00
+                                    <span>฿35.00</span>
                                 </div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/women-2.jpg" alt="">
+                                <img src="assets/img/index/coffee3.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -326,18 +326,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
+                                <div class="catagory-name">Coffee Drink</div>
                                 <a href="#">
-                                    <h5>Guangzhou sweater</h5>
+                                    <h5>Caffe latte</h5>
                                 </a>
                                 <div class="product-price">
-                                    $13.00
+                                    ฿50.00
                                 </div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/women-3.jpg" alt="">
+                                <img src="assets/img/index/coffee4.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -348,18 +348,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Coffee Drink</div>
                                 <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                    <h5>Caffè Mocha</h5>
                                 </a>
                                 <div class="product-price">
-                                    $34.00
+                                    ฿50.00
                                 </div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/women-4.jpg" alt="">
+                                <img src="assets/img/index/coffee2.png" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -370,12 +370,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Coffee Drink</div>
                                 <a href="#">
-                                    <h5>Converse Shoes</h5>
+                                    <h5>Cappuccino</h5>
                                 </a>
                                 <div class="product-price">
-                                    $34.00
+                                    ฿50.00
                                 </div>
                             </div>
                         </div>
@@ -387,11 +387,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Women Banner Section End -->
 
     <!-- Deal Of The Week Section Begin-->
-    <section class="deal-of-week set-bg spad" data-setbg="assets/img/time-bg.jpg">
+    <section class="deal-of-week set-bg spad" data-setbg="assets/img/index/Barista.jpg">
         <div class="container">
             <div class="col-lg-6 text-center">
                 <div class="section-title">
-                    <h2>Deal Of The Week</h2>
+                    <h2>Cousre Barista</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br /> do ipsum dolor sit amet,
                         consectetur adipisicing elit </p>
                     <div class="product-price">
@@ -439,7 +439,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="product-slider owl-carousel">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/man-1.jpg" alt="">
+                                <img src="assets/img/index/coffee beans1.jpg" alt="">
                                 <div class="sale">Sale</div>
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
@@ -451,19 +451,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Coat</div>
+                                <div class="catagory-name">Coffee Beans</div>
                                 <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                    <h5>A4 Medium Roast</h5>
                                 </a>
                                 <div class="product-price">
-                                    $14.00
-                                    <span>$35.00</span>
+                                    ฿100.00
+                                    <span>฿130.00</span>
                                 </div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/man-2.jpg" alt="">
+                                <img src="assets/img/index/coffee beans2.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -474,18 +474,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Shoes</div>
+                                <div class="catagory-name">Coffee Beans</div>
                                 <a href="#">
-                                    <h5>Guangzhou sweater</h5>
+                                    <h5>A4.5 Medium-Dark Roast</h5>
                                 </a>
                                 <div class="product-price">
-                                    $13.00
+                                    ฿130.00
                                 </div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/man-3.jpg" alt="">
+                                <img src="assets/img/index/coffee beans3.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -496,18 +496,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Coffee Beans</div>
                                 <a href="#">
-                                    <h5>Pure Pineapple</h5>
+                                    <h5>A5 Dark Roast</h5>
                                 </a>
                                 <div class="product-price">
-                                    $34.00
+                                    ฿130.00
                                 </div>
                             </div>
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/products/man-4.jpg" alt="">
+                                <img src="assets/img/index/coffee beans4.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -518,20 +518,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </ul>
                             </div>
                             <div class="pi-text">
-                                <div class="catagory-name">Towel</div>
+                                <div class="catagory-name">Coffee Beans</div>
                                 <a href="#">
-                                    <h5>Converse Shoes</h5>
+                                    <h5>A3 Light Roast</h5>
                                 </a>
                                 <div class="product-price">
-                                    $34.00
+                                    ฿130.00
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1">
-                    <div class="product-large set-bg m-large" data-setbg="assets/img/products/man-large.jpg">
-                        <h2>Men’s</h2>
+                    <div class="product-large set-bg m-large" data-setbg="assets/img/index/Bg5.jpg">
+                        <h2>Coffee Beans</h2>
                         <a href="#">Discover More</a>
                     </div>
                 </div>

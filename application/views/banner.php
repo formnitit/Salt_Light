@@ -136,12 +136,12 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li class="active"><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
-                        <li><a href="./shop.html">Product</a>
+                        <li ><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
+                        <li ><a href="<?php echo site_url('shop'); ?>">Product</a>
                         <ul class="dropdown">
-                                <li><a href="#">Coffee Drink</a></li>
-                                <li><a href="#">Coffee Beans</a></li>
-                                <li><a href="#">Coffee Equipment </a></li>
+                                <li><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></li>
+                                <li><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></li>
+                                <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment </a></li>
                             </ul></li>
                         <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
                         <li><a href="#">Cousre</a></li>

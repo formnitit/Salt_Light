@@ -1,37 +1,33 @@
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hero-items owl-carousel">
-            <div class="single-hero-items set-bg" data-setbg="assets/img/index/Bg1.jpg">
+            <div class="single-hero-items set-bg" data-setbg="<?php echo base_url('assets/img/index'); ?>/Bg1.jpg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-5">
-                            <span>Bag,kids</span>
-                            <h1>Black friday</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore</p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                      <div class="col-lg-5">
+                        <div>
+                          <h1 style="background-color:rgba(255,255,255, 0.6);">Salt & Light</h1>
+                          <p style="background-color:rgba(255,255,255, 0.6);">ร้าน Salt&Light ในช่วงแรกเปิดเพื่อเป็นสถานที่ใว้ต้อนรับเพื่อนๆ
+                            และเป็นสถานที่เพื่อการประกาศเรื่องราวของพระเยซูและมีบาร์กาแฟด้วยและมีเพื่อนๆ แนะนำให้เปิดเป็นร้านไปด้วย เลยตั้งชื่อว่า Salt&Light แปลว่า
+                            เกลือและแสงสว่างเป็นคำสอนของพระเยซู ที่มีต่อสาวกในหนัง</p>
+                            <a href="#" class="primary-btn">VIEW</a>
+                          </div>
                         </div>
                     </div>
-                    <div class="off-card">
-                        <h2>Sale <span>50%</span></h2>
-                    </div>
-                </div>
+                                  </div>
             </div>
-            <div class="single-hero-items set-bg" data-setbg="assets/img/index/Bg4.jpg">
+            <div class="single-hero-items set-bg" data-setbg="<?php echo base_url('assets/img/index'); ?>/Bg6.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-5">
-                            <span>Bag,kids</span>
-                            <h1>Black friday</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore</p>
-                            <a href="#" class="primary-btn">Shop Now</a>
+                            <h1 style="background-color:rgba(255,255,255, 0.6);">Salt & Light</h1>
+                            <p style="background-color:rgba(255,255,255, 0.6);">ร้าน Salt&Light ในช่วงแรกเปิดเพื่อเป็นสถานที่ใว้ต้อนรับเพื่อนๆ
+                              และเป็นสถานที่เพื่อการประกาศเรื่องราวของพระเยซูและมีบาร์กาแฟด้วยและมีเพื่อนๆ แนะนำให้เปิดเป็นร้านไปด้วย เลยตั้งชื่อว่า Salt&Light แปลว่า
+                              เกลือและแสงสว่างเป็นคำสอนของพระเยซู ที่มีต่อสาวกในหนัง</p>
+                            <a href="#" class="primary-btn">VIEW</a>
                         </div>
                     </div>
-                    <div class="off-card">
-                        <h2>Sale <span>50%</span></h2>
-                    </div>
-                </div>
+                                    </div>
             </div>
         </div>
     </section>
@@ -43,25 +39,25 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="assets/img/index/Coffee Drink.jpg" alt="">
+                        <img src="<?php echo base_url('assets/img/index'); ?>/Coffee Drink.jpg" alt="">
                         <div class="inner-text">
-                            <h4>Coffee Drink</h4>
+                            <h4><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="assets/img/index/Coffee Beans.jpg" alt="">
+                        <img src="<?php echo base_url('assets/img/index'); ?>/Coffee Beans.jpg" alt="">
                         <div class="inner-text">
-                            <h4>Coffee Beans</h4>
+                            <h4><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="single-banner">
-                        <img src="assets/img/index/Coffee Equipment.jpg" alt="">
+                        <img src="<?php echo base_url('assets/img/index'); ?>/Coffee Equipment.jpg" alt="">
                         <div class="inner-text">
-                            <h4>Coffee Equipment</h4>
+                            <h4><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment</a></h4>
                         </div>
                     </div>
                 </div>
@@ -75,7 +71,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="product-large set-bg" data-setbg="assets/img/index/Bg2.jpg">
+                    <div class="product-large set-bg" data-setbg="<?php echo base_url('assets/img/index'); ?>/Bg2.jpg">
                         <h2>Coffee Drink</h2>
                         <a href="#">Discover More</a>
                     </div>
@@ -92,7 +88,7 @@
                     <div class="product-slider owl-carousel">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee1.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee2.jpg" alt="">
                                 <div class="sale">Sale</div>
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
@@ -116,7 +112,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee3.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee4.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -138,7 +134,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee4.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee5.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -160,7 +156,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee2.png" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee3.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -188,16 +184,15 @@
     <!-- Women Banner Section End -->
 
     <!-- Deal Of The Week Section Begin-->
-    <section class="deal-of-week set-bg spad" data-setbg="assets/img/index/Barista.jpg">
+    <section class="deal-of-week set-bg spad" data-setbg="<?php echo base_url('assets/img/index'); ?>/Barista.jpg">
         <div class="container">
             <div class="col-lg-6 text-center">
                 <div class="section-title">
                     <h2>Cousre Barista</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed<br /> do ipsum dolor sit amet,
-                        consectetur adipisicing elit </p>
+                    <p>หลักสูตร Basic Barista Course 1 วัน : เน้นทฤษฎี และการปฏิบัติด้วยเครื่อง<br /> Espresso Machine และการปฏิบัติด้วยเครื่อง Espresso Machine </p>
                     <div class="product-price">
-                        $35.00
-                        <span>/ HanBag</span>
+                        ฿2,500.00
+                        <span>/ Cousre</span>
                     </div>
                 </div>
                 <div class="countdown-timer" id="countdown">
@@ -218,7 +213,7 @@
                         <p>Secs</p>
                     </div>
                 </div>
-                <a href="#" class="primary-btn">Shop Now</a>
+                <a href="#" class="primary-btn">VIEW</a>
             </div>
         </div>
     </section>
@@ -240,7 +235,7 @@
                     <div class="product-slider owl-carousel">
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee beans1.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/coffee beans1.jpg" alt="">
                                 <div class="sale">Sale</div>
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
@@ -264,7 +259,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee beans2.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/coffee beans2.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -286,7 +281,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee beans3.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/coffee beans3.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -308,7 +303,7 @@
                         </div>
                         <div class="product-item">
                             <div class="pi-pic">
-                                <img src="assets/img/index/coffee beans4.jpg" alt="">
+                                <img src="<?php echo base_url('assets/img/products'); ?>/coffee beans4.jpg" alt="">
                                 <div class="icon">
                                     <i class="icon_heart_alt"></i>
                                 </div>
@@ -331,7 +326,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 offset-lg-1">
-                    <div class="product-large set-bg m-large" data-setbg="assets/img/index/Bg5.jpg">
+                    <div class="product-large set-bg m-large" data-setbg="<?php echo base_url('assets/img/index'); ?>/Bg5.jpg">
                         <h2>Coffee Beans</h2>
                         <a href="#">Discover More</a>
                     </div>
@@ -621,4 +616,3 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </body>
 
 </html>
-

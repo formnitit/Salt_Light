@@ -6,7 +6,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
                         <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Blog</span>
+                        <span>Promotion</span>
                     </div>
                 </div>
             </div>
@@ -27,51 +27,43 @@
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </form>
                         </div>
-                        <div class="blog-catagory">
-                            <h4>Categories</h4>
-                            <ul>
-                                <li><a href="#">Study</a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Colum</a></li>
-                            </ul>
-                        </div>
                         <div class="recent-post">
-                            <h4>Recent Post</h4>
+                            <h4>Recent Promotion</h4>
                             <div class="recent-blog">
-                                <a href="<?php echo site_url('blogdetails'); ?>" class="rb-item">
+                                <a href="<?php echo site_url('promotiondetails'); ?>" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="<?php echo base_url('assets/img/blog'); ?>/blog1.jpg" alt="">
+                                        <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion2.jpg" alt="">
                                     </div>
                                     <div class="rb-text">
-                                        <h6>อราบิก้า (Arabica) กับ โรบัสต้า (Robusta) แตกต่างกันอย่างไร</h6>
-                                        <p>STUDY <span>- May 19, 2019</span></p>
+                                        <h6>Buy 1 Free 1 Shop Now!</h6>
+                                        <p><span>- January 10, 2020</span></p>
                                     </div>
                                 </a>
                                 <a href="#" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="<?php echo base_url('assets/img/blog'); ?>/blog2.jpg" alt="">
+                                        <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion4.png" alt="">
                                     </div>
                                     <div class="rb-text">
-                                        <h6>วิธีการสตีมนม | How to Steam Milk</h6>
-                                        <p>STUDY <span>- May 19, 2019</span></p>
+                                        <h6>New Year Sale 2020 ต้อนรับปีใหม่</h6>
+                                        <p><span>- January 1, 2020</span></p>
                                     </div>
                                 </a>
                                 <a href="#" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="<?php echo base_url('assets/img/blog'); ?>/blog3.jpg" alt="">
+                                        <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion1.jpg" alt="">
                                     </div>
                                     <div class="rb-text">
-                                        <h6>Coffee ( 101 ) – ว่าด้วยเรื่องพื้นฐานของกาแฟ</h6>
-                                        <p>STUDY <span>- May 19, 2019</span></p>
+                                        <h6>Sale 50% Only This Week</h6>
+                                        <p><span>- December 19, 2019</span></p>
                                     </div>
                                 </a>
                                 <a href="#" class="rb-item">
                                     <div class="rb-pic">
-                                        <img src="<?php echo base_url('assets/img/blog'); ?>/blog4.jpg" alt="">
+                                        <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion3.jpg" alt="">
                                     </div>
                                     <div class="rb-text">
-                                        <h6>ภาษีนำเข้ากาแฟจากออสเตรเลียเหลือ 0% จริงหรือ ?!</h6>
-                                        <p>NEWS <span>- May 19, 2019</span></p>
+                                        <h6>Salt&Light For Earth</h6>
+                                        <p><span>- November 30, 2019</span></p>
                                     </div>
                                 </a>
                             </div>
@@ -91,78 +83,52 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="<?php echo base_url('assets/img/blog'); ?>/blog1.jpg" alt="">
+                                    <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion2.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
-                                    <a href="<?php echo site_url('blogdetails'); ?>">
-                                        <h4>อราบิก้า (Arabica) กับ โรบัสต้า (Robusta) แตกต่างกันอย่างไร</h4>
+                                    <a href="<?php echo site_url('promotiondetails'); ?>">
+                                        <h4>Sale 50% Only This Week</h4>
                                     </a>
-                                    <p>Study <span>- May 19, 2019</span></p>
+                                    <p><span>- January 10, 2020</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="<?php echo base_url('assets/img/blog'); ?>/blog2.jpg" alt="">
+                                    <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion4.png" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
-                                        <h4>วิธีการสตีมนม | How to Steam Milk</h4>
+                                        <h4>New Year Sale 2020 ต้อนรับปีใหม่</h4>
                                     </a>
-                                    <p>Study <span>- May 19, 2019</span></p>
+                                    <p><span>- January 1, 2020</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="<?php echo base_url('assets/img/blog'); ?>/blog3.jpg" alt="">
+                                    <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion1.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
-                                        <h4>Coffee ( 101 ) – ว่าด้วยเรื่องพื้นฐานของกาแฟ</h4>
+                                        <h4>Buy 1 Free 1 Shop Now!</h4>
                                     </a>
-                                    <p>Study <span>- May 19, 2019</span></p>
+                                    <p><span>- December 19, 2019</span></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="<?php echo base_url('assets/img/blog'); ?>/blog4.jpg" alt="">
+                                    <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion3.jpg" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="./blog-details.html">
-                                        <h4>ภาษีนำเข้ากาแฟจากออสเตรเลียเหลือ 0% จริงหรือ ?!</h4>
+                                        <h4>Salt&Light For Earth</h4>
                                     </a>
-                                    <p>News <span>- May 19, 2019</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="blog-item">
-                                <div class="bi-pic">
-                                    <img src="<?php echo base_url('assets/img/blog'); ?>/blog5.jpg" alt="">
-                                </div>
-                                <div class="bi-text">
-                                    <a href="./blog-details.html">
-                                        <h4>งานวิจัยล่าสุดบ่งชี้ว่าการดื่มกาแฟก่อนนอนไม่ส่งผลต่อการนอนหลับ</h4>
-                                    </a>
-                                    <p>News <span>- May 19, 2019</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-6">
-                            <div class="blog-item">
-                                <div class="bi-pic">
-                                    <img src="<?php echo base_url('assets/img/blog'); ?>/blog6.jpg" alt="">
-                                </div>
-                                <div class="bi-text">
-                                    <a href="./blog-details.html">
-                                        <h4>เผื่อหลายคนสงสัยว่าสินค้าเราคืออะไร ชิม CASCARA HONEY ได้ที่ Salt&light</h4>
-                                    </a>
-                                    <p>Colum <span>- May 19, 2019</span></p>
+                                    <p><span>- November 30, 2019</span></p>
                                 </div>
                             </div>
                         </div>

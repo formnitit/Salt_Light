@@ -19,21 +19,10 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
-                    <div class="lan-selector">
-                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
-                            <option value='yt' data-image="<?php echo base_url('assets/img'); ?>/flag-1.jpg" data-imagecss="flag yt"
-                                data-title="English">English</option>
-                            <option value='yu' data-image="<?php echo base_url('assets/img'); ?>/flag-2.jpg" data-imagecss="flag yu"
-                                data-title="Bangladesh">German </option>
-                        </select>
-                    </div>
-                    <div class="top-social">
-                        <a href="#"><i class="ti-facebook"></i></a>
-                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                        <a href="#"><i class="ti-linkedin"></i></a>
-                        <a href="#"><i class="ti-pinterest"></i></a>
-                    </div>
+                    <a href="<?php echo site_url('login'); ?>" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                </div>
+                <div class="ht-right">
+                    <a href="<?php echo site_url('register'); ?>" class="login-panel"><i class="fa fa-registered"></i>Register</a>
                 </div>
             </div>
         </div>
@@ -131,6 +120,12 @@
                             <li><a href="#">Accessories/Shoes</a></li>
                             <li><a href="#">Luxury Brands</a></li>
                             <li><a href="#">Brand Outdoor Apparel</a></li>
+                            <li><a href="./blog-details.html">Blog Details</a></li>
+                            <li><a href="./shopping-cart.html">Shopping Cart</a></li>
+                            <li><a href="./check-out.html">Checkout</a></li>
+                            <li><a href="./faq.html">Faq</a></li>
+                            <li><a href="./register.html">Register</a></li>
+                            <li><a href="./login.html">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -144,19 +139,9 @@
                                 <li><a href="#">Coffee Equipment </a></li>
                             </ul></li>
                         <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
-                        <li><a href="#">Cousre</a></li>
-
+                        <li><a href="<?php echo site_url('cousre'); ?>">Cousre</a></li>
                         <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="dropdown">
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                                <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                <li><a href="./check-out.html">Checkout</a></li>
-                                <li><a href="./faq.html">Faq</a></li>
-                                <li><a href="./register.html">Register</a></li>
-                                <li><a href="./login.html">Login</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="<?php echo site_url('promotion'); ?>">Promotion</a></li>
                     </ul>
                 </nav>
                 <div id="mobile-menu-wrap"></div>

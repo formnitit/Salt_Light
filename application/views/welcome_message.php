@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -75,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <a href="./index.html">
-                                <img src="assets/img/logo.png" alt=""> 
+                                <img src="assets/img/logo.png" alt="">
                             </a>
                         </div>
                     </div>

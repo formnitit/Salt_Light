@@ -1,3 +1,7 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -48,10 +52,10 @@
                     <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
-                            <option value='yt' data-image="img/flag-1.jpg" data-imagecss="flag yt"
+                            <option value='yt' data-image="assets/img/flag-1.jpg" data-imagecss="flag yt"
                                 data-title="English">English</option>
-                            <option value='yu' data-image="img/flag-2.jpg" data-imagecss="flag yu"
-                                data-title="Bangladesh">German </option>
+                            <option value='yu' data-image="assets/img/flag-2.jpg" data-imagecss="flag yu"
+                                data-title="Bangladesh">German</option>
                         </select>
                     </div>
                     <div class="top-social">
@@ -69,7 +73,7 @@
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <a href="./index.html">
-                                <img src="img/logo.png" alt="">
+                                <img src="assets/img/logo.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -98,7 +102,7 @@
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td class="si-pic"><img src="img/select-product-1.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="assets/img/select-product-1.jpg" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>$60.00 x 1</p>
@@ -110,7 +114,7 @@
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="si-pic"><img src="img/select-product-2.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="assets/img/select-product-2.jpg" alt=""></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
                                                             <p>$60.00 x 1</p>
@@ -160,7 +164,7 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="">Home</a></li>
                         <li><a href="./shop.html">Shop</a></li>
                         <li><a href="#">Collection</a>
                             <ul class="dropdown">
@@ -169,8 +173,8 @@
                                 <li><a href="#">Kid's</a></li>
                             </ul>
                         </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li class="active"><a href="./contact.html">Contact</a></li>
+                        <li class="active"><a href="./blog.html">Blog</a></li>
+                        <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
                         <li><a href="#">Pages</a>
                             <ul class="dropdown">
                                 <li><a href="./blog-details.html">Blog Details</a></li>
@@ -196,7 +200,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
                         <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Contact</span>
+                        <span>Blog</span>
                     </div>
                 </div>
             </div>
@@ -204,88 +208,176 @@
     </div>
     <!-- Breadcrumb Section Begin -->
 
-    <!-- Map Section Begin -->
-    <div class="map spad">
-        <div class="container">
-            <div class="map-inner">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48158.305462977965!2d-74.13283844036356!3d41.02757295168286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e440473470d7%3A0xcaf503ca2ee57958!2sSaddle%20River%2C%20NJ%2007458%2C%20USA!5e0!3m2!1sen!2sbd!4v1575917275626!5m2!1sen!2sbd"
-                    height="610" style="border:0" allowfullscreen="">
-                </iframe>
-                <div class="icon">
-                    <i class="fa fa-map-marker"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Map Section Begin -->
-
-    <!-- Contact Section Begin -->
-    <section class="contact-section spad">
+    <!-- Blog Section Begin -->
+    <section class="blog-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
-                    <div class="contact-title">
-                        <h4>Contacts Us</h4>
-                        <p>Contrary to popular belief, Lorem Ipsum is simply random text. It has roots in a piece of
-                            classical Latin literature from 45 BC, maki years old.</p>
-                    </div>
-                    <div class="contact-widget">
-                        <div class="cw-item">
-                            <div class="ci-icon">
-                                <i class="ti-location-pin"></i>
-                            </div>
-                            <div class="ci-text">
-                                <span>Address:</span>
-                                <p>60-49 Road 11378 New York</p>
+                <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1">
+                    <div class="blog-sidebar">
+                        <div class="search-form">
+                            <h4>Search</h4>
+                            <form action="#">
+                                <input type="text" placeholder="Search . . .  ">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="blog-catagory">
+                            <h4>Categories</h4>
+                            <ul>
+                                <li><a href="#">Study</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Colum</a></li>
+                            </ul>
+                        </div>
+                        <div class="recent-post">
+                            <h4>Recent Post</h4>
+                            <div class="recent-blog">
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="assets/img/blog/recent-1.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>The Personality Trait That Makes...</h6>
+                                        <p>Fashion <span>- May 19, 2019</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="assets/img/blog/recent-2.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>The Personality Trait That Makes...</h6>
+                                        <p>Fashion <span>- May 19, 2019</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="assets/img/blog/recent-3.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>The Personality Trait That Makes...</h6>
+                                        <p>Fashion <span>- May 19, 2019</span></p>
+                                    </div>
+                                </a>
+                                <a href="#" class="rb-item">
+                                    <div class="rb-pic">
+                                        <img src="assets/img/blog/recent-4.jpg" alt="">
+                                    </div>
+                                    <div class="rb-text">
+                                        <h6>The Personality Trait That Makes...</h6>
+                                        <p>Fashion <span>- May 19, 2019</span></p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="cw-item">
-                            <div class="ci-icon">
-                                <i class="ti-mobile"></i>
-                            </div>
-                            <div class="ci-text">
-                                <span>Phone:</span>
-                                <p>+65 11.188.888</p>
-                            </div>
-                        </div>
-                        <div class="cw-item">
-                            <div class="ci-icon">
-                                <i class="ti-email"></i>
-                            </div>
-                            <div class="ci-text">
-                                <span>Email:</span>
-                                <p>hellocolorlib@gmail.com</p>
+                        <div class="blog-tags">
+                            <h4>Product Tags</h4>
+                            <div class="tag-item">
+                                <a href="#">Towel</a>
+                                <a href="#">Shoes</a>
+                                <a href="#">Coat</a>
+                                <a href="#">Dresses</a>
+                                <a href="#">Trousers</a>
+                                <a href="#">Men's hats</a>
+                                <a href="#">Backpack</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <div class="contact-form">
-                        <div class="leave-comment">
-                            <h4>Leave A Comment</h4>
-                            <p>Our staff will call back later and answer your questions.</p>
-                            <form action="#" class="comment-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <input type="text" placeholder="Your name">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <input type="text" placeholder="Your email">
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <textarea placeholder="Your message"></textarea>
-                                        <button type="submit" class="site-btn">Send message</button>
-                                    </div>
+                <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img src="assets/img/blog/blog1.jpg" alt="">
                                 </div>
-                            </form>
+                                <div class="bi-text">
+                                    <a href="./blog-details.html">
+                                        <h4>อราบิก้า (Arabica) กับ โรบัสต้า (Robusta) แตกต่างกันอย่างไร</h4>
+                                    </a>
+                                    <p>Study <span>- May 19, 2019</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img src="assets/img/blog/blog2.jpg" alt="">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="./blog-details.html">
+                                        <h4>วิธีการสตีมนม | How to Steam Milk</h4>
+                                    </a>
+                                    <p>Study <span>- May 19, 2019</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img src="assets/img/blog/blog3.jpg" alt="">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="./blog-details.html">
+                                        <h4>Coffee ( 101 ) – ว่าด้วยเรื่องพื้นฐานของกาแฟ</h4>
+                                    </a>
+                                    <p>Study <span>- May 19, 2019</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img src="assets/img/blog/blog4.jpg" alt="">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="./blog-details.html">
+                                        <h4>ภาษีนำเข้ากาแฟจากออสเตรเลียเหลือ 0% จริงหรือ ?!</h4>
+                                    </a>
+                                    <p>News <span>- May 19, 2019</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img src="assets/img/blog/blog5.jpg" alt="">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="./blog-details.html">
+                                        <h4>งานวิจัยล่าสุดบ่งชี้ว่าการดื่มกาแฟก่อนนอนไม่ส่งผลต่อการนอนหลับ</h4>
+                                    </a>
+                                    <p>News <span>- May 19, 2019</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="blog-item">
+                                <div class="bi-pic">
+                                    <img src="assets/img/blog/blog6.jpg" alt="">
+                                </div>
+                                <div class="bi-text">
+                                    <a href="./blog-details.html">
+                                        <h4>เผื่อหลายคนสงสัยว่าสินค้าเราคืออะไร ชิม CASCARA HONEY ได้ที่ Salt&light</h4>
+                                    </a>
+                                    <p>Colum <span>- May 19, 2019</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-12">
+                            <div class="loading-more">
+                                <i class="icon_loading"></i>
+                                <a href="#">
+                                    Loading More
+                                </a>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
+    <!-- Blog Section End -->
 
     <!-- Partner Logo Section Begin -->
     <div class="partner-logo">
@@ -293,27 +385,27 @@
             <div class="logo-carousel owl-carousel">
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-1.png" alt="">
+                        <img src="assets/img/logo-carousel/logo-1.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-2.png" alt="">
+                        <img src="assets/img/logo-carousel/logo-2.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-3.png" alt="">
+                        <img src="assets/img/logo-carousel/logo-3.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-4.png" alt="">
+                        <img src="assets/img/logo-carousel/logo-4.png" alt="">
                     </div>
                 </div>
                 <div class="logo-item">
                     <div class="tablecell-inner">
-                        <img src="img/logo-carousel/logo-5.png" alt="">
+                        <img src="assets/img/logo-carousel/logo-5.png" alt="">
                     </div>
                 </div>
             </div>
@@ -328,7 +420,7 @@
                 <div class="col-lg-3">
                     <div class="footer-left">
                         <div class="footer-logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="assets/img/footer-logo.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: 60-49 Road 11378 New York</li>
@@ -387,7 +479,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </div>
                         <div class="payment-pic">
-                            <img src="img/payment-method.png" alt="">
+                            <img src="assets/img/payment-method.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -397,16 +489,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- Footer Section End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.zoom.min.js"></script>
-    <script src="js/jquery.dd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.zoom.min.js"></script>
+    <script src="assets/js/jquery.dd.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -348,7 +348,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="pi-text">
                                 <div class="catagory-name">Coffee Drink</div>
                                 <a href="#">
-                                    <h5>Caffè Mocha</h5>
+                                    <h5>Caffe Mocha</h5>
                                 </a>
                                 <div class="product-price">
                                     ฿50.00
@@ -818,4 +818,4 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </body>
 
 </html>
->>>>>>> pong
+

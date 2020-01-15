@@ -63,43 +63,32 @@
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td class="si-pic"><img src="<?php echo base_url('assets/img'); ?>/select-product-1.jpg" alt=""></td>
+                                                    <td class="si-pic"><img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee2.jpg" alt="" width="50%"></td>
                                                     <td class="si-text">
                                                         <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
+                                                            <p>฿50.00 x 1</p>
+                                                            <h6>Americano</h6>
                                                         </div>
                                                     </td>
                                                     <td class="si-close">
                                                         <i class="ti-close"></i>
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="si-pic"><img src="<?php echo base_url('assets/img'); ?>/select-product-2.jpg" alt=""></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>$60.00 x 1</p>
-                                                            <h6>Kabino Bedside Table</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
                                     <div class="select-total">
                                         <span>total:</span>
-                                        <h5>$120.00</h5>
+                                        <h5>฿50.00</h5>
                                     </div>
                                     <div class="select-button">
-                                        <a href="#" class="primary-btn view-card">VIEW CARD</a>
+                                        <a href="<?php echo site_url('ShoppingCart'); ?>" class="primary-btn view-card">VIEW CARD</a>
                                         <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
                                     </div>
                                 </div>
                             </li>
-                            <li class="cart-price">$150.00</li>
+                            <li class="cart-price">$฿50.00</li>
                         </ul>
                     </div>
                 </div>
@@ -110,33 +99,25 @@
                 <div class="nav-depart">
                     <div class="depart-btn">
                         <i class="ti-menu"></i>
-                        <span>All</span>
+                        <span>Other</span>
                         <ul class="depart-hover">
-                            <li class="active"><a href="#">Women’s Clothing</a></li>
-                            <li><a href="#">Men’s Clothing</a></li>
-                            <li><a href="#">Underwear</a></li>
-                            <li><a href="#">Kid's Clothing</a></li>
-                            <li><a href="#">Brand Fashion</a></li>
-                            <li><a href="#">Accessories/Shoes</a></li>
-                            <li><a href="#">Luxury Brands</a></li>
-                            <li><a href="#">Brand Outdoor Apparel</a></li>
-                            <li><a href="./blog-details.html">Blog Details</a></li>
-                            <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                            <li><a href="./check-out.html">Checkout</a></li>
-                            <li><a href="./faq.html">Faq</a></li>
-                            <li><a href="./register.html">Register</a></li>
-                            <li><a href="./login.html">Login</a></li>
+                          <ul class="dropdown">
+                              <li><a href="<?php echo site_url('ShoppingCart'); ?>">Shopping Cart</a></li>
+                              <li><a href="<?php echo site_url('CheckOut'); ?>">Checkout</a></li>
+                              <li><a href="./register.html">Register</a></li>
+                              <li><a href="./login.html">Login</a></li>
+                          </ul>
                         </ul>
                     </div>
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li class="active"><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
-                        <li><a href="./shop.html">Product</a>
+                        <li ><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
+                        <li ><a href="<?php echo site_url('shop'); ?>">Product</a>
                         <ul class="dropdown">
-                                <li><a href="#">Coffee Drink</a></li>
-                                <li><a href="#">Coffee Beans</a></li>
-                                <li><a href="#">Coffee Equipment </a></li>
+                                <li><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></li>
+                                <li><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></li>
+                                <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment </a></li>
                             </ul></li>
                         <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
                         <li><a href="<?php echo site_url('cousre'); ?>">Cousre</a></li>

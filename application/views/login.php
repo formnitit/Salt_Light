@@ -42,7 +42,7 @@
                             <button type="submit" class="site-btn login-btn">Sign In</button>
                         </form>
                         <div class="switch-login">
-                            <a href="./register.html" class="or-login">Or Create An Account</a>
+                            <li><a href="<?php echo site_url('Register'); ?>">Or Create An Account</a></li>
                         </div>
                     </div>
                 </div>

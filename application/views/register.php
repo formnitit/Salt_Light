@@ -22,7 +22,7 @@
                         <h2>Register</h2>
                         <form action="#">
                             <div class="group-input">
-                                <label for="username">Username or email address *</label>
+                                <label for="username">Username *</label>
                                 <input type="text" id="username">
                             </div>
                             <div class="group-input">
@@ -44,7 +44,7 @@
                             <button type="submit" class="site-btn register-btn">REGISTER</button>
                         </form>
                         <div class="switch-login">
-                            <a href="./login.html" class="or-login">Or Login</a>
+                            <a href="<?php echo site_url('Login'); ?>">Or Login</a>
                         </div>
                     </div>
                 </div>

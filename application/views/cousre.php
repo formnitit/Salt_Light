@@ -1,18 +1,53 @@
+<!-- Breadcrumb Section Begin -->
+  <div class="breacrumb-section">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="breadcrumb-text">
+                      <a href="#"><i class="fa fa-home"></i> Home</a>
+                      <span>Cousre</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Breadcrumb Section Begin -->
 
-    <!-- Breadcrumb Section Begin -->
-    <div class="breacrumb-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-text">
-                        <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Cousre</span>
-                    </div>
+<!-- Deal Of The Week Section Begin-->
+<section class="deal-of-week set-bg spad" data-setbg="<?php echo base_url('assets/img/index'); ?>/Barista.jpg">
+    <div class="container">
+        <div class="col-lg-6 text-center">
+            <div class="section-title">
+                <h2>Cousre Barista</h2>
+                <p>หลักสูตร Basic Barista Course 1 วัน : เน้นทฤษฎี และการปฏิบัติด้วยเครื่อง<br /> Espresso Machine และการปฏิบัติด้วยเครื่อง Espresso Machine </p>
+                <div class="product-price">
+                    ฿2,500.00
+                    <span>/ Cousre</span>
                 </div>
             </div>
+            <div class="countdown-timer" id="countdown">
+                <div class="cd-item">
+                    <span>56</span>
+                    <p>Days</p>
+                </div>
+                <div class="cd-item">
+                    <span>12</span>
+                    <p>Hrs</p>
+                </div>
+                <div class="cd-item">
+                    <span>40</span>
+                    <p>Mins</p>
+                </div>
+                <div class="cd-item">
+                    <span>52</span>
+                    <p>Secs</p>
+                </div>
+            </div>
+            <!-- <a href="<?php echo site_url('cousre'); ?>">Go To Lesson</a> -->
         </div>
     </div>
-    <!-- Breadcrumb Section Begin -->
+</section>
+<!-- Deal Of The Week Section End -->
 
     <!-- Blog Section Begin -->
     <section class="blog-section spad">

@@ -1,69 +1,50 @@
 <footer class="footer-section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-6">
                 <div class="footer-left">
                     <div class="footer-logo">
-                        <a href="#"><img src="<?php echo base_url('assets/img') ?>/footer-logo.png" alt=""></a>
+                        <a href="#"><img src="<?php echo base_url('assets/img'); ?>/footterlogin.jpg" alt="" width="30%"></a>
                     </div>
                     <ul>
-                        <li>Address: 60-49 Road 11378 New York</li>
-                        <li>Phone: +65 11.188.888</li>
-                        <li>Email: hello.colorlib@gmail.com</li>
-                    </ul>
-                    <div class="footer-social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 offset-lg-1">
-                <div class="footer-widget">
-                    <h5>Information</h5>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Checkout</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Serivius</a></li>
+                        <li>Address: 165 Lane.Ban Pak Kong 2 Moo. 6<br>
+                          Sub-district.Chomphu District.Saraphi Province.Chiangmai 50140</li>
+                        <li>Phone: +66 4 373 7234</li>
+                        <li>Email: Salt&Light@gmail.com</li>
+                        <li>Opening time: 7.00-16.00 P.M.</li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="footer-widget">
-                    <h5>My Account</h5>
+                    <h5>Navigation</h5>
                     <ul>
-                        <li><a href="#">My Account</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Shopping Cart</a></li>
-                        <li><a href="#">Shop</a></li>
+                        <li ><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
+                        <li ><a href="<?php echo site_url('shop'); ?>">Product</a>
+                        <li><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></li>
+                        <li><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></li>
+                        <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment </a></li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="newslatter-item">
-                    <h5>Join Our Newsletter Now</h5>
-                    <p>Get E-mail updates about our latest shop and special offers.</p>
-                    <form action="#" class="subscribe-form">
-                        <input type="text" placeholder="Enter Your Mail">
-                        <button type="button">Subscribe</button>
-                    </form>
+            <div class="col-lg-2">
+                <div class="footer-widget">
+                    <ul>
+                        <br><br>
+                        <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
+                        <li><a href="<?php echo site_url('cousre'); ?>">Cousre</a></li>
+                        <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
+                        <li><a href="<?php echo site_url('promotion'); ?>">Promotion</a></li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="copyright-reserved">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="copyright-text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                    <div class="payment-pic">
-                        <img src="<?php echo base_url('assets/img'); ?>/payment-method.png" alt="">
+            <div class="col-lg-2">
+                <div class="footer-widget">
+                    <h5>Keep connected</h5>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/saltlightproud/"><i class="fa fa-facebook">&nbsp;&nbsp;</i>Facebook</a><br>
+                        <a href="#"><i class="fa fa-instagram">&nbsp;&nbsp;</i>Instagram</a><br>
+                        <a href="#"><i class="fa fa-twitter">&nbsp;&nbsp;</i>Twitter</a><br>
                     </div>
                 </div>
             </div>

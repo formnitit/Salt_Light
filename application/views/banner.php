@@ -6,37 +6,6 @@
 
     <!-- Header Section Begin -->
     <header class="header-section">
-        <div class="header-top">
-            <div class="container">
-                <div class="ht-left">
-                    <div class="mail-service">
-                        <i class=" fa fa-envelope"></i>
-                        hello.colorlib@gmail.com
-                    </div>
-                    <div class="phone-service">
-                        <i class=" fa fa-phone"></i>
-                        +65 11.188.888
-                    </div>
-                </div>
-                <div class="ht-right">
-                    <a href="#" class="login-panel"><i class="fa fa-user"></i>Login</a>
-                    <div class="lan-selector">
-                        <select class="language_drop" name="countries" id="countries" style="width:300px;">
-                            <option value='yt' data-image="<?php echo base_url('assets/img'); ?>/flag-1.jpg" data-imagecss="flag yt"
-                                data-title="English">English</option>
-                            <option value='yu' data-image="<?php echo base_url('assets/img'); ?>/flag-2.jpg" data-imagecss="flag yu"
-                                data-title="Bangladesh">German </option>
-                        </select>
-                    </div>
-                    <div class="top-social">
-                        <a href="#"><i class="ti-facebook"></i></a>
-                        <a href="#"><i class="ti-twitter-alt"></i></a>
-                        <a href="#"><i class="ti-linkedin"></i></a>
-                        <a href="#"><i class="ti-pinterest"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container">
             <div class="inner-header">
                 <div class="row">
@@ -57,50 +26,10 @@
                         </div>
                     </div>
                     <div class="col-lg-3 text-right col-md-3">
-                        <ul class="nav-right">
-                            <li class="heart-icon">
-                                <a href="#">
-                                    <i class="icon_heart_alt"></i>
-                                    <span>1</span>
-                                </a>
-                            </li>
-                            <li class="cart-icon">
-                                <a href="#">
-                                    <i class="icon_bag_alt"></i>
-                                    <span>3</span>
-                                </a>
-                                <div class="cart-hover">
-                                    <div class="select-items">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="si-pic"><img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee2.jpg" alt="" width="50%"></td>
-                                                    <td class="si-text">
-                                                        <div class="product-selected">
-                                                            <p>฿50.00 x 1</p>
-                                                            <h6>Americano</h6>
-                                                        </div>
-                                                    </td>
-                                                    <td class="si-close">
-                                                        <i class="ti-close"></i>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="select-total">
-                                        <span>total:</span>
-                                        <h5>฿50.00</h5>
-                                    </div>
-                                    <div class="select-button">
-                                        <a href="<?php echo site_url('ShoppingCart'); ?>" class="primary-btn view-card">VIEW CARD</a>
-                                        <a href="#" class="primary-btn checkout-btn">CHECK OUT</a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="cart-price">$฿50.00</li>
-                        </ul>
+                      <div class="ht-right">
+                        <a href="<?php echo site_url('login'); ?>"><button type="button" class="btn btn-outline-dark"><i class="fa fa-user"></i>Login</button>
+                          <a href="<?php echo site_url('register'); ?>"><button type="button" class="btn btn-outline-dark"><i class="fa fa-registered"></i>Register</button>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -115,8 +44,8 @@
                           <ul class="dropdown">
                               <li><a href="<?php echo site_url('ShoppingCart'); ?>">Shopping Cart</a></li>
                               <li><a href="<?php echo site_url('CheckOut'); ?>">Checkout</a></li>
-                              <li><a href="./register.html">Register</a></li>
-                              <li><a href="./login.html">Login</a></li>
+                              <li><a href="<?php echo site_url('Register'); ?>">Register</a></li>
+                              <li><a href="<?php echo site_url('Login'); ?>">Login</a></li>
                           </ul>
                         </ul>
                     </div>
@@ -124,17 +53,16 @@
                 <nav class="nav-menu mobile-menu">
                     <ul>
                         <li ><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
-                        <li ><a href="<?php echo site_url('shop'); ?>">Product</a>
+                        <li ><a href="<?php echo site_url('product'); ?>">Product</a>
                         <ul class="dropdown">
                                 <li><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></li>
                                 <li><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></li>
                                 <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment </a></li>
                             </ul></li>
                         <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
-                        <li><a href="#">Cousre</a></li>
-                        <li><a href="#">Promotion</a></li>
+                        <li><a href="<?php echo site_url('cousre'); ?>">Cousre</a></li>
+                        <li><a href="<?php echo site_url('promotion'); ?>">Promotion</a></li>
                         <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
-
                     </ul>
                 </nav>
                 <div id="mobile-menu-wrap"></div>

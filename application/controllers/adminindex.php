@@ -14,3 +14,4 @@ class Adminindex extends CI_Controller {
     $this->load->view('admin/js_admin');
 	}
 }
+?>

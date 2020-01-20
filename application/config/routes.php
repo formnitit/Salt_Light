@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 
-$route['default_controller'] = 'adminindex';
+$route['default_controller'] = 'adminmember';
 
 
 $route['404_override'] = '';

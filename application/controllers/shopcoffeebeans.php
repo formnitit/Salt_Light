@@ -14,3 +14,4 @@ class shopcoffeebeans extends CI_Controller {
 		$this->load->view('js');
 	}
 }
+?>

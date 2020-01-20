@@ -14,3 +14,4 @@ class Cousre extends CI_Controller {
 		$this->load->view('js');
 	}
 }
+?>

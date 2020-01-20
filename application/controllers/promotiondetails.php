@@ -14,3 +14,4 @@ class Promotiondetails extends CI_Controller {
 		$this->load->view('js');
 	}
 }
+?>

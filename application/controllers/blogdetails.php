@@ -14,3 +14,4 @@ class Blogdetails extends CI_Controller {
 		$this->load->view('js');
 	}
 }
+?>

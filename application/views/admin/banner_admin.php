@@ -135,9 +135,23 @@
 
                             </ul>
                         </li>
-                        <li>
-                            <a href="<?php echo site_url('adminmember'); ?>">
-                                <i class="fas fa-chart-bar"></i>จัดการสมาชิก</a>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-tachometer-alt"></i>สมาชิก</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="<?php echo site_url('adminmember'); ?>">จัดการข้อมูลสมาชิก</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('adminaddmember'); ?>">เพิ่มข้อมูลสมาชิก</a>
+                                </li>
+                                <li>
+                                    <a href="index3.html">Dashboard 3</a>
+                                </li>
+                                <li>
+                                    <a href="index4.html">Dashboard 4</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="table.html">
@@ -397,3 +411,7 @@
                 </div>
             </header>
             <!-- HEADER DESKTOP-->
+            <div class="main-content">
+                <div class="section__content section__content--p20">
+                    <div class="container-fluid">
+                      

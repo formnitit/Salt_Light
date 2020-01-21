@@ -6,7 +6,7 @@
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="<?php echo base_url('assets/admin/images/icon'); ?>/logo.png" alt="CoolAdmin" />
+                            <img src="<?php echo base_url('assets/img'); ?>/logo.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -119,9 +119,9 @@
 
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
-            <div class="logo">
+            <div class="logo" align="center">
                 <a href="#">
-                    <img src="<?php echo base_url('assets/admin/images/icon'); ?>/logo.png" alt="Cool Admin" />
+                    <img src="<?php echo base_url('assets/img'); ?>/logo.png" alt="Cool Admin" width="70%" />
 
                 </a>
             </div>
@@ -137,7 +137,7 @@
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>สมาชิก</a>
+                                <i class="fas fa-user"></i>สมาชิก</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
                                     <a href="<?php echo site_url('adminmember'); ?>">จัดการข้อมูลสมาชิก</a>
@@ -145,88 +145,44 @@
                                 <li>
                                     <a href="<?php echo site_url('adminaddmember'); ?>">เพิ่มข้อมูลสมาชิก</a>
                                 </li>
-                                <li>
-                                    <a href="index3.html">Dashboard 3</a>
-                                </li>
-                                <li>
-                                    <a href="index4.html">Dashboard 4</a>
-                                </li>
+
                             </ul>
                         </li>
-                        <li>
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>จัดการสินค้า</a>
+
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-shopping-cart"></i>สินค้า</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="#">จัดการสินค้า</a>
+                                </li>
+                                <li>
+                                    <a href="#">เพิ่มข้อมูลสินค้า</a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li>
                             <a href="form.html">
-                                <i class="far fa-check-square"></i>จัดการบล๊อค</a>
+                                <i class="fas fa-book"></i>จัดการบล๊อค</a>
                         </li>
                         <li>
                             <a href="calendar.html">
-                                <i class="fas fa-calendar-alt"></i>จัดการคอร์ส</a>
+                                <i class="fas fa-coffee"></i>จัดการคอร์ส</a>
                         </li>
                         <li>
                             <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>จัดการโปรโมชั้น</a>
+                                <i class="fas fa-tag"></i>จัดการโปรโมชั้น</a>
                         </li>
                         <li>
                             <a href="map.html">
-                                <i class="fas fa-map-marker-alt"></i>จัดการรายงาน</a>
+                                <i class="fas fa-comments"></i>ติดต่อ</a>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-copy"></i>Pages</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="login.html">Login</a>
-                                </li>
-                                <li>
-                                    <a href="register.html">Register</a>
-                                </li>
-                                <li>
-                                    <a href="forget-pass.html">Forget Password</a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="map.html">
+                                <i class="fas  fa-file-text"></i>จัดการรายงาน</a>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
-                                <i class="fas fa-desktop"></i>UI Elements</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="button.html">Button</a>
-                                </li>
-                                <li>
-                                    <a href="badge.html">Badges</a>
-                                </li>
-                                <li>
-                                    <a href="tab.html">Tabs</a>
-                                </li>
-                                <li>
-                                    <a href="card.html">Cards</a>
-                                </li>
-                                <li>
-                                    <a href="alert.html">Alerts</a>
-                                </li>
-                                <li>
-                                    <a href="progress-bar.html">Progress Bars</a>
-                                </li>
-                                <li>
-                                    <a href="modal.html">Modals</a>
-                                </li>
-                                <li>
-                                    <a href="switch.html">Switchs</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grids</a>
-                                </li>
-                                <li>
-                                    <a href="fontawesome.html">Fontawesome Icon</a>
-                                </li>
-                                <li>
-                                    <a href="typo.html">Typography</a>
-                                </li>
-                            </ul>
-                        </li>
+
                     </ul>
                 </nav>
             </div>
@@ -394,13 +350,13 @@
                                                         <i class="zmdi zmdi-settings"></i>Setting</a>
                                                 </div>
                                                 <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                                    <a href="<?php echo site_url('welcome'); ?>">
+                                                        <i class="zmdi zmdi-money-box">หน้าเว็บไซต์</i></a>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
                                                 <a href="#">
-                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                                    <i class="zmdi zmdi-power"></i>ลงชื่อออก</a>
                                             </div>
                                         </div>
                                     </div>
@@ -414,4 +370,3 @@
             <div class="main-content">
                 <div class="section__content section__content--p20">
                     <div class="container-fluid">
-                      

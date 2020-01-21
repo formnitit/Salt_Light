@@ -20,28 +20,32 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="register-form">
                         <h2>Register</h2>
-                        <form action="#">
+                        <form action="<?php echo site_url('Register/adding'); ?>" method="post">
                             <div class="group-input">
-                                <label for="usernamemember">ชื่อผู้ใช *</label>
-                                <input type="text" id="usernamemember">
+                                <label for="member_name">ชื่อผู้ใช้</label>
+                                <input type="text" id="member_name"  name="member_name" required>
                             </div>
                             <div class="group-input">
-                                <label for="namemember">ชื่อ - นามสกุล *</label>
-                                <input type="text" id="namemember">
+                                <label for="member_name_lastname">ชื่อ - นามสกุล</label>
+                                <input type="text" id="member_name_lastname" name="member_name_lastname" required>
                             </div>
                             <div class="group-input">
-                                <label for="passmember">พาสเวิร์ด *</label>
-                                <input type="text" id="passmember">
+                                <label for="member_pass">พาสเวิร์ด</label>
+                                <input type="text" id="member_pass" name="member_pass" required>
                             </div>
                             <div class="group-input">
-                                <label for="emailmember">อีเมล *</label>
-                                <input type="text" id="emailmember">
+                                <label for="member_email">อีเมล </label>
+                                <input type="text" id="member_email" name="member_email" required>
                             </div>
                             <div class="group-input">
-                                <label for="เบอร์โทรศัพท์">เบอร์โทรศัพท์ *</label>
-                                <input type="text" id="เบอร์โทรศัพท์">
+                                <label for="member_phonenumber">เบอร์โทรศัพท์</label>
+                                <input type="number" id="member_phonenumber" name="member_phonenumber" required>
                             </div>
-                            <button type="submit" class="site-btn register-btn">REGISTER</button>
+                            <div class="group-input" hidden>
+                                <label for="user">user</label>
+                                <input type="text" id="member_type" name="member_type" value="user">
+                            </div>
+                            <button type="submit" class="site-btn register-btn">สมัคสมาชิค</button>
                         </form>
                         <div class="switch-login">
                             <a href="<?php echo site_url('Login'); ?>">Or Login</a>

@@ -12,11 +12,11 @@
                     <div class="col-lg-2 col-md-2">
                         <div class="logo">
                             <a href="./index.html">
-                                <img src="<?php echo base_url('assets/img'); ?>/logo.png" alt="">
+                                <img src="<?php echo base_url('assets/img'); ?>/footter.jpg" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-7">
+                    <div class="col-lg-7 col-md-7" >
                         <div class="advanced-search">
                             <button type="button" class="category-btn">All Categories</button>
                             <div class="input-group">

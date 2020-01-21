@@ -3,8 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Adminmemberedit extends CI_Controller {
 
+	public function __construct()
+				        {
+				                parent::__construct();
+				                $this->load->model('adminmember_model');
+								}
 
-	public function index()
+
+	public function edit1()
 	{
 		$this->load->view('admin/header_admin');
 		$this->load->view('admin/css_admin');
@@ -12,6 +18,15 @@ class Adminmemberedit extends CI_Controller {
 		$this->load->view('admin/adminmemberedit');
 		$this->load->view('admin/footer_admin');
     $this->load->view('admin/js_admin');
+	}
+
+	public function edit()
+	{
+		// echo '<pre>';
+		// print_r($_POST);
+		// echo '</pre>';
+		// exit;
+		$this->adminmember_model->editmember();
 	}
 
 	public function adding()

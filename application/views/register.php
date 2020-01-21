@@ -22,24 +22,24 @@
                         <h2>Register</h2>
                         <form action="#">
                             <div class="group-input">
-                                <label for="username">Username *</label>
-                                <input type="text" id="username">
+                                <label for="usernamemember">ชื่อผู้ใช *</label>
+                                <input type="text" id="usernamemember">
                             </div>
                             <div class="group-input">
-                                <label for="pass">Password *</label>
-                                <input type="text" id="pass">
+                                <label for="namemember">ชื่อ - นามสกุล *</label>
+                                <input type="text" id="namemember">
                             </div>
                             <div class="group-input">
-                                <label for="con-pass">Confirm Password *</label>
-                                <input type="text" id="con-pass">
+                                <label for="passmember">พาสเวิร์ด *</label>
+                                <input type="text" id="passmember">
                             </div>
                             <div class="group-input">
-                                <label for="email">E-mail *</label>
-                                <input type="text" id="email">
+                                <label for="emailmember">อีเมล *</label>
+                                <input type="text" id="emailmember">
                             </div>
                             <div class="group-input">
-                                <label for="phone">Phone *</label>
-                                <input type="text" id="phone">
+                                <label for="เบอร์โทรศัพท์">เบอร์โทรศัพท์ *</label>
+                                <input type="text" id="เบอร์โทรศัพท์">
                             </div>
                             <button type="submit" class="site-btn register-btn">REGISTER</button>
                         </form>

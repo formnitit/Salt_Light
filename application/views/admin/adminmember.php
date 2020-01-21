@@ -71,17 +71,16 @@
                         <td><?php echo $row->member_type; ?></td>
                         <td>
                             <div class="table-data-feature">
-
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                    <i class="zmdi zmdi-edit"></i>
+                                    <a href="<?php echo site_url('adminmember/edit/').$row->member_ID; ?>"><i class="zmdi zmdi-edit"></i>
                                 </button>
                                 <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                    <i class="zmdi zmdi-delete"></i>
+                                      <a href="<?php echo site_url('adminmember/delete/').$row->member_ID;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
                                 </button>
                             </div>
                         </td>
                     </tr>
-
+<a href="#"></a>
                     <?php } ;?>
 
                 </tbody>

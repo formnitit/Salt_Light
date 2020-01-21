@@ -40,7 +40,7 @@
               $query=$this->db->update('member',$data);
 
               if($query){
-                echo 'edit ok';
+                redirect('adminmember','refresh');
               }else {
                 echo 'false';
               }

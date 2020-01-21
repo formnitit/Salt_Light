@@ -23,10 +23,9 @@
                 </div>
             </div>
             <div class="table-data__tool-right">
-                <button class="au-btn au-btn-icon au-btn--green au-btn--small">
-                    <i class="zmdi zmdi-plus"></i>เพิ่มข้อมูล</button>
-                <button class="au-btn-icon btn btn-danger au-btn--small">
-                    <i class="zmdi zmdi-minus"></i>ลบข้อมูล</button>
+              <a href="<?php echo site_url('adminaddmember')?>">
+                <button class="au-btn-icon btn btn-success au-btn--small">
+                    <i class="zmdi zmdi-plus"></i>เพิ่มข้อมูล</button></a>
             </div>
         </div>
         <div class="table-responsive table-responsive-data2">

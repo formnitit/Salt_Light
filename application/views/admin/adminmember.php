@@ -1,6 +1,4 @@
-<div class="main-content">
-    <div class="section__content section__content--p20">
-        <div class="container-fluid">
+
 <div class="row">
     <div class="col-md-12">
         <!-- DATA TABLE -->
@@ -77,10 +75,9 @@
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                     <i class="zmdi zmdi-edit"></i>
                                 </button>
-                                <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
                                     <i class="zmdi zmdi-delete"></i>
                                 </button>
-
                             </div>
                         </td>
                     </tr>
@@ -92,7 +89,4 @@
         </div>
         <!-- END DATA TABLE -->
     </div>
-</div>
-</div>
-</div>
 </div>

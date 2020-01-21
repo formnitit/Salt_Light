@@ -3,10 +3,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header">เพิ่มข้อมูลสมาชิก</div>
+                    <div class="card-header">แก้ไขข้อมูลสมาชิก</div>
                     <div class="card-body">
                         <div class="card-title">
-                            <h3 class="text-center title-2">เพิ่มข้อมูลสมาชิก</h3>
+                            <h3 class="text-center title-2">แก้ไขข้อมูลสมาชิก</h3>
                         </div>
                         <hr>
                         <form action="<?php echo site_url('adminaddmember/adding'); ?>" method="post">
@@ -44,7 +44,7 @@
                                 </div>
                             </div>
                               <div align="center">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-user-plus">&nbsp;</i>เพิ่มข้อมูลสมาชิก</button>
+                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-user-plus">&nbsp;</i>บันทึกข้อมูลสมาชิก</button>
                             </div>
                         </form>
                     </div>

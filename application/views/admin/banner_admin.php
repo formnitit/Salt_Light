@@ -166,13 +166,31 @@
                             <a href="form.html">
                                 <i class="fas fa-book"></i>จัดการบล๊อค</a>
                         </li>
-                        <li>
-                            <a href="calendar.html">
-                                <i class="fas fa-coffee"></i>จัดการคอร์ส</a>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-user"></i>คอร์ส</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="<?php echo site_url('admincourse'); ?>">จัดการข้อมูลคอร์ส</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('adminaddcourse'); ?>">เพิ่มข้อมูลคอร์ส</a>
+                                </li>
+
+                            </ul>
                         </li>
-                        <li>
-                            <a href="map.html">
-                                <i class="fas fa-tag"></i>จัดการโปรโมชั้น</a>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-user"></i>โปรโมชั่น</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="<?php echo site_url('adminpromotion'); ?>">จัดการข้อมูลโปรโมชั่น</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('adminaddpromotion'); ?>">เพิ่มข้อมูลโปรโมชั่น</a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li>
                             <a href="map.html">

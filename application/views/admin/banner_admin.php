@@ -154,7 +154,7 @@
                                 <i class="fas fa-shopping-cart"></i>สินค้า</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="#">จัดการสินค้า</a>
+                                    <a href="<?php echo site_url('adminshop'); ?>">จัดการสินค้า</a>
                                 </li>
                                 <li>
                                     <a href="#">เพิ่มข้อมูลสินค้า</a>

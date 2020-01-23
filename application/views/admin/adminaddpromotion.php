@@ -15,10 +15,6 @@
                                 <input id="promotion_name" name="promotion_name" type="text" class="form-control" value="">
                             </div>
                             <div class="form-group">
-                                <label for="promotion_detail" class="control-label mb-1">รายละเอียดโปรโมชั่น</label>
-                                <input id="promotion_detail" name="promotion_detail" type="text" class="form-control" value="">
-                            </div>
-                            <div class="form-group">
                                 <label for="promotion_code" class="control-label mb-1">รหัสโปรโมชั่น</label>
                                 <input id="promotion_code" name="promotion_code" type="text" class="form-control" value="">
                             </div>
@@ -29,6 +25,20 @@
                             <div class="form-group">
                                 <label for="promotion_dateend" class="control-label mb-1">วันสิ้นสุดโปรโมชั่น</label>
                                 <input id="promotion_dateend" name="promotion_dateend" type="text" class="form-control" value="">
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="textarea-input" class=" form-control-label" >รายละเอียดโปรโมชั่น</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <textarea id="promotion_detail" name="promotion_detail" rows="9"  class="form-control" ></textarea>
+                                </div>
+                            </div>
+                                  </div>
+                                </div>
                             </div>
                               <div align="center">
                                 <button type="submit" class="btn btn-outline-dark"><i class="fa fa-user-plus">&nbsp;</i>เพิ่มข้อมูลโปรโมชั่น</button>

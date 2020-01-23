@@ -18,6 +18,8 @@ class Adminaddcourse extends CI_Controller {
 	{
 		$data = array(
 			'course_name' => $this->input->post('course_name'),
+			'course_datestart' => $this->input->post('course_datestart'),
+			'course_dateend' => $this->input->post('course_dateend'),
 			'course_price' => $this->input->post('course_price'),
 			'course_detail' => $this->input->post('course_detail'),
 			'course_skill' => $this->input->post('course_skill'),

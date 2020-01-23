@@ -15,12 +15,16 @@
                                 <input id="course_name" name="course_name" type="text" class="form-control" value="">
                             </div>
                             <div class="form-group">
-                                <label for="course_price" class="control-label mb-1">ราคาคอร์ส</label>
-                                <input id="course_price" name="course_price" type="number" class="form-control" value="">
+                                <label for="course_datestart" class="control-label mb-1">วัน/เวลา ลงคอร์ส</label>
+                                <input id="course_datestart" name="course_datestart" type="text" class="form-control" value="">
                             </div>
                             <div class="form-group">
-                                <label for="course_detail" class="control-label mb-1">รายระเอียดคอร์ส</label>
-                                <input id="course_detail" name="course_detail" type="text" class="form-control" value="">
+                                <label for="course_dateend" class="control-label mb-1">วัน/เวลา สิ้นสุดคอร์ส</label>
+                                <input id="course_dateend" name="course_dateend" type="text" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="course_price" class="control-label mb-1">ราคาคอร์ส</label>
+                                <input id="course_price" name="course_price" type="number" class="form-control" value="">
                             </div>
                             <div class="row form-group">
                                 <div class="col col-md-12">
@@ -33,6 +37,20 @@
                                         <option value="บาริสต้าขั้นสูง">บาริสต้าขั้นสูง</option>
                                         <option value="ลาเต้อาทต">ลาเต้อาทต์</option>
                                     </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="textarea-input" class=" form-control-label" >รายระเอียดคอร์ส</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <textarea id="course_detail" name="course_detail" rows="9"  class="form-control" ></textarea>
+                                </div>
+                            </div>
+                                  </div>
                                 </div>
                             </div>
                               <div align="center">

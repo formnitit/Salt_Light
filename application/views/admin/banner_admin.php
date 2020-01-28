@@ -157,7 +157,7 @@
                                     <a href="<?php echo site_url('adminshop'); ?>">จัดการสินค้า</a>
                                 </li>
                                 <li>
-                                    <a href="#">เพิ่มข้อมูลสินค้า</a>
+                                    <a href="<?php echo site_url('adminaddshop'); ?>">เพิ่มข้อมูลสินค้า</a>
                                 </li>
 
                             </ul>
@@ -168,7 +168,7 @@
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-user"></i>คอร์ส</a>
+                                <i class="fas fa-coffee"></i>คอร์ส</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
                                     <a href="<?php echo site_url('admincourse'); ?>">จัดการข้อมูลคอร์ส</a>
@@ -181,7 +181,7 @@
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-user"></i>โปรโมชั่น</a>
+                                <i class="fas fa-tag"></i>โปรโมชั่น</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
                                     <a href="<?php echo site_url('adminpromotion'); ?>">จัดการข้อมูลโปรโมชั่น</a>

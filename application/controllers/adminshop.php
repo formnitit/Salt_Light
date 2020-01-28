@@ -1,19 +1,19 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Adminshop extends CI_Controller {
+class adminshop extends CI_Controller {
 
 	public function __construct()
 				        {
 				                parent::__construct();
-				                $this->load->model('adminmember_model');
+				                $this->load->model('adminshop_model');
 								}
 
 								//----------------------เพิ่ม-----------------------//
 		public function index()
 		{
 
-		$data['query']=$this->adminmember_model->get();
+		$data['query']=$this->adminshop_model->get();
 
 		// echo '<pre>';
 		// print_r($data);
@@ -35,10 +35,10 @@ class Adminshop extends CI_Controller {
 	}
 	//----------------------เพิ่ม-----------------------//
 
-	public function edit($member_ID)
+	public function edit($product_id)
 	{
 
-	$data['rowedit']=$this->adminmember_model->read($member_ID);
+	$data['rowedit']=$this->adminshop_model->read($product_id);
 
 	// echo '<pre>';
 	//print_r($data);
@@ -49,7 +49,7 @@ class Adminshop extends CI_Controller {
 	$this->load->view('admin/header_admin');
 	$this->load->view('admin/css_admin');
 	$this->load->view('admin/banner_admin');
-	$this->load->view('admin/adminmemberedit',$data);
+	$this->load->view('admin/adminshopedit',$data);
 	$this->load->view('admin/footer_admin');
 	$this->load->view('admin/js_admin');
 
@@ -60,16 +60,16 @@ class Adminshop extends CI_Controller {
 }
 
 	//----------------------ลบ-----------------------//
-	public function delete($member_ID)
+	public function delete($product_id)
 	{
-		$this->adminmember_model->deldata($member_ID);
-		redirect('adminmember','refresh');
+		$this->adminshop_model->deldata($product_id);
+		redirect('adminshop','refresh');
 	}
 
 	//----------------------แก้ไข-----------------------//
-	public function read($member_ID)
+	public function read($product_id)
 	{
-		$this->adminmember_model->editmember();
+		$this->adminshop_model->editproduct();
 	}
 
 }

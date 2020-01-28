@@ -3,12 +3,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header">เพิ่มข้อมูลสมาชิก</div>
+                    <div class="card-header"><i class="fas fa-user"></i> เพิ่มข้อมูลสมาชิก</div>
                     <div class="card-body">
-                        <div class="card-title">
-                            <h3 class="text-center title-2">เพิ่มข้อมูลสมาชิก</h3>
-                        </div>
-                        <hr>
+
                         <form action="<?php echo site_url('adminaddmember/adding'); ?>" method="post">
                             <div class="form-group">
                                 <label for="member_name" class="control-label mb-1">ชื่อผู้ใช้</label>
@@ -44,7 +41,10 @@
                                 </div>
                             </div>
                               <div align="center">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-user-plus">&nbsp;</i>เพิ่มข้อมูลสมาชิก</button>
+                                <button type="submit" class="btn btn-outline-success"><i class="fa fa-user-plus">&nbsp;</i> เพิ่มสมาชิก</button>
+                                <a href="<?php echo site_url('adminmember'); ?>">
+                                  <button type="button" class="btn btn-outline-danger"><i class="fa fa-times-circle">&nbsp;</i> ยกเลิก</button>
+                                </a>
                             </div>
                         </form>
                     </div>

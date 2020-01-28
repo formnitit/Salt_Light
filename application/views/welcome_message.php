@@ -37,7 +37,7 @@
                     <div class="single-banner">
                         <img src="<?php echo base_url('assets/img/index'); ?>/Product1.jpg" alt="">
                         <div class="inner-text">
-                            <h4><a href="<?php echo site_url('product'); ?>">Product</a></h4>
+                            <a href="<?php echo site_url('product'); ?>"><h4>Product</h4>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                     <div class="single-banner">
                         <img src="<?php echo base_url('assets/img/index'); ?>/Cousre1.jpg" alt="">
                         <div class="inner-text">
-                            <h4><a href="<?php echo site_url('cousre'); ?>">Cousre</a></h4>
+                            <a href="<?php echo site_url('cousre'); ?>"><h4>Cousre</h4>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                     <div class="single-banner">
                         <img src="<?php echo base_url('assets/img/index'); ?>/Promotion1.jpg" alt="">
                         <div class="inner-text">
-                            <h4><a href="<?php echo site_url('promotion'); ?>">Promotion</a></h4>
+                            <a href="<?php echo site_url('promotion'); ?>"><h4>Promotion</h4>
                         </div>
                     </div>
                 </div>

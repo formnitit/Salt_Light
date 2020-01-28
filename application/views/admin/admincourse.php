@@ -38,10 +38,11 @@
                             </label>
                         </th>
                         <th>ชื่อคอร์ส</th>
-                        <th>วัน/เวลา ลงคอร์ส</th>
-                        <th>วัน/เวลา สิ้นสุดคอร์ส</th>
+                        <th>รูปภาพคอร์ส</th>
+                        <th>ด/ว/ป เริ่มคอร์ส</th>
+                        <th>ด/ว/ป สิ้นสุดคอร์ส</th>
                         <th>ราคาคอร์ส</th>
-                        <th>รายระเอียดคอร์ส</th>
+                        <!-- <th>รายระเอียดคอร์ส</th> -->
                         <th>ทักษะจากคอร์ส</th>
                     </tr>
                 </thead>
@@ -57,13 +58,13 @@
                             </label>
                         </td>
                         <td><?php echo $row->course_name; ?></td>
-
+                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->course_img; ?>" width="100px"></td>
                         <td><?php echo $row->course_datestart; ?></td>
                         <td><?php echo $row->course_dateend; ?></td>
                         <td>
                             <span class="block-email"><?php echo $row->course_price; ?></span>
                         </td>
-                        <td><?php echo $row->course_detail; ?></td>
+                        <!-- <td><?php echo $row->course_detail; ?></td> -->
                         <td>
                             <span class="status--process"><?php echo $row->course_skill; ?></span>
                         </td>

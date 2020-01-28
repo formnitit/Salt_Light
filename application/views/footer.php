@@ -42,9 +42,11 @@
                 <div class="footer-widget">
                     <h5>Keep connected</h5>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/saltlightproud/"><i class="fa fa-facebook">&nbsp;&nbsp;</i>Facebook</a><br>
-                        <a href="#"><i class="fa fa-instagram">&nbsp;&nbsp;</i>Instagram</a><br>
-                        <a href="#"><i class="fa fa-twitter">&nbsp;&nbsp;</i>Twitter</a><br>
+                        <a href="https://www.facebook.com/saltlightproud/"><h5>Facebook</h5>
+                        <a href=" "><h5>Instagram</h5>
+                        <a href=" "><h5>Twitter</h5>
+                        <!-- <a href="#"><i class="fa fa-instagram">&nbsp;&nbsp;</i>Instagram</a><br>
+                        <a href="#"><i class="fa fa-twitter">&nbsp;&nbsp;</i>Twitter</a><br> -->
                     </div>
                 </div>
             </div>

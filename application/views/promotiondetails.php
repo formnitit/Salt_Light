@@ -20,7 +20,7 @@
                       <div class="leave-comment">
                           <form action="#" class="comment-form">
                               <div class="row">
-                                      <button type="submit" class="site-btn"><a href="#">Get Code</button>
+                                      <a href="#"><button type="submit" class="site-btn">Get Code</button>
                                   </div>
                               </div>
                           </form>

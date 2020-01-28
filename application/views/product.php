@@ -6,7 +6,7 @@
                 <div class="single-banner">
                     <img src="<?php echo base_url('assets/img/index'); ?>/Coffee Drink.jpg" alt="">
                     <div class="inner-text">
-                        <h4><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></h4>
+                        <a href="<?php echo site_url('shop'); ?>"><h4>Coffee Drink</h4>
                     </div>
                 </div>
             </div>
@@ -14,7 +14,7 @@
                 <div class="single-banner">
                     <img src="<?php echo base_url('assets/img/index'); ?>/Coffee Beans.jpg" alt="">
                     <div class="inner-text">
-                        <h4><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></h4>
+                        <a href="<?php echo site_url('shopcoffeebeans'); ?>"><h4>Coffee Beans</h4>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
                 <div class="single-banner">
                     <img src="<?php echo base_url('assets/img/index'); ?>/Coffee Equipment.jpg" alt="">
                     <div class="inner-text">
-                        <h4><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment</a></h4>
+                        <a href="<?php echo site_url('shopcoffeeequipment'); ?>"><h4>Coffee Equipment</h4>
                     </div>
                 </div>
             </div>

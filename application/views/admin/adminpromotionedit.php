@@ -9,27 +9,48 @@
                             <h3 class="text-center title-2">แก้ไขข้อมูลโปรโมชั่น</h3>
                         </div>
                         <hr>
-                        <form action="<?php echo site_url('adminpromotionedit/edit'); ?>" method="post">
+                        <form action="<?php echo site_url('adminpromotionedit/edit'); ?>" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="promotion_name" class="control-label mb-1">ชื่อโปรโมชั่น</label>
                                 <input id="promotion_name" name="promotion_name" type="text" class="form-control" value="<?php echo $rowedit->promotion_name;?>">
                             </div>
-                            <div class="form-group">
-                                <label for="promotion_detail" class="control-label mb-1">รายละเอียดโปรโมชั่น</label>
-                                <input id="promotion_detail" name="promotion_detail" type="text" class="form-control" value="<?php echo $rowedit->promotion_detail;?>">
-                            </div>
+
+                            <div class="container mt-5">
+                              <h5 class="text-center">อัพโหลดรูปภาพ</h5>
+                              <div class="col-sm-12 col-lg-4 mr-auto ml-auto border p-4">
+                                  <div class="form-group">
+                                    <label><strong>Upload Files</strong></label>
+                                    <div class="custom-file">
+                                      <input type="file" name="promotion_img" multiple class="custom-file-input" id="promotion_img" accept="img/*" value="<?php echo $rowedit->promotion_img;?>">
+                                      <label class="custom-file-label" for="customFile">Choose file</label>
+                                    </div>
+                                  </div>
+                              </div>
+
                             <div class="form-group">
                                 <label for="promotion_code" class="control-label mb-1">รหัสโปรโมชั่น</label>
                                 <input id="promotion_code" name="promotion_code" type="text" class="form-control" value="<?php echo $rowedit->promotion_code;?>">
                             </div>
                             <div class="form-group">
-                                <label for="promotion_datestart" class="control-label mb-1">วันเริ่มโปรโมชั่น</label>
-                                <input id="promotion_datestart" name="promotion_datestart" type="text" class="form-control" value="<?php echo $rowedit->promotion_datestart;?>">
+                              <label for="promotion_datestart" class="control-label mb-1">ด/ว/ป เริ่มโปรโมชั่น</label>
                             </div>
+                            <input id="datepicker" name="promotion_datestart" value="<?php echo $rowedit->promotion_datestart;?>"/>
+                            <script>
+                                $('#datepicker').datepicker({
+                                    uiLibrary: 'bootstrap4'
+                                });
+                            </script>
+                            <br>
                             <div class="form-group">
-                                <label for="promotion_dateend" class="control-label mb-1">วันสิ้นสุดโปรโมชั่น</label>
-                                <input id="promotion_dateend" name="promotion_dateend" type="text" class="form-control" value="<?php echo $rowedit->promotion_dateend;?>">
+                                <label for="promotion_dateend" class="control-label mb-1">ด/ว/ป สิ้นสุดคอร์ส</label>
                             </div>
+                            <input id="datepicker1" name="promotion_dateend" value="<?php echo $rowedit->promotion_dateend;?>"/>
+                            <script>
+                                $('#datepicker1').datepicker({
+                                    uiLibrary: 'bootstrap4'
+                                });
+                            </script>
+                            <br>
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">

@@ -39,10 +39,11 @@
                             </label>
                         </th>
                         <th>ชื่อโปรโมชั่น</th>
-                        <th>รายละเอียดโปรโมชั่น</th>
+                        <th>รูปภาพโปรโมชั่น</th>
+                        <!-- <th>รายละเอียดโปรโมชั่น</th> -->
                         <th>รหัสโปรโมชั่น</th>
-                        <th>วันเริ่มโปรโมชั่น</th>
-                        <th>วันสิ้นสุดโปรโมชั่น</th>
+                        <th>ด/ว/ป เริ่มโปรโมชั่น</th>
+                        <th>ด/ว/ป สิ้นสุดโปรโมชั่น</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,8 +58,8 @@
                             </label>
                         </td>
                         <td><?php echo $row->promotion_name; ?></td>
-
-                        <td class="desc"><?php echo $row->promotion_detail; ?></td>
+                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->promotion_img; ?>" width="100px"></td>
+                        <!-- <td class="desc"><?php echo $row->promotion_detail; ?></td> -->
                         <td>
                             <span class="block-email"><?php echo $row->promotion_code; ?></span>
                         </td>

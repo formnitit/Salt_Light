@@ -44,7 +44,7 @@
                       <div class="leave-comment">
                           <form action="#" class="comment-form">
                               <div class="row">
-                                      <button type="submit" class="site-btn"><a href="<?php echo site_url('recousre'); ?>">Register Cousre</button>
+                                      <a href="<?php echo site_url('recousre'); ?>"><button type="submit" class="site-btn">Register Cousre</button>
                                   </div>
                               </div>
                           </form>

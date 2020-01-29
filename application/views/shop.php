@@ -61,39 +61,17 @@
                         </div>
                     </div>
 
+
                     <div class="product-list">
                         <div class="row">
+                          <?php foreach ($query as $row) {?>
                             <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee1.jpg" alt="">
 
-                                        <div class="sale pp-sale">Sale</div>
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Hot Coffee</div>
-                                        <a href="#">
-                                            <h5>Espresso</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿35.00
-                                            <span>฿40.00</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
                                 <div class="product-item">
                                     <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee2.jpg" alt="">
+
+                                        <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->product_img; ?>" height="250px" width="600px">
+
                                         <div class="icon">
                                             <i class="icon_heart_alt"></i>
                                         </div>
@@ -102,271 +80,23 @@
                                             <li class="quick-view"><a href="#">+ Quick View</a></li>
                                             <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                         </ul>
+
                                     </div>
                                     <div class="pi-text">
-                                        <div class="catagory-name">Hot Coffee</div>
+                                        <div class="catagory-name">ประเภท</div>
                                         <a href="#">
-                                            <h5>Americano</h5>
+                                            <h5><?php echo $row->product_name; ?></h5>
                                         </a>
                                         <div class="product-price">
-                                            ฿50.00
-                                            <span></span>
+                                            ฿<?php echo $row->product_price; ?>.00
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee3.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Hot Coffee</div>
-                                        <a href="#">
-                                            <h5>Cappuccino</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿50.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee4.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Hot Coffee</div>
-                                        <a href="#">
-                                            <h5>Latte</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿50.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee5.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Hot Coffee</div>
-                                        <a href="#">
-                                            <h5>Mocha</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿50.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Milk.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Hot Milk</div>
-                                        <a href="#">
-                                            <h5>Milk</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿40.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Iced coffee1.jpg" alt="">
-                                        <div class="sale pp-sale">Sale</div>
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Iced Coffee</div>
-                                        <a href="#">
-                                            <h5>Iced Espresso</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿60.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Iced coffee2.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Iced Coffee</div>
-                                        <a href="#">
-                                            <h5>Iced Americano</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿60.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Iced coffee3.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Iced Coffee</div>
-                                        <a href="#">
-                                            <h5>Iced Cappuccino</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿65.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Iced coffee4.jpg" alt="">
-                                        <div class="sale pp-sale">Sale</div>
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Iced Coffee</div>
-                                        <a href="#">
-                                            <h5>Iced latte</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿65.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Iced coffee5.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Iced Coffee</div>
-                                        <a href="#">
-                                            <h5>Iced Mocha</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿65.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="product-item">
-                                    <div class="pi-pic">
-                                        <img src="<?php echo base_url('assets/img/products'); ?>/Iced coffee6.jpg" alt="">
-                                        <div class="icon">
-                                            <i class="icon_heart_alt"></i>
-                                        </div>
-                                        <ul>
-                                            <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
-                                            <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="pi-text">
-                                        <div class="catagory-name">Iced Milk</div>
-                                        <a href="#">
-                                            <h5>Milk</h5>
-                                        </a>
-                                        <div class="product-price">
-                                            ฿40.00
-                                            <span></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <?php } ;?>
+
+
                         </div>
                     </div>
                     <div class="loading-more">

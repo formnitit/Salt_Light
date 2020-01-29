@@ -32,9 +32,9 @@ class Adminaddmember extends CI_Controller {
 
 		$query=$this->db->insert('member',$data);
 		if($query){
-			echo 'ok';
+			redirect('adminmember','refresh');
 		}else {
 			echo 'false';
-		}
+			}
 	}
 }

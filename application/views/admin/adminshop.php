@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="table-data__tool-right">
-              <a href="<?php echo site_url('adminaddproduct')?>">
+              <a href="<?php echo site_url('adminaddshop'); ?>">
                 <button class="au-btn-icon btn btn-success au-btn--small">
                     <i class="zmdi zmdi-plus"></i>เพิ่มข้อมูล</button></a>
             </div>

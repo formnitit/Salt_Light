@@ -32,9 +32,9 @@ class Register extends CI_Controller {
 
 		$query=$this->db->insert('member',$data);
 		if($query){
-			echo 'ok';
+			redirect('welcome','refresh');
 		}else {
 			echo 'false';
-		}
+			}
 	}
 }

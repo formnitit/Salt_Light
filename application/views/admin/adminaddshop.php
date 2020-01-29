@@ -12,13 +12,19 @@
                                 <input id="product_id" name="product_id" type="text" class="form-control" value="">
                             </div>
 
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                   <label>อัพโหลดรูปภาพ</label>
                                   <div class="custom-file">
                                     <input type="file" name="product_img" multiple class="custom-file-input" id="product_img" accept="img/*">
                                     <label class="custom-file-label" for="customFile"></label>
                                   </div>
-                                </div>
+                                </div> -->
+
+
+                                  <div class="form-group">
+                                    <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
+                                    <input type="file" class="form-control-file btn btn-outline-light text-dark" id="product_img" name="product_img" accept="img/*">
+                                  </div>
 
                             <div class="form-group">
                                 <label for="product_name" class="control-label mb-1">ชื่อสินค้า</label>

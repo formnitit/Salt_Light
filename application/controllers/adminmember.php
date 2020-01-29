@@ -58,6 +58,8 @@ class Adminmember extends CI_Controller {
 	// echo '</pre>';
 	// exit;
 }
+	//----------------------จบเพิ่ม-----------------------//
+
 
 	//----------------------ลบ-----------------------//
 	public function delete($member_ID)
@@ -65,12 +67,15 @@ class Adminmember extends CI_Controller {
 		$this->adminmember_model->deldata($member_ID);
 		redirect('adminmember','refresh');
 	}
+	//----------------------จบลบ-----------------------//
+
+
 
 	//----------------------แก้ไข-----------------------//
 	public function read($member_ID)
 	{
 		$this->adminmember_model->editmember();
 	}
-
+//----------------------จบแก้ไข-----------------------//
 }
 ?>

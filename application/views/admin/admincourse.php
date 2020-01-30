@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <!-- DATA TABLE -->
-        <h3 class="title-5 m-b-35">data course</h3>
+        <h3 class="title-5 m-b-35">จัดการข้อมูลคอร์ส</h3>
         <div class="table-data__tool">
             <div class="table-data__tool-left">
                 <div class="rs-select2--light rs-select2--md">
@@ -42,7 +42,6 @@
                         <th>ด/ว/ป เริ่มคอร์ส</th>
                         <th>ด/ว/ป สิ้นสุดคอร์ส</th>
                         <th>ราคาคอร์ส</th>
-                        <!-- <th>รายระเอียดคอร์ส</th> -->
                         <th>ทักษะจากคอร์ส</th>
                     </tr>
                 </thead>
@@ -64,7 +63,6 @@
                         <td>
                             <span class="block-email"><?php echo $row->course_price; ?></span>
                         </td>
-                        <!-- <td><?php echo $row->course_detail; ?></td> -->
                         <td>
                             <span class="status--process"><?php echo $row->course_skill; ?></span>
                         </td>

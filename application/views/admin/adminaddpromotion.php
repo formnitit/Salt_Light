@@ -3,28 +3,20 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header">เพิ่มข้อมูลโปรโมชั่น</div>
+                    <div class="card-header"><i class="fa fa-tag">&nbsp;</i>เพิ่มข้อมูลโปรโมชั่น</div>
                     <div class="card-body">
-                        <div class="card-title">
-                            <h3 class="text-center title-2">เพิ่มข้อมูลโปรโมชั่น</h3>
-                        </div>
-                        <hr>
                         <form action="<?php echo site_url('adminaddpromotion/adding'); ?>" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="promotion_name" class="control-label mb-1">ชื่อโปรโมชั่น</label>
                                 <input id="promotion_name" name="promotion_name" type="text" class="form-control" value="">
                             </div>
-                            <div class="container mt-5">
-                              <h5 class="text-center">อัพโหลดรูปภาพ</h5>
-                              <div class="col-sm-12 col-lg-4 mr-auto ml-auto border p-4">
                                   <div class="form-group">
-                                    <label><strong>Upload Files</strong></label>
+                                    <label>อัพโหลดไฟล์</label>
                                     <div class="custom-file">
-                                      <input type="file" name="blog_img" multiple class="custom-file-input" id="blog_img" accept="img/*">
-                                      <label class="custom-file-label" for="customFile">Choose file</label>
+                                      <input type="file" name="promotion_img" multiple class="custom-file-input" id="promotion_img" accept="img/*">
+                                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
                                     </div>
                                   </div>
-                              </div>
                             <div class="form-group">
                                 <label for="promotion_code" class="control-label mb-1">รหัสโปรโมชั่น</label>
                                 <input id="promotion_code" name="promotion_code" type="text" class="form-control" value="">
@@ -64,10 +56,9 @@
                                 </div>
                             </div>
                               <div align="center">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-user-plus">&nbsp;</i>เพิ่มข้อมูลโปรโมชั่น</button>
+                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-tag">&nbsp;</i>เพิ่มข้อมูลโปรโมชั่น</button>
                             </div>
                         </form>
-                    </div>
                 </div>
             </div>
         </div>

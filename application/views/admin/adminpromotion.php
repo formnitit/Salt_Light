@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-md-12">
         <!-- DATA TABLE -->
-        <h3 class="title-5 m-b-35">data promotion</h3>
+        <h3 class="title-5 m-b-35">จัดการข้อมูลโปรโมชั่น</h3>
         <div class="table-data__tool">
             <div class="table-data__tool-left">
                 <div class="rs-select2--light rs-select2--md">
@@ -40,7 +40,6 @@
                         </th>
                         <th>ชื่อโปรโมชั่น</th>
                         <th>รูปภาพโปรโมชั่น</th>
-                        <!-- <th>รายละเอียดโปรโมชั่น</th> -->
                         <th>รหัสโปรโมชั่น</th>
                         <th>ด/ว/ป เริ่มโปรโมชั่น</th>
                         <th>ด/ว/ป สิ้นสุดโปรโมชั่น</th>
@@ -59,7 +58,6 @@
                         </td>
                         <td><?php echo $row->promotion_name; ?></td>
                         <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->promotion_img; ?>" width="100px"></td>
-                        <!-- <td class="desc"><?php echo $row->promotion_detail; ?></td> -->
                         <td>
                             <span class="block-email"><?php echo $row->promotion_code; ?></span>
                         </td>

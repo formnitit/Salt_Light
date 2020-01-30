@@ -3,30 +3,20 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header">แก้ไขข้อมูลคอร์ส</div>
+                    <div class="card-header"><i class="fa fa-coffee">&nbsp;</i>แก้ไขข้อมูลคอร์ส</div>
                     <div class="card-body">
-                        <div class="card-title">
-                            <h3 class="text-center title-2">แก้ไขข้อมูลคอร์ส</h3>
-                        </div>
-                        <hr>
                         <form action="<?php echo site_url('admincourseedit/edit'); ?>" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="course_name" class="control-label mb-1">ชื่อคอร์ส</label>
                                 <input id="course_name" name="course_name" type="text" class="form-control" value="<?php echo $rowedit->course_name;?>">
                             </div>
-
-                            <div class="container mt-5">
-                              <h5 class="text-center">อัพโหลดรูปภาพ</h5>
-                              <div class="col-sm-12 col-lg-4 mr-auto ml-auto border p-4">
+                              <label>อัพโหลดไฟล์</label>
                                   <div class="form-group">
-                                    <label><strong>Upload Files</strong></label>
                                     <div class="custom-file">
                                       <input type="file" name="course_img" multiple class="custom-file-input" id="course_img" accept="img/*" value="<?php echo $rowedit->course_img;?>">
-                                      <label class="custom-file-label" for="customFile">Choose file</label>
+                                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
                                     </div>
                                   </div>
-                              </div>
-
                             <div class="form-group">
                               <label for="course_datestart" class="control-label mb-1">ด/ว/ป เริ่มคอร์ส</label>
                             </div>
@@ -80,10 +70,9 @@
                             </div>
                               <div align="center">
                                 <input type="hidden" name="course_id" value="<?php echo $rowedit->course_id;?>">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-user-plus">&nbsp;</i>แก้ไขข้อมูลคอร์ส</button>
+                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-coffee">&nbsp;</i>แก้ไขข้อมูลคอร์ส</button>
                             </div>
                         </form>
-                    </div>
                 </div>
             </div>
         </div>

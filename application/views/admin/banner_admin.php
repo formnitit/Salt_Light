@@ -162,9 +162,18 @@
 
                             </ul>
                         </li>
-                        <li>
-                            <a href="form.html">
-                                <i class="fas fa-book"></i>จัดการบล๊อค</a>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-user"></i>บทความ</a>
+                            <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                <li>
+                                    <a href="<?php echo site_url('adminblog'); ?>">จัดการข้อมูลบทความ</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('adminaddblog'); ?>">เพิ่มข้อมูลบทความ</a>
+                                </li>
+
+                            </ul>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">

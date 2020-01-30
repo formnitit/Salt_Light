@@ -20,7 +20,7 @@
                                   <div class="form-group">
                                     <label><strong>Upload Files</strong></label>
                                     <div class="custom-file">
-                                      <input type="file" name="promotion_img" multiple class="custom-file-input" id="promotion_img" accept="img/*">
+                                      <input type="file" name="blog_img" multiple class="custom-file-input" id="blog_img" accept="img/*">
                                       <label class="custom-file-label" for="customFile">Choose file</label>
                                     </div>
                                   </div>

@@ -13,5 +13,25 @@ class Contact extends CI_Controller {
 		$this->load->view('footer');
 		$this->load->view('js');
 	}
+
+	public function adding()
+	{
+		$data = array(
+			'contact_name' => $this->input->post('contact_name'),
+			'contact_email' => $this->input->post('contact_email'),
+			'contact_phone' => $this->input->post('contact_phone'),
+			'contact_message' => $this->input->post('contact_message')
+		);
+
+		$query=$this->db->insert('contact',$data);
+		if($query){
+			redirect('welcome','refresh');
+		}else {
+			echo 'false';
+			}
+}
+
+
+
 }
 ?>

@@ -10,13 +10,10 @@
                                 <label for="promotion_name" class="control-label mb-1">ชื่อโปรโมชั่น</label>
                                 <input id="promotion_name" name="promotion_name" type="text" class="form-control" value="">
                             </div>
-                                  <div class="form-group">
-                                    <label>อัพโหลดไฟล์</label>
-                                    <div class="custom-file">
-                                      <input type="file" name="promotion_img" multiple class="custom-file-input" id="promotion_img" accept="img/*">
-                                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
-                                    </div>
-                                  </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
+                              <input type="file" class="form-control-file btn btn-outline-light text-dark" id="promotion_img" name="promotion_img" accept="img/*">
+                            </div>
                             <div class="form-group">
                                 <label for="promotion_code" class="control-label mb-1">รหัสโปรโมชั่น</label>
                                 <input id="promotion_code" name="promotion_code" type="text" class="form-control" value="">

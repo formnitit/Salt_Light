@@ -201,13 +201,18 @@
 
                             </ul>
                         </li>
-                        <li>
-                            <a href="map.html">
-                                <i class="fas fa-comments"></i>ติดต่อ</a>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="<?php echo site_url('admincontact'); ?>">
+                                <i class="fas fa-tag"></i>ติดต่อ</a>
                         </li>
                         <li>
                             <a href="map.html">
                                 <i class="fas  fa-file-text"></i>จัดการรายงาน</a>
+                                <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                                    <li>
+                                        <a href="<?php echo site_url('admincontact'); ?>">ข้อมูลติดต่อ</a>
+                                    </li>
+                                </ul>
                         </li>
 
                     </ul>

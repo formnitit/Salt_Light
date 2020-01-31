@@ -10,13 +10,10 @@
                                 <label for="course_name" class="control-label mb-1">ชื่อคอร์ส</label>
                                 <input id="course_name" name="course_name" type="text" class="form-control" value="">
                             </div>
-                              <label>อัพโหลดรูปภาพ</label>
-                                  <div class="form-group">
-                                    <div class="custom-file">
-                                      <input type="file" name="course_img" multiple class="custom-file-input" id="course_img" accept="img/*">
-                                      <label class="custom-file-label" for="customFile">เลือกรูปภาพ</label>
-                                    </div>
-                                  </div>
+                              <div class="form-group">
+                                <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
+                                <input type="file" class="form-control-file btn btn-outline-light text-dark" id="course_img" name="course_img" accept="img/*">
+                              </div>
                             <div class="form-group">
                               <label for="course_datestart" class="control-label mb-1">ด/ว/ป เริ่มคอร์ส</label>
                             </div>

@@ -13,5 +13,17 @@ class Product extends CI_Controller {
 		$this->load->view('footer');
 		$this->load->view('js');
 	}
+
+	// ---------------------------------logout--------
+		public function index1()
+		{
+			$this->load->view('header_view');
+			$this->load->view('css');
+			$this->load->view('bannerlogout');
+			$this->load->view('product');
+			$this->load->view('footer');
+			$this->load->view('js');
+		}
+
 }
 ?>

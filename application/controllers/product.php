@@ -21,6 +21,7 @@ class Product extends CI_Controller {
 		$this->load->view('js');
 	}
 
+
 	// ---------------------------------logout--------
 		public function index1()
 		{
@@ -31,6 +32,7 @@ class Product extends CI_Controller {
 			$this->load->view('footer');
 			$this->load->view('js');
 		}
+
 
 }
 ?>

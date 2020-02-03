@@ -45,7 +45,7 @@
                                 <label for="user">user</label>
                                 <input type="text" id="member_type" name="member_type" value="user">
                             </div>
-                            <button type="submit" class="site-btn register-btn">สมัคสมาชิค</button>
+                            <button type="submit" class="site-btn register-btn">สมัคสมาชิก</button>
                         </form>
                         <div class="switch-login">
                             <a href="<?php echo site_url('Login'); ?>">Or Login</a>

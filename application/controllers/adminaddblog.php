@@ -32,9 +32,7 @@ class Adminaddblog extends CI_Controller {
 			$filename = $data['file_name'];
 		$data = array(
 			'blog_name' => $this->input->post('blog_name'),
-			'blog_type_name' => $this->input->post('blog_type_name'),
-			'blog_date' => $this->input->post('blog_date'),
-			'member_name' => $this->input->post('member_name'),
+			'blog_type_id' => $this->input->post('blog_type_id'),
 			'blog_img' => $filename,
 		);
 

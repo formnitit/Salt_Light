@@ -12,6 +12,9 @@
                       $this->db->delete('product',array('product_id'=>$product_ID));
 
               }
+//----------------------จบdelete-----------------------//
+
+
 
 //----------------------edit-----------------------//
         public function read($product_ID){
@@ -45,12 +48,24 @@
                 echo 'false';
               }
         }
+//----------------------จบedit-----------------------//
 
 
 
+// ---------------------จอยตาราง-------------------------//
+        public function jointableshop()
+        {
+              $this->db->select('product.*,product_type.*');
+              $this->db->from('product');
+              $this->db->join('product_type','product.product_type_id = product_type.product_type_id');
 
 
+              $query = $this->db->get();
+              return $query->result();
+        }
 
+
+// ---------------------จบจอยตาราง-------------------------//
 
 
 

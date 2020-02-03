@@ -62,7 +62,7 @@
                         <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->product_img; ?>" width="100px"></td>
                         <td class="desc"><?php echo $row->product_name; ?></td>
                         <td>
-                            <?php echo $row->product_type_id; ?></span>
+                            <?php echo $row->product_type_name; ?></span>
                         </td>
                         <td><span class="status--process"><?php echo $row->product_price; ?></td>
                         <td>

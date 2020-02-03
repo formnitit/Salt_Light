@@ -13,7 +13,7 @@ class adminshop extends CI_Controller {
 		public function index()
 		{
 
-		$data['query']=$this->adminshop_model->get();
+		$data['query']=$this->adminshop_model->jointableshop();
 
 		// echo '<pre>';
 		// print_r($data);

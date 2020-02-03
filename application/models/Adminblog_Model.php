@@ -44,6 +44,7 @@
               }
         }
 
+// จอยตารางบทความ--------------------------
         public function jointableblog()
         {
               $this->db->select('blog.*,blog_type.*,member.*');

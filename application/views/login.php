@@ -1,4 +1,3 @@
-  <!-- Breadcrumb Section Begin -->
     <div class="breacrumb-section">
         <div class="container">
             <div class="row">
@@ -20,14 +19,14 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="login-form">
                         <h2>Login</h2>
-                        <form action="#">
+                        <form action="<?php echo site_url('login/loginMe'); ?> " method="post">
                             <div class="group-input">
                                 <label for="username">Username or email address *</label>
-                                <input type="text" id="username">
+                                <input type="text" id="username" name="member_email">
                             </div>
                             <div class="group-input">
                                 <label for="pass">Password *</label>
-                                <input type="text" id="pass">
+                                <input type="text" id="pass" name="member_pass">
                             </div>
                             <div class="group-input gi-check">
                                 <div class="gi-more">

@@ -387,7 +387,7 @@
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="#">
+                                                <a href="<?php echo site_url('login/logout'); ?>">
                                                     <i class="zmdi zmdi-power"></i>ลงชื่อออก</a>
                                             </div>
                                         </div>

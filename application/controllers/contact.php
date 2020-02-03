@@ -25,7 +25,7 @@ class Contact extends CI_Controller {
 
 		$query=$this->db->insert('contact',$data);
 		if($query){
-			redirect('welcome','refresh');
+			redirect('contact','refresh');
 		}else {
 			echo 'false';
 			}

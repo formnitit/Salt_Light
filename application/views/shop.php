@@ -83,7 +83,7 @@
 
                                     </div>
                                     <div class="pi-text">
-                                        <div class="catagory-name">ประเภท</div>
+                                        <div class="catagory-name"><?php echo $row->product_type_name; ?></div>
                                         <a href="#">
                                             <h5><?php echo $row->product_name; ?></h5>
                                         </a>

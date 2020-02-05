@@ -33,7 +33,7 @@ class Admincourse extends CI_Controller {
 		// echo '</pre>';
 		// exit;
 	}
-	//----------------------เพิ่ม-----------------------//
+	//----------------------จบเพิ่ม-----------------------//
 
 	public function edit($course_id)
 	{

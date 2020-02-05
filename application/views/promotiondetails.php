@@ -5,18 +5,18 @@
               <div class="col-lg-12">
                   <div class="blog-details-inner">
                       <div class="blog-detail-title">
-                          <h2>Sale 50% Only This Week</h2>
-                          <p><span>- December 27, 2019</span></p>
+                          <h2><?php echo $rowshow->promotion_name ?></h2>
                       </div>
                       <div class="blog-medium-pic" align="center">
-                          <img src="<?php echo base_url('assets/img/promotion'); ?>/promotion2.jpg" alt="" width="60%">
+                          <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $rowshow->promotion_img; ?>" alt="" width="60%">
                       </div>
                       <br>
                       <div class="blog-quote" align="center">
-                          <p>“ โปรโมชั่นสุดคุ้ม ลด 50% ที่ร้าน Salt&Light ”</p>
+                          <p>วันเริ่ม - สิ้นสุด <?php echo $rowshow->promotion_datestart ?> - <?php echo $rowshow->promotion_dateend ?> </p>
                       </div>
-                        <p>- รับโค้ดส่วนลดทันที! 50% เพียงซื้อเครื่องดื่มที่ร้าน Salt&Light </p><br>
-                        <p>- รับสิทธิ์ได้ตั้งแต่ 10 ม.ค. 63 - 17 ม.ค. 63 </p>
+                      <div class="">
+                          <p><?php echo $rowshow->promotion_detail ?></p>
+                      </div>
                       <div class="leave-comment">
                           <form action="#" class="comment-form">
                               <div class="row">
@@ -24,7 +24,6 @@
                                   </div>
                               </div>
                           </form>
-                      </div>
                   </div>
               </div>
           </div>

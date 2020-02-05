@@ -31,7 +31,7 @@
                             <h4>Recent Promotion</h4>
                             <div class="recent-blog">
                               <?php foreach ($query as $row) {?>
-                                <a href="<?php echo site_url('promotiondetails'); ?>" class="rb-item">
+                                <a href="<?php echo site_url('promotiondetails/show/').$row->promotion_id; ?>" class="rb-item">
                                     <div class="rb-pic">
                                         <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->promotion_img; ?>" >
                                     </div>
@@ -62,7 +62,7 @@
                                     <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->promotion_img; ?>" height="300px" width="600px">
                                 </div>
                                 <div class="bi-text">
-                                    <a href="<?php echo site_url('promotiondetails'); ?>">
+                                    <a href="<?php echo site_url('promotiondetails/show/').$row->promotion_id; ?>">
                                         <h4><?php echo $row->promotion_name; ?></h4>
                                     </a>
                                     <p><span>start <?php echo $row->promotion_datestart; ?> - <?php echo $row->promotion_dateend; ?></span></p>

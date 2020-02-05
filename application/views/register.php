@@ -21,6 +21,14 @@
                     <div class="register-form">
                         <h2>Register</h2>
                         <form action="<?php echo site_url('Register/adding'); ?>" method="post">
+                          <div class="group-input">
+                              <label for="member_email">อีเมล </label>
+                              <input type="text" id="member_email" name="member_email" required>
+                          </div>
+                          <div class="group-input">
+                              <label for="member_pass">พาสเวิร์ด</label>
+                              <input type="text" id="member_pass" name="member_pass" required>
+                          </div>
                             <div class="group-input">
                                 <label for="member_name">ชื่อผู้ใช้</label>
                                 <input type="text" id="member_name"  name="member_name" required>
@@ -30,19 +38,11 @@
                                 <input type="text" id="member_name_lastname" name="member_name_lastname" required>
                             </div>
                             <div class="group-input">
-                                <label for="member_pass">พาสเวิร์ด</label>
-                                <input type="text" id="member_pass" name="member_pass" required>
-                            </div>
-                            <div class="group-input">
-                                <label for="member_email">อีเมล </label>
-                                <input type="text" id="member_email" name="member_email" required>
-                            </div>
-                            <div class="group-input">
                                 <label for="member_phonenumber">เบอร์โทรศัพท์</label>
                                 <input type="number" id="member_phonenumber" name="member_phonenumber" required>
                             </div>
                             <div class="group-input" hidden>
-                                <label for="user">user</label>
+                                <label for="user">0</label>
                                 <input type="text" id="member_type" name="member_type" value="user">
                             </div>
                             <button type="submit" class="site-btn register-btn">สมัคสมาชิก</button>

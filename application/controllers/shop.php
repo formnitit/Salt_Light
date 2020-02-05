@@ -11,7 +11,7 @@ class Shop extends CI_Controller {
 
 	public function index()
 	{
-		$data['query'] = $this->adminshop_model->jointableshops();
+		$data['query'] = $this->adminshop_model->jointableshop();
 		$this->load->view('header_view');
 		$this->load->view('css');
 		$this->load->view('banner');
@@ -23,7 +23,7 @@ class Shop extends CI_Controller {
 	// ---------------------------------logout--------
 		public function index1()
 		{
-			$data['query'] = $this->adminshop_model->get();
+			$data['query'] = $this->adminshop_model->jointableshop();
 			$this->load->view('header_view');
 			$this->load->view('css');
 			$this->load->view('bannerlogout');

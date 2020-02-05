@@ -32,8 +32,8 @@ class Cousredetails extends CI_Controller {
 			$this->load->view('header_view');
 			$this->load->view('css');
 			$this->load->view('bannerlogout');
-			$this->load->view('cousredetails');
-			$this->load->view('footer');
+			$this->load->view('login/cousredetails1');
+			$this->load->view('login/footer1');
 			$this->load->view('js');
 		}
 

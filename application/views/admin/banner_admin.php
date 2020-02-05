@@ -382,7 +382,7 @@
                                                         <i class="zmdi zmdi-settings"></i>Setting</a>
                                                 </div>
                                                 <div class="account-dropdown__item">
-                                                    <a href="<?php echo site_url('welcome'); ?>">
+                                                    <a href="<?php echo site_url('welcome/index1'); ?>">
                                                         <i class="zmdi zmdi-money-box">หน้าเว็บไซต์</i></a>
                                                 </div>
                                             </div>

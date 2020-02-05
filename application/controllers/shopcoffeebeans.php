@@ -20,8 +20,8 @@ class shopcoffeebeans extends CI_Controller {
 			$this->load->view('header_view');
 			$this->load->view('css');
 			$this->load->view('bannerlogout');
-			$this->load->view('shopcoffeebeans');
-			$this->load->view('footer');
+			$this->load->view('login/shopcoffeebeans1');
+			$this->load->view('login/footer1');
 			$this->load->view('js');
 		}
 

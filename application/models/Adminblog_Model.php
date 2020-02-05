@@ -33,6 +33,8 @@
                 'blog_date' => $this->input->post('blog_date'),
                 'blog_type_name' => $this->input->post('blog_type_name'),
                 'member_name' => $this->input->post('member_name'),
+                'blog_img' => $this->input->post('blog_img'),
+                'blog_details' => $this->input->post('blog_details'),
               );
               $this->db->where('blog_id', $this->input->post('blog_id'));
               $query=$this->db->update('blog',$data);

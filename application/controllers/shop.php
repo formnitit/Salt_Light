@@ -28,8 +28,8 @@ class Shop extends CI_Controller {
 			$this->load->view('header_view');
 			$this->load->view('css');
 			$this->load->view('bannerlogout');
-			$this->load->view('shop',$data);
-			$this->load->view('footer');
+			$this->load->view('login/shop1',$data);
+			$this->load->view('login/footer1');
 			$this->load->view('js');
 		}
 

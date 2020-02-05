@@ -10,7 +10,7 @@ while (list($old_username) = mysqli_fetch_row($query_old_username)) {
         <script>
             alert("username ซ้ำกันในระบบ!");
             window.history.back();
-        </script>
+       </script>
         <?php
         exit();
     }

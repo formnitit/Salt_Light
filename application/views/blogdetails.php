@@ -5,24 +5,15 @@
                 <div class="col-lg-12">
                     <div class="blog-details-inner">
                         <div class="blog-detail-title">
-                            <h2>อราบิก้า (Arabica) กับ โรบัสต้า (Robusta) แตกต่างกันอย่างไร</h2>
+                            <h2><?php echo $rowshow->blog_name ?></h2>
                             <p>Study <span>- May 19, 2019</span></p>
                         </div>
                         <div class="blog-medium-pic" align="center">
-                            <img src="<?php echo base_url('assets/img/blog'); ?>/blog1.jpg" alt="" width="80%">
+                            <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $rowshow->blog_img; ?>" alt="" width="80%">
                         </div>
                         <br><br>
                         <div class="blog-quote">
-                            <p>“ อราบิก้า (Arabica) กับ โรบัสต้า (Robusta)อราบิก้า (Arabica) กับ โรบัสต้า (Robusta)
-                              เป็นกาแฟสองสายพันธุ์หลักที่ถูกปลูกเพื่อการพาณิชย์ โดยหลายๆคนอาจจะคิดว่ากาแฟสองสายพันธุ์นี้เหมือนกัน
-                              แต่ในความจริงแล้วกาแฟทั้งสองสายพันธุ์มีความแตกต่างกันในหลายๆด้าน ” </p>
-                        </div>
-                        <div class="blog-small-pic" align="center">
-                            <img src="<?php echo base_url('assets/img/blog'); ?>/blogdetail1.jpg" alt="" width="40%">
-                        </div>
-                        <br>
-                        <div class="blog-small-pic" align="center">
-                            <img src="<?php echo base_url('assets/img/blog'); ?>/blogdetail2.jpg" alt="" width="60%">
+                            <p><?php echo $rowshow->blog_details ?></p>
                         </div>
                         <div class="tag-share">
                             <div class="details-tag">
@@ -48,7 +39,7 @@
                                     <a href="<?php echo site_url('blogdetails'); ?>" class="prev-blog">
                                         <div class="pb-pic">
                                             <i class="ti-arrow-left"></i>
-                                            <img src="<?php echo base_url('assets/img/blog'); ?>/blog1.jpg" alt="">
+                                            <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $rowshow->blog_img; ?>" alt="">
                                         </div>
                                         <div class="pb-text">
                                             <span>Previous Post:</span>
@@ -59,7 +50,7 @@
                                 <div class="col-lg-5 offset-lg-2 col-md-6">
                                     <a href="#" class="next-blog">
                                         <div class="nb-pic">
-                                            <img src="<?php echo base_url('assets/img/blog'); ?>/blog2.jpg" alt="">
+                                            <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $rowshow->blog_img; ?>" alt="">
                                             <i class="ti-arrow-right"></i>
                                         </div>
                                         <div class="nb-text">

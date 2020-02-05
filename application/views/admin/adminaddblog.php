@@ -28,7 +28,20 @@
                             <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
                             <input type="file" class="form-control-file btn btn-outline-light text-dark" id="blog_img" name="blog_img" accept="img/*">
                             </div>
-
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header">
+                            <div class="row form-group">
+                                <div class="col col-md-3">
+                                    <label for="textarea-input" class=" form-control-label" >รายละเอียดบทความ</label>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <textarea id="blog_details" name="blog_details" rows="9"  class="form-control" ></textarea>
+                                </div>
+                            </div>
+                                  </div>
+                                </div>
+                            </div>
                     <div align="center">
                       <button type="submit" class="btn btn-outline-success"><i class="fa fa-plus-circle">&nbsp;</i> เพิ่มสินค้า</button>
 

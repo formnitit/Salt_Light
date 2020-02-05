@@ -40,8 +40,8 @@
                         </th>
                         <th>ชื่อผู้ใช้</th>
                         <th>ชื่อ - นามสกุล</th>
+                        <th>รูปภาพผู้ใช้งาน</th>
                         <th>อีเมล</th>
-                        <th>วันที่</th>
                         <th>เบอร์โทรศัพท์</th>
                         <th>ประเภทผู้ใช้</th>
                     </tr>
@@ -60,10 +60,10 @@
                         <td><?php echo $row->member_name; ?></td>
 
                         <td class="desc"><?php echo $row->member_name_lastname; ?></td>
+                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->member_img; ?>" width="100px"></td>
                         <td>
                             <span class="block-email"><?php echo $row->member_email; ?></span>
                         </td>
-                        <td><?php echo $row->member_date; ?></td>
                         <td>
                             <span class="status--process"><?php echo $row->member_phonenumber; ?></span>
                         </td>

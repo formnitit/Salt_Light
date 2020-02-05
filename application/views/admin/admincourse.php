@@ -57,7 +57,7 @@
                             </label>
                         </td>
                         <td><?php echo $row->course_name; ?></td>
-                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->course_img; ?>" width="100px"></td>
+                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->course_img; ?>" width="100px" height="100px"></td>
                         <td><?php echo $row->course_datestart; ?></td>
                         <td><?php echo $row->course_dateend; ?></td>
                         <td>

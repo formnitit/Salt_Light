@@ -103,7 +103,7 @@
                                     <a href="<?php echo site_url('cousredetails'); ?>">
                                         <h4><?php echo $row->course_name; ?></h4>
                                     </a>
-                                    <p><span>Start <?php echo $row->course_dateend; ?> - <?php echo $row->course_dateend; ?></span></p>
+                                    <p><span>Start <?php echo $row->course_datestart; ?> - <?php echo $row->course_dateend; ?></span></p>
 
                                 </div>
                             </div>

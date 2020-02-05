@@ -6,7 +6,7 @@
                     <div class="card-header"><i class="fas fa-user"></i> แก้ไขข้อมูลสมาชิก</div>
                     <div class="card-body">
 
-                        <form action="<?php echo site_url('adminmemberedit/edit'); ?>" method="post">
+                        <form action="<?php echo site_url('adminmemberedit/editphoto'); ?>" method="post" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="member_name" class="control-label mb-1">ชื่อผู้ใช้</label>
                                 <input id="member_name" name="member_name" type="text" class="form-control" value="<?php echo $rowedit->member_name;?>">
@@ -18,6 +18,10 @@
                             <div class="form-group">
                                 <label for="member_pass" class="control-label mb-1">พาสเวิร์ด</label>
                                 <input id="member_pass" name="member_pass" type="text" class="form-control" value="<?php echo $rowedit->member_pass;?>">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
+                              <input type="file" class="form-control-file btn btn-outline-light text-dark" id="member_img" name="member_img" accept="img/*">
                             </div>
                             <div class="form-group">
                                 <label for="member_email" class="control-label mb-1">อีเมล</label>

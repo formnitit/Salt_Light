@@ -14,6 +14,17 @@ class Adminaddblog extends CI_Controller {
     $this->load->view('admin/js_admin');
 	}
 
+	// ---------------------------------logout--------
+		public function index1()
+		{
+			$this->load->view('admin/header_admin');
+			$this->load->view('admin/css_admin');
+			$this->load->view('admin/banner_admin');
+			$this->load->view('loginadmin/adminaddblog1');
+			$this->load->view('admin/footer_admin');
+			$this->load->view('admin/js_admin');
+		}
+
 	public function adding()
 	{
 
@@ -34,6 +45,7 @@ class Adminaddblog extends CI_Controller {
 			'blog_name' => $this->input->post('blog_name'),
 			'blog_type_id' => $this->input->post('blog_type_id'),
 			'blog_img' => $filename,
+			'blog_details' => $this->input->post('blog_details'),
 		);
 
 	 	// echo '<pre>';

@@ -20,12 +20,23 @@ class Adminblogedit extends CI_Controller {
     $this->load->view('admin/js_admin');
 	}
 
+	// ---------------------------------logout--------
+		public function index1()
+		{
+			$this->load->view('admin/header_admin');
+			$this->load->view('admin/css_admin');
+			$this->load->view('admin/banner_admin');
+			$this->load->view('loginadmin/adminblogedit1');
+			$this->load->view('admin/footer_admin');
+			$this->load->view('admin/js_admin');
+		}
+
 	public function edit()
 	{
-		echo '<pre>';
-		print_r($_POST);
-		echo '</pre>';
-		exit;
+		// echo '<pre>';
+		// print_r($_POST);
+		// echo '</pre>';
+		// exit;
 		$config['upload_path'] = './assets/img/uploadimg/';
 		$config['allowed_types'] = 'gif|jpg|png';
 		$config['max_size'] = '2000';
@@ -44,7 +55,8 @@ class Adminblogedit extends CI_Controller {
 					'blog_date' => $this->input->post('blog_date'),
 					'blog_type_name' => $this->input->post('blog_type_name'),
 					'member_name' => $this->input->post('member_name'),
-					'blog_img' => $filename
+					'blog_img' => $filename,
+					'blog_details' => $this->input->post('blog_details')
 				);
 				// echo '<pre>';
 				// print_r($data);
@@ -70,6 +82,8 @@ class Adminblogedit extends CI_Controller {
 			'blog_date' => $this->input->post('blog_date'),
 			'blog_type_name' => $this->input->post('blog_type_name'),
 			'member_name' => $this->input->post('member_name'),
+			'blog_img' => $this->input->post('blog_img'),
+			'blog_details' => $this->input->post('blog_details'),
 		);
 
 	 	// echo '<pre>';
@@ -79,7 +93,7 @@ class Adminblogedit extends CI_Controller {
 
 		$query=$this->db->insert('blog',$data);
     if($query){
-			redirect('adminaddblog','refresh');
+			redirect('adminblog','refresh');
 		}else {
 			echo 'false';
 		}

@@ -42,8 +42,8 @@
                         <span>Other</span>
                         <ul class="depart-hover">
                           <ul class="dropdown">
-                              <li><a href="<?php echo site_url('ShoppingCart'); ?>">Shopping Cart</a></li>
-                              <li><a href="<?php echo site_url('CheckOut'); ?>">Checkout</a></li>
+                              <li><a href="<?php echo site_url('ShoppingCart/index1'); ?>">Shopping Cart</a></li>
+                              <li><a href="<?php echo site_url('CheckOut/index1'); ?>">Checkout</a></li>
                               <li><a href="<?php echo site_url('Register'); ?>">Register</a></li>
                               <li><a href="<?php echo site_url('Login'); ?>">Login</a></li>
                           </ul>
@@ -52,17 +52,17 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li ><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
-                        <li ><a href="<?php echo site_url('product'); ?>">Product</a>
+                        <li ><a href="<?php echo site_url('welcome/index1'); ?>">Home</a></li>
+                        <li ><a href="<?php echo site_url('product/index1'); ?>">Product</a>
                         <ul class="dropdown">
-                                <li><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></li>
-                                <li><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></li>
-                                <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment </a></li>
+                                <li><a href="<?php echo site_url('shop/index1'); ?>">Coffee Drink</a></li>
+                                <li><a href="<?php echo site_url('shopcoffeebeans/index1'); ?>">Coffee Beans</a></li>
+                                <li><a href="<?php echo site_url('shopcoffeeequipment/index1'); ?>">Coffee Equipment </a></li>
                             </ul></li>
-                        <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
-                        <li><a href="<?php echo site_url('cousre'); ?>">Cousre</a></li>
-                        <li><a href="<?php echo site_url('promotion'); ?>">Promotion</a></li>
-                        <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
+                        <li><a href="<?php echo site_url('blog/index1'); ?>">Blog</a></li>
+                        <li><a href="<?php echo site_url('cousre/index1'); ?>">Cousre</a></li>
+                        <li><a href="<?php echo site_url('promotion/index1'); ?>">Promotion</a></li>
+                        <li><a href="<?php echo site_url('contact/index1'); ?>">Contact</a></li>
                     </ul>
                 </nav>
                 <div id="mobile-menu-wrap"></div>

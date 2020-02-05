@@ -33,6 +33,17 @@ class Admincourse extends CI_Controller {
 		// echo '</pre>';
 		// exit;
 	}
+
+	// ---------------------------------logout--------
+		public function index1()
+		{
+			$this->load->view('admin/header_admin');
+			$this->load->view('admin/css_admin');
+			$this->load->view('admin/banner_admin');
+			$this->load->view('loginadmin/admincourse1');
+			$this->load->view('admin/footer_admin');
+			$this->load->view('admin/js_admin');
+		}
 	//----------------------เพิ่ม-----------------------//
 
 	public function edit($course_id)

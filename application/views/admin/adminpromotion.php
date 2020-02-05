@@ -57,7 +57,7 @@
                             </label>
                         </td>
                         <td><?php echo $row->promotion_name; ?></td>
-                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->promotion_img; ?>" width="100px"></td>
+                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->promotion_img; ?>" width="100px" height="100px"></td>
                         <td>
                             <span class="block-email"><?php echo $row->promotion_code; ?></span>
                         </td>

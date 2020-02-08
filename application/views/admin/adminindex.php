@@ -20,7 +20,8 @@
                                     <i class="zmdi zmdi-account-o"></i>
                                 </div>
                                 <div class="text">
-                                    <h2>10368</h2>
+                                  <h2>100000</h2>
+                                    <!-- <h6><?php echo '<pre>'; ?><?php echo print_r($_SESSION); ?><?php echo '</pre>'; ?></h6> -->
                                     <span>members online</span>
                                 </div>
                             </div>

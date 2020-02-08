@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Blog</span>
+                        <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
+                        <a href="#"><span>Blog</span>
                     </div>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                             <h4>Recent Post</h4>
                                   <?php foreach ($query as $row) {?>
                             <div class="recent-blog">
-                                <a href="<?php echo site_url('blogdetails/show/').$row->blog_id; ?>">
+                                <a href="<?php echo site_url('register'); ?>">
                                     <div class="rb-pic">
                                         <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->blog_img; ?>" alt="">
                                     </div>
@@ -71,7 +71,7 @@
                                     <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->blog_img; ?>" height="250px" width="600px" alt="">
                                 </div>
                                 <div class="bi-text">
-                                    <a href="<?php echo site_url('blogdetails/show/').$row->blog_id; ?>">
+                                    <a href="<?php echo site_url('register'); ?>">
                                         <h4><?php echo $row->blog_name; ?></h4>
                                     </a>
                                     <p><?php echo $row->blog_type_name; ?> <br><span><?php echo $row->blog_date; ?></span></p>

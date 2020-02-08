@@ -23,6 +23,21 @@ class Login_model extends CI_Model{
        }
 
     }
-}
+
+    public function addmember($member_email)
+{
+
+        // echo '<pre>';
+        // print_r($_POST);
+        // echo '</pre>';
+        // exit;
+        $this->db->select('*');
+        $this->db->from('member');
+        $this->db->where('member_email',$member_email);
+        $get = $this->db->get();
+        return $get->result();
+      }
+      }
+
 
 ?>

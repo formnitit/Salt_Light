@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
+                    <div class="card-header"><i class="fas fa-shopping-cart"></i>  <h6><?php echo '<pre>'; ?><?php echo print_r($_SESSION); ?><?php echo '</pre>'; ?></h6></div>
                     <div class="card-header"><i class="fas fa-shopping-cart"></i>  เพิ่มข้อมูลบทความ</div>
                     <div class="card-body">
 
@@ -23,6 +24,7 @@
                                       <option value="103">เกี่ยวกับร้านเรา</option>
                                   </select>
                               </div>
+                              <input id="blog_userID" name="member_ID" type="text" class="form-control" value="<?php echo ($_SESSION['member_ID']); ?>" hidden>
                           </div>
                             <div class="form-group">
                             <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
@@ -43,7 +45,7 @@
                                 </div>
                             </div>
                     <div align="center">
-                      <button type="submit" class="btn btn-outline-success"><i class="fa fa-plus-circle">&nbsp;</i> เพิ่มสินค้า</button>
+                      <button type="submit" class="btn btn-outline-success"><i class="fa fa-plus-circle">&nbsp;</i> เพิ่มบทความ</button>
 
                       <a href="<?php echo site_url('adminblog'); ?>">
                         <button type="button" class="btn btn-outline-danger"><i class="fa fa-times-circle">&nbsp;</i> ยกเลิก</button>

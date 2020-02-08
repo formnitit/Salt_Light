@@ -46,6 +46,7 @@ class Adminaddblog extends CI_Controller {
 			'blog_type_id' => $this->input->post('blog_type_id'),
 			'blog_img' => $filename,
 			'blog_details' => $this->input->post('blog_details'),
+			'member_ID' => $this->input->post('member_ID'),
 		);
 
 	 	// echo '<pre>';

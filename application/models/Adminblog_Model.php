@@ -14,7 +14,8 @@
               }
 
 //----------------------edit-----------------------//
-        public function read($blog_id){
+        public function read($blog_id)
+        {
               $this->db->select('*');
               $this->db->from('blog');
               $this->db->where('blog_id',$blog_id);

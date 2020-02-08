@@ -30,21 +30,19 @@
                                 <label for="product_name" class="control-label mb-1">ชื่อสินค้า</label>
                                 <input id="product_name" name="product_name" type="text" class="form-control" value="">
                             </div>
-                            <!-- <div class="row form-group">
+                            <div class="row form-group">
                                 <div class="col col-md-12">
                                     <label for="select" class=" form-control-label">หมวดหมู่สินค้า</label>
                                 </div>
                                 <div class="col-12 col-md-12">
-                                    <select name="product_type_id" id="product_type_id" class="form-control" required>
+                                    <select name="product_type_id" id="select" class="form-control" value="" required>
                                         <option >กรุณาเลือก</option>
-                                        <option value="1">แอดมิน</option>
-                                        <option value="2">พนักงาน</option>
-                                        <option value="3">ผู้ใช้งานสมาชิก</option>
+                                        <option value="1001">Coffee Drink</option>
+                                        <option value="1002">Coffee Beans</option>
+                                        <option value="1003">Coffee Equipment</option>
                                     </select>
                                 </div>
-                            </div> -->
-
-
+                            </div>
                             <div class="form-group">
                                 <label for="product_price" class="control-label mb-1">ราคาสินค้า</label>
                                 <input id="product_price" name="product_price" type="text" class="form-control" value="">

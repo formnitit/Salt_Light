@@ -18,7 +18,6 @@ class Adminblog extends CI_Controller {
 		// echo '<pre>';
 		// print_r($data);
 		// echo '</pre>';
-		//
 		// exit;
 
 		$this->load->view('admin/header_admin');

@@ -132,7 +132,6 @@
                             <a class="js-arrow" href="#">
                                 <i class="fas fa-tachometer-alt"></i>จัดการระบบ</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
-
                             </ul>
                         </li>
                         <li class="has-sub">
@@ -145,7 +144,6 @@
                                 <li>
                                     <a href="<?php echo site_url('adminaddmember'); ?>">เพิ่มข้อมูลสมาชิก</a>
                                 </li>
-
                             </ul>
                         </li>
 
@@ -172,7 +170,6 @@
                                 <li>
                                     <a href="<?php echo site_url('adminaddblog'); ?>">เพิ่มข้อมูลบทความ</a>
                                 </li>
-
                             </ul>
                         </li>
                         <li class="has-sub">
@@ -185,7 +182,9 @@
                                 <li>
                                     <a href="<?php echo site_url('adminaddcourse'); ?>">เพิ่มข้อมูลคอร์ส</a>
                                 </li>
-
+                                <li>
+                                    <a href="<?php echo site_url('adminrecourse'); ?>">จัดการข้อมูลผู้สมัครคอร์ส</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="has-sub">

@@ -5,7 +5,7 @@
               <div class="col-lg-12">
                   <div class="breadcrumb-text">
                       <a href="#"><i class="fa fa-home"></i> Home</a>
-                      <span>Cousre</span>
+                      <span>Course</span>
                   </div>
               </div>
           </div>
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="col-lg-6 text-center">
             <div class="section-title">
-                <h2>Cousre Barista</h2>
+                <h2>Course Barista</h2>
                 <p>หลักสูตร Basic Barista Course 1 วัน : เน้นทฤษฎี และการปฏิบัติด้วยเครื่อง<br /> Espresso Machine และการปฏิบัติด้วยเครื่อง Espresso Machine </p>
                 <div class="product-price">
                     ฿2,500.00
@@ -43,7 +43,7 @@
                     <p>Secs</p>
                 </div>
             </div>
-            <!-- <a href="<?php echo site_url('cousre'); ?>">Go To Lesson</a> -->
+            <!-- <a href="">Go To Lesson</a> -->
         </div>
     </div>
 </section>

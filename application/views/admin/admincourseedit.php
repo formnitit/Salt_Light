@@ -67,15 +67,18 @@
                             </div>
                               <div align="center">
                                 <input type="hidden" name="course_id" value="<?php echo $rowedit->course_id;?>">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-coffee">&nbsp;</i>แก้ไขข้อมูลคอร์ส</button>
+                                <button type="submit" class="btn btn-outline-success"><i class="fa fa-save">&nbsp;</i>แก้ไขข้อมูลคอร์ส</button>
+                                <a href="<?php echo site_url('admincourse'); ?>">
+                                  <button type="button" class="btn btn-outline-danger"><i class="fa fa-times-circle">&nbsp;</i> ยกเลิก</button>
+                                </a>
                             </div>
                         </form>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-12">
             </div>
-        </div>
+        </div> -->
     </div>
 </div>

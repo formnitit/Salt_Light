@@ -12,7 +12,7 @@
                           </div>
                         </div>
                     </div>
-                                  </div>
+                </div>
             </div>
             <div class="single-hero-items set-bg" data-setbg="<?php echo base_url('assets/img/index'); ?>/Bg6.jpg">
                 <div class="container">
@@ -45,7 +45,7 @@
                     <div class="single-banner">
                         <img src="<?php echo base_url('assets/img/index'); ?>/Cousre1.jpg" alt="">
                         <div class="inner-text">
-                            <a href="<?php echo site_url('cousre'); ?>"><h4>Cousre</h4>
+                            <a href="<?php echo site_url('course'); ?>"><h4>Course</h4>
                         </div>
                     </div>
                 </div>

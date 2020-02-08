@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <!-- DATA TABLE -->
-        <h3 class="title-5 m-b-35">ข้อมูลติดต่อ</h3>
+        <h3 class="title-5 m-b-35">จัดการข้อมูลผู้สมัครคอร์ส</h3>
         <div class="table-data__tool">
             <div class="table-data__tool-left">
                 <div class="rs-select2--light rs-select2--md">
@@ -32,11 +32,12 @@
                                 <span class="au-checkmark"></span>
                             </label>
                         </th>
-                        <th>ชื่อ - นามสกุล</th>
-                        <th>วัน/เวลา ส่งข้อความ</th>
+                        <th>ชื่อผู้สมัคร</th>
+                        <th>นามสกุล</th>
+                        <th>ที่อยู่</th>
                         <th>อีเมล</th>
                         <th>เบอร์โทรศัพท์</th>
-                        <th>ข้อความ</th>
+                        <th>คอร์สที่สมัคร</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,15 +51,31 @@
                                 <span class="au-checkmark"></span>
                             </label>
                         </td>
-                        <td><?php echo $row->contact_name; ?></td>
-                        <td><?php echo $row->contact_date; ?></td>
-                        <td class="desc"><?php echo $row->contact_email; ?></td>
+                        <td><?php echo $row->recourse_name; ?></td>
+
+                        <td class="desc"><?php echo $row->recourse_surname; ?></td>
+                        <td><?php echo $row->recourse_address; ?></td>
                         <td>
-                            <span class="block-email"><?php echo $row->contact_phone; ?></span>
+                            <span class="block-email"><?php echo $row->recourse_email; ?></span>
                         </td>
-                        <td><?php echo $row->contact_message; ?></td>
+                        <td>
+                            <span class="status--process"><?php echo $row->recourse_phone; ?></span>
+                        </td>
+                        <td><?php echo $row->course_name; ?></td>
+                        <td>
+                            <div class="table-data-feature">
+                                <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
+                                    <a href="<?php echo site_url('adminrecourse/edit/').$row->recourse_id; ?>"><i class="zmdi zmdi-edit"></i>
+                                </button>
+                                <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                      <a href="<?php echo site_url('adminrecourse/delete/').$row->recourse_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
+                                </button>
+                            </div>
+                        </td>
                     </tr>
+<a href="#"></a>
                     <?php } ;?>
+
                 </tbody>
             </table>
         </div>

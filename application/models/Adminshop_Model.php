@@ -18,8 +18,9 @@
 
 //----------------------edit-----------------------//
         public function read($product_ID){
-              $this->db->select('*');
-              $this->db->from('product');
+          $this->db->select('product.*,product_type.*');
+          $this->db->from('product');
+          $this->db->join('product_type','product.product_type_id = product_type.product_type_id');
               $this->db->where('product_ID',$product_ID);
               $query = $this->db->get();
               if($query->num_rows() > 0){

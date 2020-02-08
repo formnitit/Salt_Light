@@ -1,18 +1,20 @@
 
-    <!-- Breadcrumb Section Begin -->
-    <div class="breacrumb-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-text">
-                        <a href="#"><i class="fa fa-home"></i> Home</a>
-                        <span>Shop</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Breadcrumb Section Begin -->
+<!-- Breadcrumb Section Begin -->
+<div class="breacrumb-section">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="breadcrumb-text">
+                  <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
+                  <a href="<?php echo site_url('product'); ?>"><span>Product</span></a>
+                  <a href="<?php echo site_url('shop'); ?>"><span>Coffee Drink</span></a>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  <!-- Breadcrumb Section Begin -->
 
     <!-- Product Shop Section Begin -->
     <section class="product-shop spad">
@@ -28,19 +30,10 @@
                             <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment</a></li>
                         </ul>
                     </div>
-
-                    <div class="filter-widget">
-                        <h4 class="fw-title">Tags</h4>
-                        <div class="fw-tags">
-                            <a href="#">Towel</a>
-                            <a href="#">Shoes</a>
-                            <a href="#">Coat</a>
-                            <a href="#">Dresses</a>
-                            <a href="#">Trousers</a>
-                            <a href="#">Men's hats</a>
-                            <a href="#">Backpack</a>
+                        <div class="product-large set-bg" data-setbg="<?php echo base_url('assets/img/index'); ?>/Bg2.jpg">
+                            <h2>Coffee Drink</h2>
+                            <a href="#">Discover More</a>
                         </div>
-                    </div>
                 </div>
                 <div class="col-lg-9 order-1 order-lg-2">
                     <div class="product-show-option">
@@ -77,14 +70,14 @@
                                         </div>
                                         <ul>
                                             <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                            <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                            <li class="quick-view"><a href="<?php echo site_url('shopsingle/show/').$row->product_id; ?>">+ Quick View</a></li>
                                             <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                         </ul>
 
                                     </div>
                                     <div class="pi-text">
                                         <div class="catagory-name"><?php echo $row->product_type_name; ?></div>
-                                        <a href="#">
+                                        <a href="">
                                             <h5><?php echo $row->product_name; ?></h5>
                                         </a>
                                         <div class="product-price">

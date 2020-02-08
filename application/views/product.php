@@ -1,3 +1,16 @@
+<div class="breacrumb-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
+                    <a href="<?php echo site_url('product'); ?>"><span>Product</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Banner Section Begin -->
 <div class="banner-section spad">
     <div class="container-fluid">
@@ -61,7 +74,7 @@
                             </div>
                             <ul>
                                 <li class="w-icon active"><a href="#"><i class="icon_bag_alt"></i></a></li>
-                                <li class="quick-view"><a href="#">+ Quick View</a></li>
+                                <li class="quick-view"><a href="<?php echo site_url('shopsingle/show/').$row->product_id; ?>">+ Quick View</a></li>
                                 <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                             </ul>
                         </div>

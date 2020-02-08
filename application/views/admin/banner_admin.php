@@ -159,7 +159,9 @@
                                 <li>
                                     <a href="<?php echo site_url('adminaddshop'); ?>">เพิ่มข้อมูลสินค้า</a>
                                 </li>
-
+                                <li>
+                                    <a href="<?php echo site_url('adminShoppingCart'); ?>">จัดการสั่งซื้อ</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="has-sub">

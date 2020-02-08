@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-$route['default_controller'] = 'Shop_single';
+$route['default_controller'] = 'welcome';
 
 
 

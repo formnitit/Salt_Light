@@ -353,37 +353,29 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="<?php echo base_url('assets/admin/images/icon'); ?>/avatar-01.jpg" alt="John Doe" />
+                                            <img src="<?php echo base_url('assets/img/uploadimg/'.$_SESSION['member_img']); ?>" alt="" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">john doe</a>
+                                            <a class="js-acc-btn" href="#"><?php echo $_SESSION['member_name'] ;?></a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="<?php echo base_url('assets/admin/images/icon'); ?>/avatar-01.jpg" alt="John Doe" />
+                                                        <img src="<?php echo base_url('assets/img/uploadimg/'.$_SESSION['member_img']); ?>" alt="" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
                                                     <h5 class="name">
-                                                        <a href="#">john doe</a>
+                                                        <a href="#"><?php echo $_SESSION['member_name'] ;?></a>
                                                     </h5>
-                                                    <span class="email">johndoe@example.com</span>
+                                                    <span class="email"><?php echo $_SESSION['member_email'] ;?></span>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__body">
                                                 <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-account"></i>Account</a>
-                                                </div>
-                                                <div class="account-dropdown__item">
-                                                    <a href="#">
-                                                        <i class="zmdi zmdi-settings"></i>Setting</a>
-                                                </div>
-                                                <div class="account-dropdown__item">
                                                     <a href="<?php echo site_url('welcome/index1'); ?>">
-                                                        <i class="zmdi zmdi-money-box">หน้าเว็บไซต์</i></a>
+                                                        <i class="zmdi zmdi-money-box"></i>หน้าเว็บไซต์</a>
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">

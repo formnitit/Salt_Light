@@ -20,7 +20,7 @@
                 <div class="col-lg-6 offset-lg-3">
                     <div class="register-form">
                         <h2>Register</h2>
-                        <form action="<?php echo site_url('Register/adding'); ?>" method="post">
+                        <form action="<?php echo site_url('Register/adding'); ?>" method="post" enctype="multipart/form-data">
                           <div class="group-input">
                               <label for="member_email">อีเมล </label>
                               <input type="text" id="member_email" name="member_email" required>
@@ -28,6 +28,10 @@
                           <div class="group-input">
                               <label for="member_pass">พาสเวิร์ด</label>
                               <input type="text" id="member_pass" name="member_pass" required>
+                          </div>
+                          <div class="group-input">
+                              <label for="member_cpass">คอนเฟิร์ม พาสเวิร์ด</label>
+                              <input type="text" id="member_cpass" name="member_cpass" required>
                           </div>
                             <div class="group-input">
                                 <label for="member_name">ชื่อผู้ใช้</label>
@@ -40,6 +44,10 @@
                             <div class="group-input">
                                 <label for="member_phonenumber">เบอร์โทรศัพท์</label>
                                 <input type="number" id="member_phonenumber" name="member_phonenumber" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
+                              <input type="file" class="form-control-file btn btn-outline-light text-dark" id="member_img" name="member_img" accept="img/*">
                             </div>
                             <div class="group-input" hidden>
                                 <label for="user">0</label>

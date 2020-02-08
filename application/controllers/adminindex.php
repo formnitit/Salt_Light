@@ -6,6 +6,7 @@ class Adminindex extends CI_Controller {
 
 	public function index()
 	{
+		// print_r($_SESSION);
 		$this->load->view('admin/header_admin');
 		$this->load->view('admin/css_admin');
 		$this->load->view('admin/banner_admin');

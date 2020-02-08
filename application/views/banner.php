@@ -27,8 +27,8 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-3">
                       <div class="ht-right">
-                        <a href="<?php echo site_url('login'); ?>"><button type="button" class="btn btn-outline-dark"><i class="fa fa-user"></i>Login</button>
-                          <a href="<?php echo site_url('register'); ?>"><button type="button" class="btn btn-outline-dark"><i class="fa fa-registered"></i>Register</button>
+                        <a href="<?php echo site_url('login'); ?>"><button type="button" class="btn btn-warning"><i class="fa fa-user"></i>&nbsp; Login</button>
+                          <a href="<?php echo site_url('register'); ?>"><button type="button" class="btn btn-warning"><i class="fa fa-registered"></i>&nbsp; Register</button>
                       </div>
                     </div>
                 </div>

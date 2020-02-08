@@ -16,7 +16,7 @@
                                  <label for="select" class=" form-control-label">หมวดหมู่บทความ</label>
                              </div>
                              <div class="col-12 col-md-12">
-                                 <select name="blog_type_id" id="select" class="form-control" value="<?php echo $rowedit->blog_type_name;?>" required>
+                                 <select name="blog_type_id" id="select" class="form-control" value="<?php echo $rowedit->blog_type_id;?>" required>
                                    <option >กรุณาเลือก</option>
                                    <option value="101">ให้ความรู้</option>
                                    <option value="102">ข่าวสารใหม่ๆ</option>

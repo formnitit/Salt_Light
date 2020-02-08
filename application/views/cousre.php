@@ -4,7 +4,7 @@
           <div class="row">
               <div class="col-lg-12">
                   <div class="breadcrumb-text">
-                      <a href="#"><i class="fa fa-home"></i> Home</a>
+                      <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
                       <span>Cousre</span>
                   </div>
               </div>

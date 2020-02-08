@@ -27,8 +27,10 @@
                     </div>
                     <div class="col-lg-3 text-right col-md-3">
                       <div class="ht-right">
-                        <!-- <a href="<?php //echo site_url('login'); ?>"><button type="button" class="btn btn-outline-dark"><i class="fa fa-user"></i>Login</button> -->
-                          <a href="<?php echo site_url('login/logout'); ?>"><button type="button" class="btn btn-outline-dark"><i class="fa fa-registered"></i>logout</button>
+                        <button type="button" class="btn btn-warning">
+                                          <i class="fa fa-star"></i>&nbsp; <?php echo $_SESSION['member_name'] ;?></button>
+                          <a href="<?php echo site_url('login/logout'); ?>"><button type="button" class="btn btn-danger">
+                                            <i class="fa fa-sign-out"></i>&nbsp; Logout</button>
                       </div>
                     </div>
                 </div>

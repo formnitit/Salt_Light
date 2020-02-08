@@ -52,9 +52,9 @@ class Adminblogedit extends CI_Controller {
 			$filename = $data['file_name'];
 				$data = array(
 					'blog_name' => $this->input->post('blog_name'),
-					'blog_date' => $this->input->post('blog_date'),
-					'blog_type_name' => $this->input->post('blog_type_name'),
-					'member_name' => $this->input->post('member_name'),
+					// 'blog_date' => $this->input->post('blog_date'),
+					'blog_type_id' => $this->input->post('blog_type_id'),
+					// 'member_ID' => $this->input->post('member_ID'),
 					'blog_img' => $filename,
 					'blog_details' => $this->input->post('blog_details')
 				);

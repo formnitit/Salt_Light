@@ -53,7 +53,9 @@ class Login extends CI_Controller {
 					$session_user=array(
 							'member_ID' 		=> $result->member_ID,
 							'member_type'	=> $result->member_type,
-							'member_name'	=> $result->member_name
+							'member_name'	=> $result->member_name,
+							'member_img'	=> $result->member_img,
+							'member_email' => $result->member_email
 					);
 					// echo '<br>';
 					//print_r{$session_user};

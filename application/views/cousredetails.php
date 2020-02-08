@@ -35,14 +35,14 @@
                       <div class="">
                           <p><?php echo $rowshow->course_detail ?></p>
                       </div>
-                      <div class="leave-comment">
+                      <div class="site-btn">
                           <form action="#" class="comment-form">
                               <div class="row">
-                                      <a href="<?php echo site_url('recousre'); ?>"><button type="submit" class="site-btn">Register Cousre</button>
-                                      <a href="<?php echo site_url('recousre'); ?>">Shopping Cart</a>
-                                  </div>
+                                      <!-- <a href=""><button type="submit" class="site-btn">Register Cousre</button></a> -->
+                                      <a href="<?php echo site_url('recourse/show/').$rowshow->course_id; ?>">Register Course</a>
                               </div>
                           </form>
+                          </div>
                       </div>
                   </div>
               </div>

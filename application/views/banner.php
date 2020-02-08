@@ -60,7 +60,7 @@
                                 <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment </a></li>
                             </ul></li>
                         <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
-                        <li><a href="<?php echo site_url('cousre'); ?>">Cousre</a></li>
+                        <li><a href="<?php echo site_url('course'); ?>">Course</a></li>
                         <li><a href="<?php echo site_url('promotion'); ?>">Promotion</a></li>
                         <li><a href="<?php echo site_url('contact'); ?>">Contact</a></li>
                     </ul>

@@ -65,8 +65,12 @@
                                 </div>
                             </div>
                               <div align="center">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-plus">&nbsp;</i>เพิ่มข้อมูลคอร์ส</button>
-                            </div>
+                                <button type="submit" class="btn btn-outline-success"><i class="fa fa-plus-circle">&nbsp;</i>เพิ่มข้อมูลคอร์ส</button>
+
+                                <a href="<?php echo site_url('admincourse'); ?>">
+                                  <button type="button" class="btn btn-outline-danger"><i class="fa fa-times-circle">&nbsp;</i> ยกเลิก</button>
+                                </a>
+                              </div>
                         </form>
                 </div>
             </div>

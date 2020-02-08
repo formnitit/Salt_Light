@@ -53,7 +53,11 @@
                                 </div>
                             </div>
                               <div align="center">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-tag">&nbsp;</i>เพิ่มข้อมูลโปรโมชั่น</button>
+                                <button type="submit" class="btn btn-outline-success"><i class="fa fa-plus-circle">&nbsp;</i>เพิ่มข้อมูลโปรโมชั่น</button>
+
+                                <a href="<?php echo site_url('adminpromotion'); ?>">
+                                  <button type="button" class="btn btn-outline-danger"><i class="fa fa-times-circle">&nbsp;</i> ยกเลิก</button>
+                                </a>
                             </div>
                         </form>
                 </div>

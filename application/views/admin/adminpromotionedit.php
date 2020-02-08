@@ -13,7 +13,7 @@
                             <div class="form-group">
                               <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
                               <input type="file" class="form-control-file btn btn-outline-light text-dark" id="promotion_img" name="promotion_img" accept="img/*">
-                            </div>  
+                            </div>
                             <div class="form-group">
                                 <label for="promotion_code" class="control-label mb-1">รหัสโปรโมชั่น</label>
                                 <input id="promotion_code" name="promotion_code" type="text" class="form-control" value="<?php echo $rowedit->promotion_code;?>">
@@ -54,7 +54,10 @@
                             </div>
                               <div align="center">
                                 <input type="hidden" name="promotion_id" value="<?php echo $rowedit->promotion_id;?>">
-                                <button type="submit" class="btn btn-outline-dark"><i class="fa fa-tag">&nbsp;</i>แก้ไขข้อมูลโปรโมชั่น</button>
+                                <button type="submit" class="btn btn-outline-success"><i class="fa fa-save">&nbsp;</i>แก้ไขข้อมูลโปรโมชั่น</button>
+                                <a href="<?php echo site_url('adminpromotion'); ?>">
+                                  <button type="button" class="btn btn-outline-danger"><i class="fa fa-times-circle">&nbsp;</i> ยกเลิก</button>
+                                </a>
                             </div>
                         </form>
                 </div>

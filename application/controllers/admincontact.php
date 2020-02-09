@@ -29,5 +29,12 @@ class Admincontact extends CI_Controller {
       $this->load->view('admin/footer_admin');
       $this->load->view('admin/js_admin');
     }
+
+    //----------------------ลบ-----------------------//
+  	public function delete($contact_id)
+  	{
+  		$this->admincontact_model->deldata($contact_id);
+  		redirect('admincontact','refresh');
+  	}
 }
 ?>

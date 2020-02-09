@@ -22,38 +22,38 @@
                         <h2>Register</h2>
                         <form action="<?php echo site_url('Register/adding'); ?>" method="post" enctype="multipart/form-data">
                           <div class="group-input">
-                              <label for="member_email">อีเมล </label>
+                              <label for="member_email">Username (email)  </label>
                               <input type="text" id="member_email" name="member_email" required>
                           </div>
                           <div class="group-input">
-                              <label for="member_pass">พาสเวิร์ด</label>
-                              <input type="text" id="member_pass" name="member_pass" required>
+                              <label for="member_pass">Password </label>
+                              <input type="password" id="member_pass" name="member_pass" required>
                           </div>
                           <div class="group-input">
-                              <label for="member_cpass">คอนเฟิร์ม พาสเวิร์ด</label>
-                              <input type="text" id="member_cpass" name="member_cpass" required>
+                              <label for="member_cpass">Confirm Password</label>
+                              <input type="password" id="member_cpass" name="member_cpass" required>
                           </div>
                             <div class="group-input">
-                                <label for="member_name">ชื่อผู้ใช้</label>
+                                <label for="member_name">Username</label>
                                 <input type="text" id="member_name"  name="member_name" required>
                             </div>
                             <div class="group-input">
-                                <label for="member_name_lastname">ชื่อ - นามสกุล</label>
+                                <label for="member_name_lastname">Name-Lastname</label>
                                 <input type="text" id="member_name_lastname" name="member_name_lastname" required>
                             </div>
                             <div class="group-input">
-                                <label for="member_phonenumber">เบอร์โทรศัพท์</label>
+                                <label for="member_phonenumber">Phone</label>
                                 <input type="number" id="member_phonenumber" name="member_phonenumber" required>
                             </div>
                             <div class="form-group">
-                              <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
+                              <label for="exampleFormControlFile1">Upload Profile</label>
                               <input type="file" class="form-control-file btn btn-outline-light text-dark" id="member_img" name="member_img" accept="img/*">
                             </div>
                             <div class="group-input" hidden>
                                 <label for="user">0</label>
                                 <input type="text" id="member_type" name="member_type" value="user">
                             </div>
-                            <button type="submit" class="site-btn register-btn">สมัคสมาชิก</button>
+                            <button type="submit" class="site-btn register-btn">Register</button>
                         </form>
                         <div class="switch-login">
                             <a href="<?php echo site_url('Login'); ?>">Or Login</a>

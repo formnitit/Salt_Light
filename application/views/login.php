@@ -26,7 +26,7 @@
                             </div>
                             <div class="group-input">
                                 <label for="pass">Password *</label>
-                                <input type="text" id="pass" name="member_pass">
+                                <input type="password" id="pass" name="member_pass">
                             </div>
                             <div class="group-input gi-check">
                                 <div class="gi-more">

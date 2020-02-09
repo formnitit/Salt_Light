@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-shopping-cart"></i>  <h6><?php echo '<pre>'; ?><?php echo print_r($_SESSION); ?><?php echo '</pre>'; ?></h6></div>
+                    <!-- <div class="card-header"><i class="fas fa-shopping-cart"></i>  <h6><?php echo '<pre>'; ?><?php echo print_r($_SESSION); ?><?php echo '</pre>'; ?></h6></div> -->
                     <div class="card-header"><i class="fas fa-shopping-cart"></i>  เพิ่มข้อมูลบทความ</div>
                     <div class="card-body">
 

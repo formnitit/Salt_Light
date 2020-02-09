@@ -39,7 +39,7 @@
                         </div>
                         <div class="group-input">
                             <label for="recourse_phone">Phone</label>
-                            <input type="text" id="recourse_phone" name="recourse_phone" required>
+                            <input type="number" id="recourse_phone" name="recourse_phone" required >
                         </div>
                         <div class="group-input">
                             <input type="text" id="recourse_phone" name="course_id"  value="<?php echo $rowshow->course_id;?>" hidden>

@@ -49,10 +49,11 @@
                                   </div>
                                   <!-- Modal body -->
                                   <div class="modal-body">
-                                    <p><?php echo $rowshow->promotion_code ?></p>
+                                    <input type="text" value="<?php echo $rowshow->promotion_code ?>" id="myInput">
                                   </div>
                                   <!-- Modal footer -->
                                   <div class="modal-footer">
+                                    <button class="btn btn-success" onclick="myFunction()">คัดลอก</button>
                                     <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
                                   </div>
                                 </div>

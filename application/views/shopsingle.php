@@ -20,6 +20,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-6">
+        <form class="" action="<?php echo site_url('ShoppingCart/index'); ?>" method="post">
+  <input type="text" name="id" value="<?php echo $rowshow->product_id?>" hidden>
+
         <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $rowshow->product_img; ?>" alt="Image" class="img-fluid">
       </div>
       <div class="col-md-6">
@@ -34,19 +37,20 @@
           <div class="input-group-prepend">
             <button class="btn btn-outline-warning js-btn-minus" type="button">&minus;</button>
           </div>
-          <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+          <input type="text" class="form-control text-center" value="1" name="qty" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
           <div class="input-group-append">
             <button class="btn btn-outline-warning js-btn-plus" type="button">&plus;</button>
           </div>
         </div>
 
         </div>
-        <a href="#"><button type="submit" class="site-btn">ADD TO CART</button>
+        <a href=""><button type="submit" class="site-btn">ADD TO CART</button>
           <a href="<?php echo site_url('shop'); ?>"><button type="submit" class="site-btn">BACK </button>
 <br>
 <br>
 <br>
       </div>
+      </form>
     </div>
   </div>
 </div>

@@ -15,6 +15,19 @@
 <!-- Breadcrumb Section Begin -->
 
 <!-- Shopping Cart Section Begin -->
+<?php if (empty($this->cart->contents())) : ?>
+                <div class="cart-main-area pt-70 pb-70">
+                    <div class="container">
+                        <div class="cart-empty-content text-center " style="font-size: 24px;">
+                            <i class="fa fa-shopping-cart fa-10x" aria-hidden="true" ></i>
+
+                            <div class="empty-btn">
+                                <a href="Index"><p>Your cart is currently empty. (ตระกร้าสินค้าของคุณว่างเปล่า)</p>Return to shop (กลับไปช๊อปต่อกัน...)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <?php else : ?>
 <section class="shopping-cart spad">
     <div class="container">
         <div class="row">
@@ -32,23 +45,32 @@
                             </tr>
                         </thead>
                         <tbody>
+                          <?php $total = 0 ; ?>
+                          <?php $i = 1; ?>
+
+<?php foreach ($this->cart->contents() as $items): ?>
+
+        <?php echo form_hidden($i.'[rowid]', $items['rowid']); ?>
                             <tr>
-                                <td class="cart-pic first-row"><img src="<?php echo base_url('assets/img/products'); ?>/Hot coffee2.jpg" alt="" width="60%"></td>
+                                <td class="cart-pic first-row"><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $items['img']; ?>" height="100px" width="100px"></td>
                                 <td class="cart-title first-row">
-                                    <h5>Americano</h5>
+                                    <h5><?php echo $items['name']; ?></h5>
                                 </td>
-                                <td class="p-price first-row">฿50.00</td>
+                                <td class="p-price first-row">฿ <?php echo $items['price']; ?>.00</td>
                                 <td class="qua-col first-row">
                                     <div class="quantity">
                                         <div class="pro-qty">
-                                            <input type="text" value="1">
+                                            <input type="text" value="<?php echo $items['qty']; ?>">
                                         </div>
                                     </div>
                                 </td>
-                                <td class="total-price first-row">฿50.00</td>
-                                <td class="close-td first-row"><i class="ti-close"></i></td>
+                                <td class="total-price first-row">฿<?php echo $this->cart->format_number($items['subtotal']); ?></td>
+                                <td class="close-td first-row"><a href="cart_remove?id=<?php echo $items['rowid']; ?>"><i class="ti-close"></i></a></td>
                             </tr>
+                            <?php $total += $items['subtotal'];
+                             $i++; ?>
 
+                            <?php endforeach; ?>
 
                         </tbody>
                     </table>
@@ -70,8 +92,8 @@
                     <div class="col-lg-4 offset-lg-4">
                         <div class="proceed-checkout">
                             <ul>
-                                <li class="subtotal">Subtotal <span>฿50.00</span></li>
-                                <li class="cart-total">Total <span>฿50.00</span></li>
+                                <li class="subtotal">Subtotal <span>฿<?php echo ($total); ?>.00</li>
+                                <li class="cart-total">Total <span>฿<?php echo ($total); ?>.00</span></li>
                             </ul>
                             <a href="#" class="proceed-btn">PROCEED TO CHECK OUT</a>
                         </div>
@@ -81,4 +103,5 @@
         </div>
     </div>
 </section>
+<?php endif ?>
 <!-- Shopping Cart Section End -->

@@ -18,6 +18,7 @@
 
     <!-- Product Shop Section Begin -->
     <section class="product-shop spad">
+
         <div class="container">
             <div class="row">
 
@@ -59,6 +60,8 @@
                         <div class="row">
                           <?php foreach ($query as $row) {?>
                             <div class="col-lg-4 col-sm-6">
+                              <form class="" action="" method="post">
+
 
                                 <div class="product-item">
                                     <div class="pi-pic">
@@ -69,7 +72,7 @@
                                             <i class="icon_heart_alt"></i>
                                         </div>
                                         <ul>
-                                            <li class="w-icon active"><a href=""><i class="icon_bag_alt"></i></a></li>
+                                            <li class="w-icon active"><a href="<?php echo site_url('ShoppingCart/index/').$row->product_id; ?>"><i class="icon_bag_alt"></i></a></li>
                                             <li class="quick-view"><a href="<?php echo site_url('shopsingle/show/').$row->product_id; ?>">+ Quick View</a></li>
                                             <li class="w-icon"><a href="#"><i class="fa fa-random"></i></a></li>
                                         </ul>
@@ -86,6 +89,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                </form>
                             </div>
                                 <?php } ;?>
 

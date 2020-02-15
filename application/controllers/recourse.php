@@ -30,6 +30,7 @@ class Recourse extends CI_Controller {
 
 	public function adding()
 	{
+		$course_id  = $this->input->post('course_id');
 		$data = array(
 			'recourse_name' => $this->input->post('recourse_name'),
 			'recourse_surname' => $this->input->post('recourse_surname'),
@@ -38,7 +39,6 @@ class Recourse extends CI_Controller {
 			'recourse_phone' => $this->input->post('recourse_phone'),
 			'course_id'=> $this->input->post('course_id')
 		);
-
 	 	// echo '<pre>';
 		// print_r($data);
 		// echo '</pre>';
@@ -46,7 +46,7 @@ class Recourse extends CI_Controller {
 
 		$query=$this->db->insert('recourse',$data);
 		if($query){
-			redirect('course','refresh');
+			redirect('Courseconfirm/show/'.$course_id);
 		}else {
 			echo 'false';
 			}

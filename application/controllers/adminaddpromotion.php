@@ -45,6 +45,7 @@ class Adminaddpromotion extends CI_Controller {
 				'promotion_img' => $filename,
 				'promotion_detail' => $this->input->post('promotion_detail'),
 				'promotion_code' => $this->input->post('promotion_code'),
+				'promotion_discount' => $this->input->post('promotion_discount'),
 				'promotion_datestart' => $this->input->post('promotion_datestart'),
 		    'promotion_dateend' => $this->input->post('promotion_dateend'),
 			);

@@ -41,6 +41,7 @@
                         <th>ชื่อโปรโมชั่น</th>
                         <th>รูปภาพโปรโมชั่น</th>
                         <th>รหัสโปรโมชั่น</th>
+                        <th>ส่วนลด</th>
                         <th>ด/ว/ป เริ่มโปรโมชั่น</th>
                         <th>ด/ว/ป สิ้นสุดโปรโมชั่น</th>
                     </tr>
@@ -61,6 +62,7 @@
                         <td>
                             <span class="block-email"><?php echo $row->promotion_code; ?></span>
                         </td>
+                        <td><?php echo $row->promotion_discount; ?></td>
                         <td><?php echo $row->promotion_datestart; ?></td>
                         <td>
                             <span class="status--process"><?php echo $row->promotion_dateend; ?></span>
@@ -70,13 +72,13 @@
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                     <a href="<?php echo site_url('adminpromotion/edit/').$row->promotion_id; ?>"><i class="zmdi zmdi-edit"></i>
                                 </button>
-                                <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                      <a href="<?php echo site_url('adminpromotion/delete/').$row->promotion_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
+                                <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete" onclick="myFunction()">
+                                      <a href="<?php echo site_url('adminpromotion/delete/').$row->promotion_id;?>" ></a><i class="zmdi zmdi-delete"></i>
+                                      <p id="demo"></p>
                                 </button>
                             </div>
                         </td>
                     </tr>
-<a href="#"></a>
                     <?php } ;?>
 
                 </tbody>

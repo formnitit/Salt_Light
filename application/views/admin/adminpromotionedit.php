@@ -19,6 +19,10 @@
                                 <input id="promotion_code" name="promotion_code" type="text" class="form-control" value="<?php echo $rowedit->promotion_code;?>">
                             </div>
                             <div class="form-group">
+                                <label for="promotion_discount" class="control-label mb-1">ส่วนลด</label>
+                                <input id="promotion_discount" name="promotion_discount" type="number" class="form-control" value="<?php echo $rowedit->promotion_discount;?>">
+                            </div>
+                            <div class="form-group">
                               <label for="promotion_datestart" class="control-label mb-1">ด/ว/ป เริ่มโปรโมชั่น</label>
                             </div>
                             <input id="datepicker" name="promotion_datestart" value="<?php echo $rowedit->promotion_datestart;?>"/>

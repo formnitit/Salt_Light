@@ -71,13 +71,16 @@
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                     <a href="<?php echo site_url('admincourse/edit/').$row->course_id; ?>"><i class="zmdi zmdi-edit"></i>
                                 </button>
-                                <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                      <a href="<?php echo site_url('admincourse/delete/').$row->course_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
+                                <!-- <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                    <a href="<?php echo site_url('admincourse/delete/').$row->course_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
+                                </button> -->
+                                <button  onclick="myFunction()" class="item" data-toggle="tooltip" data-placement="top" title="Delete">
+                                    <a href="<?php echo site_url('admincourse/delete/').$row->course_id;?>"</a><i class="zmdi zmdi-delete"></i>
+                                    <p id="demo"></p>
                                 </button>
                             </div>
                         </td>
                     </tr>
-<a href="#"></a>
                     <?php } ;?>
 
                 </tbody>

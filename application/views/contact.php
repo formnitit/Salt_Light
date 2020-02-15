@@ -67,16 +67,16 @@
                                 <form class="comment-form" action="<?php echo site_url('Contact/adding'); ?>" method="post">
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <input type="text"   name="contact_name" placeholder="Your name">
+                                            <input type="text"   name="contact_name" placeholder="Your name" required>
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="text" name="contact_email" placeholder="Your email">
+                                            <input type="text" name="contact_email" placeholder="Your email" required>
                                         </div>
                                         <div class="col-lg-12">
-                                            <input type="text" name="contact_phone" placeholder="Your phone">
+                                            <input type="text" name="contact_phone" placeholder="Your phone" required>
                                         </div>
                                         <div class="col-lg-12">
-                                            <textarea name="contact_message" placeholder="Your message"></textarea>
+                                            <textarea name="contact_message" placeholder="Your message" required></textarea>
                                             <button type="submit" class="site-btn">Send message</button>
                                         </div>
                                     </div>

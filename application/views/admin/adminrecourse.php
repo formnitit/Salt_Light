@@ -67,8 +67,9 @@
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
                                     <a href="<?php echo site_url('adminrecourse/edit/').$row->recourse_id; ?>"><i class="zmdi zmdi-edit"></i>
                                 </button>
-                                <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                      <a href="<?php echo site_url('adminrecourse/delete/').$row->recourse_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
+                                <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete" onclick="myFunction()">
+                                      <a href="<?php echo site_url('adminrecourse/delete/').$row->recourse_id;?>" ></a><i class="zmdi zmdi-delete"></i>
+                                      <p id="demo"></p>
                                 </button>
                             </div>
                         </td>

@@ -23,7 +23,7 @@
                             <a href="#" class="primary-btn">VIEW</a>
                         </div>
                     </div>
-                                    </div>
+                </div>
             </div>
         </div>
     </section>

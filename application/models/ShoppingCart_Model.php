@@ -2,7 +2,7 @@
 
   public function get()
         {
-                $query = $this->db->get('product');
+                $query = $this->db->get('shoppingcart');
                 return $query->result();
         }
 
@@ -13,7 +13,12 @@
         return $get->row();
         }
 
+        //----------------------delete-----------------------//
+                public function deldata($ShoppingCart_id)
+                      {
+                              $this->db->delete('shoppingcart',array('ShoppingCart_id'=>$ShoppingCart_id));
 
+                      }
 
 
 } ?>

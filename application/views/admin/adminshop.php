@@ -59,7 +59,7 @@
                             </label>
                         </td>
                         <td><span class="block-email"><?php echo $row->product_id; ?></td>
-                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->product_img; ?>" width="100px"></td>
+                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->product_img; ?>" width="100px" height="100px" ></td>
                         <td class="desc"><?php echo $row->product_name; ?></td>
                         <td>
                             <?php echo $row->product_type_name; ?></span>

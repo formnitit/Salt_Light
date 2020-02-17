@@ -19,8 +19,8 @@
                                 <input id="promotion_code" name="promotion_code" type="text" class="form-control" value="">
                             </div>
                             <div class="form-group">
-                                <label for="promotion_discount" class="control-label mb-1">ส่วนลด</label>
-                                <input id="promotion_discount" name="promotion_discount" type="number" class="form-control" value="">
+                                <label for="promotion_discount" class="control-label mb-1">ราคาส่วนลด</label>
+                                <input id="promotion_discount" name="promotion_discount" type="text" class="form-control" value="">
                             </div>
                             <div class="form-group">
                               <label for="promotion_datestart" class="control-label mb-1">ด/ว/ป เริ่มโปรโมชั่น</label>

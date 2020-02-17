@@ -35,6 +35,7 @@
                 'promotion_discount' => $this->input->post('promotion_discount'),
                 'promotion_datestart' => $this->input->post('promotion_datestart'),
                 'promotion_dateend' => $this->input->post('promotion_dateend'),
+                'promotion_discount' => $this->input->post('promotion_discount'),
               );
               $this->db->where('promotion_id', $this->input->post('promotion_id'));
               $query=$this->db->update('promotion',$data);

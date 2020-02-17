@@ -44,6 +44,7 @@
                           <ul class="dropdown">
                               <li><a href="<?php echo site_url('ShoppingCart'); ?>">Shopping Cart</a></li>
                               <li><a href="<?php echo site_url('CheckOut'); ?>">Checkout</a></li>
+                              <li><a href="<?php echo site_url('Order'); ?>">Order History</a></li>
                               <li><a href="<?php echo site_url('Register'); ?>">Register</a></li>
                               <li><a href="<?php echo site_url('Login'); ?>">Login</a></li>
                           </ul>
@@ -53,12 +54,7 @@
                 <nav class="nav-menu mobile-menu">
                     <ul>
                         <li ><a href="<?php echo site_url('welcome'); ?>">Home</a></li>
-                        <li ><a href="<?php echo site_url('product'); ?>">Product</a>
-                        <ul class="dropdown">
-                                <li><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></li>
-                                <li><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></li>
-                                <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment </a></li>
-                            </ul></li>
+                        <li ><a href="<?php echo site_url('shop'); ?>">Product</a>
                         <li><a href="<?php echo site_url('blog'); ?>">Blog</a></li>
                         <li><a href="<?php echo site_url('course'); ?>">Course</a></li>
                         <li><a href="<?php echo site_url('promotion'); ?>">Promotion</a></li>

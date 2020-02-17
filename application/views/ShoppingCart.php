@@ -19,10 +19,19 @@
                 <div class="cart-main-area pt-70 pb-70">
                     <div class="container">
                         <div class="cart-empty-content text-center " style="font-size: 24px;">
-                            <i class="fa fa-shopping-cart fa-10x" aria-hidden="true" ></i>
+                          <br>
+                          <br>
 
+                            <i class="fa fa-shopping-cart fa-10x" aria-hidden="true" ></i>
                             <div class="empty-btn">
-                                <a href="Index"><p>Your cart is currently empty. (ตระกร้าสินค้าของคุณว่างเปล่า)</p>Return to shop (กลับไปช๊อปต่อกัน...)</a>
+                              <p>Your cart is currently empty.</p>
+                                <a href="<?php echo site_url('shop'); ?>"><button type="button" class="btn btn-warning"><i class="fa fa-reply"></i>&nbsp; Return to shop</button>
+                                  <br>
+                                  <br>
+                                  <br>
+                                  <br>
+
+
                             </div>
                         </div>
                     </div>
@@ -83,8 +92,8 @@
                         </div>
                         <div class="discount-coupon">
                             <h6>Discount Codes</h6>
-                            <form action="#" class="coupon-form">
-                                <input type="text" placeholder="Enter your codes">
+                            <form action="<?php echo site_url('ShoppingCart/Promotion'); ?>" class="coupon-form">
+                                <input type="text" placeholder="Enter your codes" value="">
                                 <button type="submit" class="site-btn coupon-btn">Apply</button>
                             </form>
                         </div>
@@ -93,9 +102,10 @@
                         <div class="proceed-checkout">
                             <ul>
                                 <li class="subtotal">Subtotal <span>฿<?php echo ($total); ?>.00</li>
+                                    <li class="subtotal">Discount <span>฿-00.00</li>
                                 <li class="cart-total">Total <span>฿<?php echo ($total); ?>.00</span></li>
                             </ul>
-                            <a href="#" class="proceed-btn">PROCEED TO CHECK OUT</a>
+                            <a href="<?php echo site_url('CheckOut'); ?>" class="proceed-btn">PROCEED TO CHECK OUT</a>
                         </div>
                     </div>
                 </div>

@@ -60,7 +60,7 @@
                         <td><?php echo $row->member_name; ?></td>
 
                         <td class="desc"><?php echo $row->member_name_lastname; ?></td>
-                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->member_img; ?>" width="100px"></td>
+                        <td><img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->member_img; ?>" width="100px" height="100px"></td>
                         <td>
                             <span class="block-email"><?php echo $row->member_email; ?></span>
                         </td>

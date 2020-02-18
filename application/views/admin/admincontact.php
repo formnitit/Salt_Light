@@ -60,7 +60,7 @@
                         <td>
                             <div class="table-data-feature">
                                 <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete" onclick="myFunction()">
-                                      <a href="<?php echo site_url('admincontact/delete/').$row->contact_id;?>" ></a><i class="zmdi zmdi-delete"></i>
+                                      <a href="<?php echo site_url('admincontact/delete/').$row->contact_id;?>" </a><i class="zmdi zmdi-delete"></i>
                                       <p id="demo"></p>
                                 </button>
                             </div>

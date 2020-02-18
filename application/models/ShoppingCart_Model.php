@@ -19,6 +19,20 @@
                               $this->db->delete('shoppingcart',array('ShoppingCart_id'=>$ShoppingCart_id));
 
                       }
+  //----------------------delete-----------------------//
 
+
+
+                      public function read($ShoppingCart_id){
+                            $this->db->select('*');
+                            $this->db->from('shoppingcart');
+                            $this->db->where('ShoppingCart_id',$ShoppingCart_id);
+                            $query = $this->db->get();
+                            if($query->num_rows() > 0){
+                                    $data = $query->row();
+                                    return $data;
+                            }
+                            return FALSE;
+                      }
 
 } ?>

@@ -12,7 +12,6 @@
                 <thead>
                     <tr>
                         <th>เลขที่สั่งซื้อ</th>
-                        <th>วันที่สั่งซื้อ</th>
                         <th>จำนวน</th>
                         <th>ราคา</th>
                         <th>ชื่อผู้สั่งซื้อ</th>
@@ -28,7 +27,6 @@
                     <tr class="tr-shadow">
 
                         <td><span class="block-email"><?php echo $row->ShoppingCart_id; ?></td>
-                        <td><?php echo $row->ShoppingCart_date; ?></td>
                         <td class="desc"><?php echo $row->ShoppingCart_Quantity; ?></td>
                         <td>
                             <?php echo $row->ShoppingCart_total; ?></span>
@@ -38,8 +36,8 @@
                         <td>รับออเดอร์</td>
                         <td>
                             <div class="table-data-feature">
-                                <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                    <a href="<?php echo site_url('adminshop/edit/').$row->product_id; ?>"><i class="zmdi zmdi-edit"></i>
+                                <button class="item" data-toggle="tooltip" data-placement="top" title="ดู">
+                                    <a href="<?php echo site_url('AdminShoppingCart/show/').$row->ShoppingCart_id; ?>"><i class="zmdi zmdi-eye"></i>
                                 </button>
                                 <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
                                       <a href="<?php echo site_url('AdminShoppingCart/delete/').$row->ShoppingCart_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>

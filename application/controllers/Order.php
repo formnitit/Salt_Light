@@ -33,6 +33,7 @@ class Order extends CI_Controller {
 			$this->load->view('js');
 		}
 
+		
 
 }
 ?>

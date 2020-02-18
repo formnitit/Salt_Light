@@ -54,5 +54,22 @@ class AdminShoppingCart extends CI_Controller {
 	}
 
 
+
+	public function show($ShoppingCart_id)
+	{
+
+	$data['rowshow']=$this->ShoppingCart_Model->read($ShoppingCart_id);
+	// echo '<pre>';
+	// print_r($data);
+	// echo '</pre>';
+	// exit;
+	$this->load->view('admin/header_admin');
+	$this->load->view('admin/css_admin');
+	$this->load->view('admin/banner_admin');
+	$this->load->view('admin/adminShoppingCartDetails',$data);
+	$this->load->view('admin/footer_admin');
+	$this->load->view('admin/js_admin');
+
+}
 }
 ?>

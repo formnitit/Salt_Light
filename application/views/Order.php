@@ -38,11 +38,59 @@
                             <tr>
                                 <td><?php echo $row->ShoppingCart_id; ?></td>
                                 <td><?php echo $row->ShoppingCart_Name; ?></td>
-                                <td><?php echo $row->ShoppingCart_total; ?></td>
+                                <td><?php echo $row->ShoppingCart_pricec; ?></td>
                                 <td>รอการชำระ</td>
                                 <td>รับออเดอรแล้ว</td>
                                 <td>
-                                  <button type="button" class="btn btn-warning"><i class="fa fa-reply"></i>&nbsp;View</button>
+                                    <button type="button" class="site-btn" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-eye"></i>&nbsp;View</button>
+
+
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                      <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <form>
+                                              <div class="row">
+
+
+                                              <div class="form-group col-lg-6">
+                                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_Name; ?>">
+                                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_Email; ?>">
+                                                <label for="recipient-name" class="col-form-label">Phone:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_Phone; ?>">
+                                                <label for="recipient-name" class="col-form-label">ID Order:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_id; ?>">
+                                                <label for="recipient-name" class="col-form-label">ID Product:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->product_id; ?>">
+                                                <label for="recipient-name" class="col-form-label">Date:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_date; ?>">
+                                                <label for="recipient-name" class="col-form-label">Quantity:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_Quantity; ?>">
+                                                <label for="recipient-name" class="col-form-label">Total:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="฿<?php echo $row->ShoppingCart_pricec; ?>.00">
+
+                                              </div>
+
+                                              <div class="form-group col-lg-6">
+                                                <label for="recipient-name" class="col-form-label">Payment status:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_Payment_status; ?>">
+                                                <label for="recipient-name" class="col-form-label">Order status:</label>
+                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $row->ShoppingCart_Order_status; ?>">
+                                                <label for="recipient-name" class="col-form-label">Slip:</label>
+                                                <img src="<?php echo base_url('assets/img/Slip'); ?>/<?php echo $row->ShoppingCart_slip; ?>" height="450px" width="600px">
+                                              </div>
+                                              </div>
+
+                                            </form>
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </div>
+
+
                                 </td>
                             </tr>
 

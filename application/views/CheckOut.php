@@ -1,3 +1,4 @@
+<?php $user = $this->db->get_where('member',['member_email'=>$this->session->userdata('member_email')])->row_array() ; ?>
 <div class="breacrumb-section">
     <div class="container">
         <div class="row">
@@ -16,91 +17,97 @@
 <!-- Shopping Cart Section Begin -->
 <section class="checkout-section spad">
     <div class="container">
-        <form action="#" class="checkout-form">
+        <form action="<?php echo site_url('ShoppingCart/Add_order'); ?>" class="checkout-form" enctype="multipart/form-data" method="post">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="checkout-content">
-                        <a href="#" class="content-btn">Click Here To Login</a>
-                    </div>
+
                     <h4>Biiling Details</h4>
                     <div class="row">
-                        <div class="col-lg-6">
-                            <label for="fir">First Name<span>*</span></label>
-                            <input type="text" id="fir">
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="last">Last Name<span>*</span></label>
-                            <input type="text" id="last">
-                        </div>
+                      <!-- <input type="text" name="id" value="<?php echo $user['member_ID'] ;?>" > -->
                         <div class="col-lg-12">
-                            <label for="cun-name">Company Name</label>
-                            <input type="text" id="cun-name">
+                            <label for="fir">Name-Lastname<span>*</span></label>
+                            <input type="text" id="fir" name="ShoppingCart_Name" required>
                         </div>
-                        <div class="col-lg-12">
-                            <label for="cun">Country<span>*</span></label>
-                            <input type="text" id="cun">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="street">Street Address<span>*</span></label>
-                            <input type="text" id="street" class="street-first">
-                            <input type="text">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="zip">Postcode / ZIP (optional)</label>
-                            <input type="text" id="zip">
-                        </div>
-                        <div class="col-lg-12">
-                            <label for="town">Town / City<span>*</span></label>
-                            <input type="text" id="town">
-                        </div>
+
                         <div class="col-lg-6">
                             <label for="email">Email Address<span>*</span></label>
-                            <input type="text" id="email">
+                            <input type="text" id="email" name="ShoppingCart_Email" required>
                         </div>
                         <div class="col-lg-6">
                             <label for="phone">Phone<span>*</span></label>
-                            <input type="text" id="phone">
+                            <input type="phone" id="phone" name="ShoppingCart_Phone" required>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="create-item">
-                                <label for="acc-create">
-                                    Create an account?
-                                    <input type="checkbox" id="acc-create">
-                                    <span class="checkmark"></span>
-                                </label>
+                        <div class="col-lg-6 form-group">
+                          <label for="exampleFormControlFile1">Upload Slip</label>
+                          <input type="file" class="form-control-file btn btn-outline-light text-dark" id="ShoppingCart_slip" name="ShoppingCart_slip" accept="img/*" required>
+                        </div>
+
+                        <div class="cart-table">
+                          <div class="col-lg-12">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>bank</th>
+                                        <th>Account Name</th>
+                                        <th>Account number</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td><img src="<?php echo base_url('assets/img/logo'); ?>/scb.jpg" width="100px" height="100px"> </td>
+                                        <td>พงศธร มหาวิเศษทรัพย์</td>
+                                        <td>590-428145-5</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><img src="<?php echo base_url('assets/img/logo'); ?>/K.jpg" width="100px" height="100px"> </td>
+                                        <td>นิธิศ เชื้อลื้อ</td>
+                                        <td>590-428145-6</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><img src="<?php echo base_url('assets/img/logo'); ?>/kb.jpg" width="100px" height="100px"> </td>
+                                        <td>เชี่ยวชาญ มิหนุน</td>
+                                        <td>590-428145-7</td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
                             </div>
                         </div>
+
                     </div>
                 </div>
+
+
+
                 <div class="col-lg-6">
-                    <div class="checkout-content">
-                        <input type="text" placeholder="Enter Your Coupon Code">
-                    </div>
                     <div class="place-order">
                         <h4>Your Order</h4>
                         <div class="order-total">
                             <ul class="order-table">
                                 <li>Product <span>Total</span></li>
-                                <li class="fw-normal">Americano x 1 <span>฿50.00</span></li>
-                                <li class="fw-normal">Subtotal <span>฿50.00</span></li>
-                                <li class="total-price">Total <span>฿50.00</span></li>
+                                <?php $total = 0 ; ?>
+                                <?php $i = 1; ?>
+
+      <?php foreach ($this->cart->contents() as $items): ?>
+
+              <?php echo form_hidden($i.'[rowid]', $items['rowid']); ?>
+                                <li class="fw-normal"><?php echo $items['name']; ?> x <?php echo $items['qty']; ?> <span>฿ <?php echo $this->cart->format_number($items['subtotal']); ?></span></li>
+
+                                <?php $total += $items['subtotal'];
+                                 $i++; ?>
+<?php endforeach; ?>
+<br>
+                                <li class="fw-normal">Subtotal <span>฿ <?php echo ($total); ?>.00</span></li>
+                                <li class="fw-normal">Subtotal <span>฿ .00</span></li>
+                                <li class="total-price">Total <span>฿ <?php echo $this->cart->format_number($this->cart->total()); ?></span></li>
+
                             </ul>
-                            <div class="payment-check">
-                                <div class="pc-item">
-                                    <label for="pc-check">
-                                        Cheque Payment
-                                        <input type="checkbox" id="pc-check">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="pc-item">
-                                    <label for="pc-paypal">
-                                        Paypal
-                                        <input type="checkbox" id="pc-paypal">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                            </div>
+
                             <div class="order-btn">
                                 <button type="submit" class="site-btn place-btn">Place Order</button>
                             </div>

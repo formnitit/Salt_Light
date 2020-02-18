@@ -41,7 +41,7 @@
                         <th>ชื่อโปรโมชั่น</th>
                         <th>รูปภาพโปรโมชั่น</th>
                         <th>รหัสโปรโมชั่น</th>
-                        <th>ส่วนลด</th>
+                        <th>ราคาส่วนลด</th>
                         <th>ด/ว/ป เริ่มโปรโมชั่น</th>
                         <th>ด/ว/ป สิ้นสุดโปรโมชั่น</th>
                     </tr>
@@ -62,7 +62,7 @@
                         <td>
                             <span class="block-email"><?php echo $row->promotion_code; ?></span>
                         </td>
-                        <td><?php echo $row->promotion_discount; ?></td>
+                          <td><?php echo $row->promotion_discount; ?>.00</td>
                         <td><?php echo $row->promotion_datestart; ?></td>
                         <td>
                             <span class="status--process"><?php echo $row->promotion_dateend; ?></span>

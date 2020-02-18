@@ -16,41 +16,44 @@
 </div>
   <!-- Breadcrumb Section Begin -->
 
+
+
     <!-- Product Shop Section Begin -->
     <section class="product-shop spad">
 
         <div class="container">
             <div class="row">
 
-                <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
-                    <div class="filter-widget">
-                        <h4 class="fw-title">Categories</h4>
-                        <ul class="filter-catagories">
-                            <li><a href="<?php echo site_url('shop'); ?>">Coffee Drink</a></li>
-                            <li><a href="<?php echo site_url('shopcoffeebeans'); ?>">Coffee Beans</a></li>
-                            <li><a href="<?php echo site_url('shopcoffeeequipment'); ?>">Coffee Equipment</a></li>
-                        </ul>
-                    </div>
-                        <div class="product-large set-bg" data-setbg="<?php echo base_url('assets/img/index'); ?>/Bg2.jpg">
-                            <h2>Coffee Drink</h2>
-                            <a href="#">Discover More</a>
-                        </div>
-                </div>
+              <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
+                  <div class="filter-widget">
+                      <h4 class="fw-title">Categories</h4>
+                      <ul class="filter-catagories">
+                          <li><a href="<?php echo site_url('shop/index1'); ?>">Coffee Drink</a></li>
+                          <li><a href="<?php echo site_url('shopcoffeebeans/index1'); ?>">Coffee Beans</a></li>
+                          <li><a href="<?php echo site_url('shopcoffeeequipment/index1'); ?>">Coffee Equipment</a></li>
+                      </ul>
+                  </div>
+
+                  <div class="filter-widget">
+                      <h4 class="fw-title">Tags</h4>
+                      <div class="fw-tags">
+                          <a href="#">Towel</a>
+                          <a href="#">Shoes</a>
+                          <a href="#">Coat</a>
+                          <a href="#">Dresses</a>
+                          <a href="#">Trousers</a>
+                          <a href="#">Men's hats</a>
+                          <a href="#">Backpack</a>
+                      </div>
+                  </div>
+              </div>
+
                 <div class="col-lg-9 order-1 order-lg-2">
                     <div class="product-show-option">
                         <div class="row">
-                            <div class="col-lg-7 col-md-7">
-                                <div class="select-option">
-                                    <select class="sorting">
-                                        <option value="">Default Sorting</option>
-                                    </select>
-                                    <select class="p-show">
-                                        <option value="">Show:</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-5 text-right">
-                                <p>Show 01- 09 Of 36 Product</p>
+                            <div class="col-lg-7 col-md-7 ">
+<h2>Product </h2>
+
                             </div>
                         </div>
                     </div>
@@ -96,12 +99,7 @@
 
                         </div>
                     </div>
-                    <div class="loading-more">
-                        <i class="icon_loading"></i>
-                        <a href="#">
-                            Loading More
-                        </a>
-                    </div>
+
                 </div>
             </div>
         </div>

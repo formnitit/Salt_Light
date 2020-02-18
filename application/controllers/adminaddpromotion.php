@@ -48,6 +48,7 @@ class Adminaddpromotion extends CI_Controller {
 				'promotion_discount' => $this->input->post('promotion_discount'),
 				'promotion_datestart' => $this->input->post('promotion_datestart'),
 		    'promotion_dateend' => $this->input->post('promotion_dateend'),
+				'promotion_discount' => $this->input->post('promotion_discount'),
 			);
 
 		$query=$this->db->insert('promotion',$data);

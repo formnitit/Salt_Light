@@ -25,6 +25,7 @@ class Adminaddshop extends CI_Controller {
 			$this->load->view('admin/js_admin');
 		}
 
+
 	public function adding()
 	{
 		$config['upload_path'] = './assets/img/uploadimg/';

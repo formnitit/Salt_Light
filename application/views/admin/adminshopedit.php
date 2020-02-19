@@ -6,19 +6,11 @@
                     <div class="card-header"><i class="fas fa-shopping-cart"></i>  เพิ่มข้อมูลสินค้า</div>
                     <div class="card-body">
 
-                        <form action="<?php echo site_url('adminaddshop/adding'); ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php echo site_url('adminshopedit/edit'); ?>" method="post" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="product_id" class="control-label mb-1">รหัสสินค้า</label>
                                 <input id="product_id" name="product_id" type="text" class="form-control" value="<?php echo $rowedit->product_id;?>">
                             </div>
-<!--
-                                <div class="form-group">
-                                  <label>อัพโหลดรูปภาพ</label>
-                                  <div class="custom-file">
-                                    <input type="file" name="product_img" multiple class="custom-file-input" id="product_img" accept="img/*">
-                                    <label class="custom-file-label" for="customFile"></label>
-                                  </div>
-                                </div> -->
 
                                 <div class="form-group">
                                   <label for="exampleFormControlFile1">อัพโหลดรูปภาพ</label>
@@ -29,19 +21,18 @@
                                 <label for="product_name" class="control-label mb-1">ชื่อสินค้า</label>
                                 <input id="product_name" name="product_name" type="text" class="form-control" value="<?php echo $rowedit->product_name;?>">
                             </div>
-                            <!-- <div class="row form-group">
+                            <div class="row form-group">
                                 <div class="col col-md-12">
                                     <label for="select" class=" form-control-label">หมวดหมู่สินค้า</label>
                                 </div>
                                 <div class="col-12 col-md-12">
-                                    <select name="product_type_id" id="product_type_id" class="form-control" required>
+                                    <select name="product_type_id" id="select" class="form-control" value="<?php echo $rowedit->product_type_id;?>" required>
                                         <option >กรุณาเลือก</option>
-                                        <option value="1">แอดมิน</option>
-                                        <option value="2">พนักงาน</option>
-                                        <option value="3">ผู้ใช้งานสมาชิก</option>
+                                        <option value="1001">Hot</option>
+                                        <option value="1002">Cool</option>
                                     </select>
                                 </div>
-                            </div> -->
+                            </div>
 
 
                             <div class="form-group">

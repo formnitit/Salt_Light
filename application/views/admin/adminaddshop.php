@@ -37,9 +37,8 @@
                                 <div class="col-12 col-md-12">
                                     <select name="product_type_id" id="select" class="form-control" value="" required>
                                         <option >กรุณาเลือก</option>
-                                        <option value="1001">Coffee Drink</option>
-                                        <option value="1002">Coffee Beans</option>
-                                        <option value="1003">Coffee Equipment</option>
+                                        <option value="1001">Hot</option>
+                                        <option value="1002">Cool</option>
                                     </select>
                                 </div>
                             </div>

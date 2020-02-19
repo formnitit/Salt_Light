@@ -28,22 +28,20 @@
                   <div class="filter-widget">
                       <h4 class="fw-title">Categories</h4>
                       <ul class="filter-catagories">
-                          <li><a href="<?php echo site_url('shop/index1'); ?>">Coffee Drink</a></li>
-                          <li><a href="<?php echo site_url('shopcoffeebeans/index1'); ?>">Coffee Beans</a></li>
-                          <li><a href="<?php echo site_url('shopcoffeeequipment/index1'); ?>">Coffee Equipment</a></li>
+                          <li><a href="">Coffee Drink</a></li>
+                          <li><a href="">Coffee Beans</a></li>
+                          <li><a href="">Coffee Equipment</a></li>
                       </ul>
                   </div>
 
                   <div class="filter-widget">
                       <h4 class="fw-title">Tags</h4>
                       <div class="fw-tags">
-                          <a href="#">Towel</a>
-                          <a href="#">Shoes</a>
-                          <a href="#">Coat</a>
-                          <a href="#">Dresses</a>
-                          <a href="#">Trousers</a>
-                          <a href="#">Men's hats</a>
-                          <a href="#">Backpack</a>
+                          <a href="#">Blog</a>
+                          <a href="#">Course</a>
+                          <a href="#">Promotion</a>
+                          <a href="#">Contact</a>
+
                       </div>
                   </div>
               </div>

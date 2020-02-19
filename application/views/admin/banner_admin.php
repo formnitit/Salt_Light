@@ -129,7 +129,7 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="<?php echo site_url('adminindex'); ?>">
                                 <i class="fas fa-tachometer-alt"></i>จัดการระบบ</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             </ul>
@@ -207,7 +207,7 @@
                                 <i class="fas fa-tag"></i>ติดต่อ</a>
                         </li>
                         <li>
-                            <a href="map.html">
+                            <a href="<?php echo site_url('Report'); ?>">
                                 <i class="fas  fa-file-text"></i>จัดการรายงาน</a>
                                 <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                     <li>

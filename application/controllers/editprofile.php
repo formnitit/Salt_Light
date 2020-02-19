@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Adminmemberedit extends CI_Controller {
+class Editprofile extends CI_Controller {
 
 	public function __construct()
 				        {
@@ -10,26 +10,16 @@ class Adminmemberedit extends CI_Controller {
 								}
 
 
-	public function edit1()
+	public function edit1($member_ID)
 	{
-		$this->load->view('admin/header_admin');
-		$this->load->view('admin/css_admin');
-		$this->load->view('admin/banner_admin');
-		$this->load->view('admin/adminmemberedit');
-		$this->load->view('admin/footer_admin');
-    $this->load->view('admin/js_admin');
+    $data['rowedit']=$this->adminmember_model->read($member_ID);
+    $this->load->view('header_view');
+		$this->load->view('css');
+		$this->load->view('bannerlogout');
+		$this->load->view('editprofile',$data);
+		$this->load->view('footer');
+		$this->load->view('js');
 	}
-
-	// ---------------------------------logout--------
-		public function index1()
-		{
-			$this->load->view('admin/header_admin');
-			$this->load->view('admin/css_admin');
-			$this->load->view('admin/banner_admin');
-			$this->load->view('loginadmin/adminmemberedit1');
-			$this->load->view('admin/footer_admin');
-			$this->load->view('admin/js_admin');
-		}
 
 	public function edit()
 	{
@@ -56,10 +46,10 @@ class Adminmemberedit extends CI_Controller {
 		// print_r($data);
 		// echo '</pre>';
 		// exit;
-
-		$query=$this->db->insert('member',$data);
+		$this->db-where('member_ID',$this->input->post('member_ID'));
+		$query=$this->db->update('member',$data);
 		if($query){
-			redirect('adminmember','refresh');
+			redirect('welcome/index1','refresh');
 		}else {
 			echo 'false';
 			}
@@ -99,7 +89,7 @@ class Adminmemberedit extends CI_Controller {
 				$query=$this->db->update('member',$data);
 
 				if($query){
-					redirect('adminmember','refresh');
+					redirect('welcome/index1','refresh');
 				}else {
 					echo 'false';
 					}

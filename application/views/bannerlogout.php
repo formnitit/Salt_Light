@@ -30,7 +30,7 @@
                         <button type="button" class="site-btn">
                                           <i class="fa fa-star"></i>&nbsp; <?php echo $_SESSION['member_name'] ;?></button>
                           <a href="<?php echo site_url('login/logout'); ?>"><button type="button" class="site-btn">
-                                            <i class="fa fa-sign-out"></i>&nbsp; Logout</button>
+                                            <i class="fa fa-sign-out"></i>&nbsp; Logout</a></button>
                       </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                         <span>Other</span>
                         <ul class="depart-hover">
                           <ul class="dropdown">
-                            <li><a href="<?php echo site_url('ShoppingCart'); ?>">Edit Profile</a></li>
+                            <li><a href="<?php echo site_url('editprofile/edit1/').$_SESSION ['member_ID'];?>">Edit Profile</a></li>
                             <li><a href="<?php echo site_url('ShoppingCart'); ?>">Shopping Cart</a></li>
                             <li><a href="<?php echo site_url('CheckOut'); ?>">Checkout</a></li>
                             <li><a href="<?php echo site_url('Order'); ?>">Order History</a></li>

@@ -68,7 +68,7 @@
                         <div class="col-lg-6 col-sm-6">
                             <div class="blog-item">
                                 <div class="bi-pic">
-                                    <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->blog_img; ?>" alt="">
+                                    <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->blog_img; ?>" height="300px" width="600px" alt="">
                                 </div>
                                 <div class="bi-text">
                                     <a href="<?php echo site_url('blogdetails/show1/').$row->blog_id; ?>">

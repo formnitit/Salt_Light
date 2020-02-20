@@ -19,7 +19,7 @@ class Courseconfirm extends CI_Controller {
 	// exit;
 	$this->load->view('header_view');
 	$this->load->view('css');
-	$this->load->view('banner');
+	$this->load->view('bannerlogout');
 	$this->load->view('courseconfirm',$data);
 	$this->load->view('footer');
 	$this->load->view('js');
@@ -31,7 +31,7 @@ class Courseconfirm extends CI_Controller {
 		{
 			$this->load->view('header_view');
 			$this->load->view('css');
-			$this->load->view('bannerlogout');
+			$this->load->view('banner');
 			$this->load->view('login/courseconfirm1');
 			$this->load->view('login/footer1');
 			$this->load->view('js');

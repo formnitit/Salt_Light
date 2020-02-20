@@ -66,7 +66,7 @@
                             <h4>Barista Course</h4>
                             <div class="recent-blog">
                               <?php foreach ($query as $row) {?>
-                                <a href="<?php echo site_url('cousredetails/index1'); ?>" class="rb-item">
+                                <a href="<?php echo site_url('cousredetails/index'); ?>" class="rb-item">
                                     <div class="rb-pic">
                                         <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->course_img; ?>" >
                                     </div>
@@ -100,7 +100,7 @@
                                     <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->course_img; ?>" height="250px" width="600px" alt="">
                                 </div>
                                 <div class="bi-text">
-                                    <a href="<?php echo site_url('cousredetails/index1'); ?>">
+                                    <a href="<?php echo site_url('coursedetails/index1/').$row->course_id; ?>">
                                         <h4><?php echo $row->course_name; ?></h4>
                                     </a>
                                     <p><span>Start <?php echo $row->course_dateend; ?> - <?php echo $row->course_dateend; ?></span></p>

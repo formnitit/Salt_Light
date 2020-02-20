@@ -71,7 +71,7 @@ class Login extends CI_Controller {
 					}elseif($m_type==0){
 						redirect('welcome/index','refresh');
 					}elseif($m_type==2){
-						redirect('adminindex/index','refresh');
+						redirect('Employee/index','refresh');
 					}
 				}else {
 					$this->session->unset_userdata(array('member_ID','member_type','member_name'));

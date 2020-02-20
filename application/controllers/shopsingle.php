@@ -20,7 +20,7 @@ class Shopsingle extends CI_Controller {
 	// exit;
 	$this->load->view('header_view');
 	$this->load->view('css');
-	$this->load->view('banner');
+	$this->load->view('bannerlogout');
 	$this->load->view('shopsingle',$data);
 	$this->load->view('footer');
 	$this->load->view('js');
@@ -34,7 +34,7 @@ class Shopsingle extends CI_Controller {
 			$data['query'] = $this->adminshop_model->get();
 			$this->load->view('header_view');
 			$this->load->view('css');
-			$this->load->view('bannerlogout');
+			$this->load->view('banner');
 			$this->load->view('shopsingle',$data);
 			$this->load->view('footer');
 			$this->load->view('js');

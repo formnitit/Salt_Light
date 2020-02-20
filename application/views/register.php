@@ -55,9 +55,7 @@
                             </div>
                             <button type="submit" class="site-btn register-btn">Register</button>
                         </form>
-                        <div class="switch-login">
-                            <a href="<?php echo site_url('Login'); ?>">Or Login</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

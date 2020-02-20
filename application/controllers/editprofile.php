@@ -49,7 +49,7 @@ class Editprofile extends CI_Controller {
 		$this->db-where('member_ID',$this->input->post('member_ID'));
 		$query=$this->db->update('member',$data);
 		if($query){
-			redirect('welcome/index1','refresh');
+			redirect('welcome/index','refresh');
 		}else {
 			echo 'false';
 			}
@@ -89,7 +89,7 @@ class Editprofile extends CI_Controller {
 				$query=$this->db->update('member',$data);
 
 				if($query){
-					redirect('welcome/index1','refresh');
+					redirect('welcome/index','refresh');
 				}else {
 					echo 'false';
 					}

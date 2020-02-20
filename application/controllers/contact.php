@@ -8,7 +8,7 @@ class Contact extends CI_Controller {
 	{
 		$this->load->view('header_view');
 		$this->load->view('css');
-		$this->load->view('banner');
+		$this->load->view('bannerlogout');
 		$this->load->view('contact');
 		$this->load->view('footer');
 		$this->load->view('js');
@@ -19,7 +19,7 @@ class Contact extends CI_Controller {
 		{
 			$this->load->view('header_view');
 			$this->load->view('css');
-			$this->load->view('bannerlogout');
+			$this->load->view('banner');
 			$this->load->view('login/contact1');
 			$this->load->view('login/footer1');
 			$this->load->view('js');

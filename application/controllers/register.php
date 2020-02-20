@@ -88,7 +88,7 @@ function adding()
 			 }
 
 			 $success = $this->db->insert('member',$data);
-			 return redirect('welcome');
+			 return redirect('welcome/index1');
 			 }
 	}
 	}

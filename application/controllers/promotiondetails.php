@@ -19,7 +19,7 @@ class Promotiondetails extends CI_Controller {
 								// exit;
 								$this->load->view('header_view');
 								$this->load->view('css');
-								$this->load->view('banner');
+								$this->load->view('bannerlogout');
 								$this->load->view('promotiondetails',$data);
 								$this->load->view('footer');
 								$this->load->view('js');
@@ -27,12 +27,13 @@ class Promotiondetails extends CI_Controller {
 							}
 
 	// ---------------------------------logout--------
-		public function index1()
+		public function index1($promotion_id)
 		{
+			$data['rowshow']=$this->adminpromotion_model->read($promotion_id);
 			$this->load->view('header_view');
 			$this->load->view('css');
-			$this->load->view('bannerlogout');
-			$this->load->view('login/promotiondetails1');
+			$this->load->view('banner');
+			$this->load->view('login/promotiondetails1',$data);
 			$this->load->view('login/footer1');
 			$this->load->view('js');
 		}

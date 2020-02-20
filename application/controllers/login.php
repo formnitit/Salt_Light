@@ -15,7 +15,7 @@ class Login extends CI_Controller {
 	{
 		$this->load->view('header_view');
 		$this->load->view('css');
-		$this->load->view('banner');
+		$this->load->view('bannerlogout');
 		$this->load->view('login');
 		$this->load->view('footer');
 		$this->load->view('js');
@@ -26,7 +26,7 @@ class Login extends CI_Controller {
 		{
 			$this->load->view('header_view');
 			$this->load->view('css');
-			$this->load->view('bannerlogout');
+			$this->load->view('banner');
 			$this->load->view('login');
 			$this->load->view('footer');
 			$this->load->view('js');
@@ -69,9 +69,9 @@ class Login extends CI_Controller {
 					if($m_type==1){
 						redirect('adminindex/index','refresh');
 					}elseif($m_type==0){
-						redirect('welcome/index1','refresh');
+						redirect('welcome/index','refresh');
 					}elseif($m_type==2){
-						redirect('adminindex/index','refresh');
+						redirect('Employee/index','refresh');
 					}
 				}else {
 					$this->session->unset_userdata(array('member_ID','member_type','member_name'));
@@ -88,7 +88,7 @@ class Login extends CI_Controller {
 		{
 			$this->session->sess_destroy();//ล้างsession
 
-		redirect('welcome');//กลับไปหน้า Login
+		redirect('welcome/index1');//กลับไปหน้า Login
 		}
 }
 ?>

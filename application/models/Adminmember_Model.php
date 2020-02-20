@@ -6,6 +6,15 @@
                 return $query->result();
         }
 
+
+        public function get1($member_ID)
+              {       $this->db->select('*');
+                      $this->db->from('member');
+                      $this->db->where('member_ID',$member_ID);
+                      $query = $this->db->get('member');
+                      return $query->result();
+              }
+
 //----------------------delete-----------------------//
         public function deldata($member_ID)
               {

@@ -130,7 +130,7 @@
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fas fa-tachometer-alt"></i>จัดการระบบ</a>
+                                <a href="<?php echo site_url('employee/index'); ?>"><i class="fas fa-tachometer-alt"></i>จัดการระบบ</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             </ul>
                         </li>
@@ -139,10 +139,7 @@
                                 <i class="fas fa-user"></i>สมาชิก</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url('adminmember'); ?>">จัดการข้อมูลสมาชิก</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('adminaddmember'); ?>">เพิ่มข้อมูลสมาชิก</a>
+                                    <a href="<?php echo site_url('Employee/member_employ'); ?>">ดูข้อมูลสมาชิก</a>
                                 </li>
                             </ul>
                         </li>
@@ -152,13 +149,10 @@
                                 <i class="fas fa-shopping-cart"></i>สินค้า</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url('adminshop'); ?>">จัดการสินค้า</a>
+                                    <a href="<?php echo site_url('Employee/shop_employ'); ?>">ดูการสินค้า</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('adminaddshop'); ?>">เพิ่มข้อมูลสินค้า</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('adminShoppingCart'); ?>">จัดการสั่งซื้อ</a>
+                                    <a href="<?php echo site_url(''); ?>">จัดการสั่งซื้อ</a>
                                 </li>
                             </ul>
                         </li>
@@ -167,10 +161,10 @@
                                 <i class="fas fa-user"></i>บทความ</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url('adminblog'); ?>">จัดการข้อมูลบทความ</a>
+                                    <a href="<?php echo site_url('Employee/blog_employ'); ?>">ดูข้อมูลบทความ</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('adminaddblog'); ?>">เพิ่มข้อมูลบทความ</a>
+                                    <a href="<?php echo site_url('Employee/add_blog_employ'); ?>">เพิ่มข้อมูลบทความ</a>
                                 </li>
                             </ul>
                         </li>
@@ -179,13 +173,10 @@
                                 <i class="fas fa-coffee"></i>คอร์ส</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url('admincourse'); ?>">จัดการข้อมูลคอร์ส</a>
+                                    <a href="<?php echo site_url(''); ?>">จัดการข้อมูลคอร์ส</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url('adminaddcourse'); ?>">เพิ่มข้อมูลคอร์ส</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('adminrecourse'); ?>">จัดการข้อมูลผู้สมัครคอร์ส</a>
+                                    <a href="<?php echo site_url(''); ?>">จัดการข้อมูลผู้สมัครคอร์ส</a>
                                 </li>
                             </ul>
                         </li>
@@ -194,24 +185,14 @@
                                 <i class="fas fa-tag"></i>โปรโมชั่น</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url('adminpromotion'); ?>">จัดการข้อมูลโปรโมชั่น</a>
+                                    <a href="<?php echo site_url('Employee/promotion_employ'); ?>">ดูข้อมูลโปรโมชั่น</a>
                                 </li>
-                                <li>
-                                    <a href="<?php echo site_url('adminaddpromotion'); ?>">เพิ่มข้อมูลโปรโมชั่น</a>
-                                </li>
-
                             </ul>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="<?php echo site_url('admincontact'); ?>">
-                                <i class="fas fa-tag"></i>ติดต่อ</a>
-                        </li>
                         <li>
-                            <a href="map.html">
-                                <i class="fas  fa-file-text"></i>จัดการรายงาน</a>
                                 <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                     <li>
-                                        <a href="<?php echo site_url('admincontact'); ?>">ข้อมูลติดต่อ</a>
+                                        <a href="<?php echo site_url(''); ?>">ข้อมูลติดต่อ</a>
                                     </li>
                                 </ul>
                         </li>

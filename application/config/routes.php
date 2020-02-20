@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-$route['default_controller'] = 'editprofile';
+$route['default_controller'] = 'adminmember';
 
 
 

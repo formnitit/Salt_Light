@@ -58,7 +58,7 @@
                             </div>
                               <div align="center">
                                 <input type="hidden" name="promotion_id" value="<?php echo $rowedit->promotion_id;?>">
-                                <button type="submit" class="btn btn-outline-success"><i class="fa fa-save">&nbsp;</i>แก้ไขข้อมูลโปรโมชั่น</button>
+                                <button type="submit" class="btn btn-outline-success"><i class="fa fa-save">&nbsp;</i>บันทึก</button>
                                 <a href="<?php echo site_url('adminpromotion'); ?>">
                                   <button type="button" class="btn btn-outline-danger"><i class="fa fa-times-circle">&nbsp;</i> ยกเลิก</button>
                                 </a>

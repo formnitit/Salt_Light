@@ -6,24 +6,17 @@ class CheckOut extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header_view');
-		$this->load->view('css');
-		$this->load->view('bannerlogout');
-		$this->load->view('CheckOut');
-		$this->load->view('footer');
-		$this->load->view('js');
+
+			$this->load->view('header_view');
+			$this->load->view('css');
+			$this->load->view('bannerlogout');
+			$this->load->view('CheckOut');
+			$this->load->view('footer');
+			$this->load->view('js');
+
 	}
 
 	// ---------------------------------logout--------
-		public function index1()
-		{
-			$this->load->view('header_view');
-			$this->load->view('css');
-			$this->load->view('banner');
-			$this->load->view('login/CheckOut1');
-			$this->load->view('login/footer1');
-			$this->load->view('js');
-		}
 
 		public function Add_order()
 		{
@@ -49,6 +42,7 @@ class CheckOut extends CI_Controller {
 				// echo '</pre>';
 				//  exit;
 			$data = array(
+				'member_ID'         => $this->input->post('id'),
 				'ShoppingCart_Name' => $this->input->post('ShoppingCart_Name'),
 				'ShoppingCart_slip' => $filename,
 				'ShoppingCart_Email' => $this->input->post('ShoppingCart_Email'),

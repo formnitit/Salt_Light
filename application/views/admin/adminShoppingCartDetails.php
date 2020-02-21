@@ -16,6 +16,27 @@
                                 </div>
                                 <hr>
                                 <form action="" method="post" novalidate="novalidate">
+
+
+                                  <div class="form-group">
+                                      <label for="cc-payment" class="control-label mb-1">สถานะการชำระเงิน</label>
+                                      <?php if ($rowshow->ShoppingCart_Payment_status == 1): ?>
+                                           <span class="badge badge-warning">กำลังตรวจสอบการชำระเงิน</span>
+                                         <?php else: ?>
+                                           <span class="badge badge-success">ชำระเงินเรียบร้อยแล้ว</span>
+                                      <?php endif; ?>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="cc-payment" class="control-label mb-1">สถานะการรับออเดอร์</label>
+                                      <?php if ($rowshow->ShoppingCart_Order_status == 1): ?>
+                                           <span class="badge badge-danger">รอรับออเดอร์</span>
+                                         <?php elseif($rowshow->ShoppingCart_Order_status == 2): ?>
+                                           <span class="badge badge-primary">กำลังดำเนินการ</span>
+                                         <?php else : ?>
+                                           <span class="badge badge-success">ออเดอร์สำเร็จ</span>
+                                      <?php endif; ?>
+                                  </div>
+
                                     <div class="form-group">
                                         <label for="cc-payment" class="control-label mb-1">ชื่อ-นามสกุล</label>
                                         <input id="cc-pament" name="cc-payment" type="text" class="form-control" aria-required="true" aria-invalid="false" value="<?php echo $rowshow->ShoppingCart_Name; ?>">
@@ -63,18 +84,7 @@
                                             autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error" value="฿<?php echo $rowshow->ShoppingCart_pricec; ?>.00">
                                         <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
                                     </div>
-                                    <div class="form-group has-success">
-                                        <label for="cc-name" class="control-label mb-1">สถานะการชำระเงิน</label>
-                                        <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card"
-                                            autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error" value="<?php echo $rowshow->ShoppingCart_Payment_status; ?>">
-                                        <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-                                    </div>
-                                    <div class="form-group has-success">
-                                        <label for="cc-name" class="control-label mb-1">สถานะการรับออเดอร์</label>
-                                        <input id="cc-name" name="cc-name" type="text" class="form-control cc-name valid" data-val="true" data-val-required="Please enter the name on card"
-                                            autocomplete="cc-name" aria-required="true" aria-invalid="false" aria-describedby="cc-name-error" value="<?php echo $rowshow->ShoppingCart_Order_status; ?>">
-                                        <span class="help-block field-validation-valid" data-valmsg-for="cc-name" data-valmsg-replace="true"></span>
-                                    </div>
+
                                 </form>
                             </div>
                         </div>

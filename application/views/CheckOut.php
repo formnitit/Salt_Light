@@ -1,3 +1,4 @@
+
 <?php $user = $this->db->get_where('member',['member_email'=>$this->session->userdata('member_email')])->row_array() ; ?>
 <div class="breacrumb-section">
     <div class="container">
@@ -23,7 +24,7 @@
 
                     <h4>Biiling Details</h4>
                     <div class="row">
-                      <!-- <input type="text" name="id" value="<?php echo $user['member_ID'] ;?>" > -->
+                      <input type="text" name="id" value="<?php echo $user['member_ID'] ;?>" hidden>
                         <div class="col-lg-12">
                             <label for="fir">Name-Lastname<span>*</span></label>
                             <input type="text" id="fir" name="ShoppingCart_Name" required>

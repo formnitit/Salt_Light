@@ -119,6 +119,7 @@ class ShoppingCart extends CI_Controller {
 
 
 							$data = array(
+								'member_ID'         => $this->input->post('id'),
 								'ShoppingCart_Name' => $this->input->post('ShoppingCart_Name'),
 								'ShoppingCart_slip' => $filename,
 								'ShoppingCart_Email' => $this->input->post('ShoppingCart_Email'),
@@ -140,6 +141,7 @@ class ShoppingCart extends CI_Controller {
 							}
 
 			if($query){
+				$this->cart->destroy();
 				redirect('Order','refresh');
 			}else {
 				echo 'false';
@@ -154,6 +156,12 @@ $query['pro'] = $this->db->get_where('promotion', array('promotion_code' => $val
 print_r($query);
 echo '<script type="text/javascript">alert("hello!");</script>';
 }
+
+// public function Cart_del()
+// {
+// 		$this->cart->destroy();
+// 		redirect('Welcome/index');
+// }
 
 
 }

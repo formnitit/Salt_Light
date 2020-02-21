@@ -6,6 +6,13 @@
                 return $query->result();
         }
 
+        public function get1($ShoppingCart_id)
+              {
+                      $this->db->where('ShoppingCart_id',$ShoppingCart_id);
+                      $query = $this->db->get('shoppingcart');
+                      return $query->result();
+              }
+
         public function Cart($id)
         {
         $this->db->where('product_id',$id);

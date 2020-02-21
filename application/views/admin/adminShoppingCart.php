@@ -32,11 +32,25 @@
                             <?php echo $row->ShoppingCart_total; ?></span>
                         </td>
                         <td><span class="status--process"><?php echo $row->ShoppingCart_Name; ?></td>
-                        <td>รอการชำระ</td>
-                        <td>รับออเดอร์</td>
+                          <td><?php if ($row->ShoppingCart_Payment_status == 1): ?>
+                               <span class="badge badge-warning">กำลังตรวจสอบการชำระเงิน</span>
+                             <?php else: ?>
+                               <span class="badge badge-success">ชำระเงินเรียบร้อยแล้ว</span>
+                          <?php endif; ?></td>
+                          <td><?php if ($row->ShoppingCart_Order_status == 1): ?>
+                               <span class="badge badge-danger">รอรับออเดอร์</span>
+                             <?php elseif($row->ShoppingCart_Order_status == 2): ?>
+                               <span class="badge badge-primary">กำลังดำเนินการ</span>
+                             <?php else : ?>
+                               <span class="badge badge-success">ออเดอร์สำเร็จ</span>
+                          <?php endif; ?></td>
+                          <td>
                         <td>
                             <div class="table-data-feature">
-                                <button class="item" data-toggle="tooltip" data-placement="top" title="ดู">
+                              <button class="item" data-toggle="tooltip" data-placement="top" title="">
+                                  <a href="<?php echo site_url('AdminShoppingCart/Success/').$row->ShoppingCart_id; ?>"><i class="zmdi zmdi-check-circle"></i>
+                              </button>
+                                <button class="item" data-toggle="tooltip" data-placement="top" title="View">
                                     <a href="<?php echo site_url('AdminShoppingCart/show/').$row->ShoppingCart_id; ?>"><i class="zmdi zmdi-eye"></i>
                                 </button>
                                 <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">

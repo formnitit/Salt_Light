@@ -13,25 +13,25 @@ class Order extends CI_Controller {
 
 	public function index()
 	{
-		$data['query']=$this->ShoppingCart_Model->get();
+   if ($this->session->userdata('member_email') != '')
+	 {
+
 		$this->load->view('header_view');
 		$this->load->view('css');
 		$this->load->view('bannerlogout');
-		$this->load->view('Order',$data);
+		$this->load->view('Order');
 		$this->load->view('footer');
 		$this->load->view('js');
+	 }
+		else
+		{
+			redirect('Welcome/index1');
+		}
+
 	}
 
 	// ---------------------------------logout--------
-		public function index1()
-		{
-			$this->load->view('header_view');
-			$this->load->view('css');
-			$this->load->view('banner');
-			$this->load->view('login/CheckOut1');
-			$this->load->view('login/footer1');
-			$this->load->view('js');
-		}
+
 
 
 

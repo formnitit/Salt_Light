@@ -15,6 +15,7 @@
                         <th>จำนวน</th>
                         <th>ราคา</th>
                         <th>ชื่อผู้สั่งซื้อ</th>
+                        <th>เพิ่มเติม</th>
                         <th>สถานะการชำระเงิน</th>
                         <th>สถานะการรับออเดอร์</th>
 
@@ -32,6 +33,9 @@
                             <?php echo $row->ShoppingCart_total; ?></span>
                         </td>
                         <td><span class="status--process"><?php echo $row->ShoppingCart_Name; ?></td>
+                          <td>
+                              <?php echo $row->ShoppingCart_Details; ?></span>
+                          </td>
                           <td><?php if ($row->ShoppingCart_Payment_status == 1): ?>
                                <span class="badge badge-warning">กำลังตรวจสอบการชำระเงิน</span>
                              <?php else: ?>

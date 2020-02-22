@@ -87,8 +87,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="cart-buttons">
-                            <a href="#" class="primary-btn continue-shop">Continue shopping</a>
-                            <a href="#" class="primary-btn up-cart">Update cart</a>
+                            <a href="<?php echo site_url('shop/index'); ?>" class="primary-btn up-cart">Update cart</a>
                         </div>
                         <div class="discount-coupon">
                             <h6>Discount Codes</h6>

@@ -42,6 +42,10 @@
                           <label for="exampleFormControlFile1">Upload Slip</label>
                           <input type="file" class="form-control-file btn btn-outline-light text-dark" id="ShoppingCart_slip" name="ShoppingCart_slip" accept="img/*" required>
                         </div>
+                        <div class="col-lg-6">
+                            <label for="Details">Details<span></span></label>
+                            <input type="Details" id="Details" name="ShoppingCart_Details" required>
+                        </div>
 
                         <div class="cart-table">
                           <div class="col-lg-12">

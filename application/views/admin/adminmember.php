@@ -67,7 +67,14 @@
                         <td>
                             <span class="status--process"><?php echo $row->member_phonenumber; ?></span>
                         </td>
-                        <td><?php echo $row->member_type; ?></td>
+                        <td><?php if ($row->member_type == 0): ?>
+                             <span class="badge badge-danger">Member</span>
+                           <?php elseif($row->member_type == 1): ?>
+                             <span class="badge badge-primary">Admin</span>
+                           <?php else : ?>
+                             <span class="badge badge-success">Employee</span>
+                        <?php endif; ?>
+                        </td>
                         <td>
                             <div class="table-data-feature">
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
@@ -78,6 +85,7 @@
                                 </button>
                             </div>
                         </td>
+
                     </tr>
 <a href="#"></a>
                     <?php } ;?>

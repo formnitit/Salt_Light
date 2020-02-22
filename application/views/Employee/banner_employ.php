@@ -152,7 +152,7 @@
                                     <a href="<?php echo site_url('Employee/shop_employ'); ?>">ดูการสินค้า</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url(''); ?>">จัดการสั่งซื้อ</a>
+                                    <a href="<?php echo site_url('Employee/manageshop_employ'); ?>">จัดการสั่งซื้อ</a>
                                 </li>
                             </ul>
                         </li>
@@ -173,10 +173,10 @@
                                 <i class="fas fa-coffee"></i>คอร์ส</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url(''); ?>">จัดการข้อมูลคอร์ส</a>
+                                    <a href="<?php echo site_url('Employee/course_employ'); ?>">จัดการข้อมูลคอร์ส</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo site_url(''); ?>">จัดการข้อมูลผู้สมัครคอร์ส</a>
+                                    <a href="<?php echo site_url('Employee/recourse_employ'); ?>">จัดการข้อมูลผู้สมัครคอร์ส</a>
                                 </li>
                             </ul>
                         </li>

@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-$route['default_controller'] = 'adminmember';
+$route['default_controller'] = 'adminfont';
 
 
 

@@ -75,7 +75,7 @@ class Login extends CI_Controller {
 					}
 				}else {
 					$this->session->unset_userdata(array('member_ID','member_type','member_name'));
-					redirect('login');
+					redirect('login/index1');
 
 
 			}

@@ -252,7 +252,7 @@
                                             </div>
                                             <div class="account-dropdown__body">
                                                 <div class="account-dropdown__item">
-                                                    <a href="<?php echo site_url('welcome/index1'); ?>">
+                                                    <a href="<?php echo site_url('adminfont/index'); ?>">
                                                         <i class="zmdi zmdi-money-box"></i>หน้าเว็บไซต์</a>
                                                 </div>
                                             </div>

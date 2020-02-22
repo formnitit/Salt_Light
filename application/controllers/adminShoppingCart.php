@@ -75,7 +75,7 @@ class AdminShoppingCart extends CI_Controller {
 public function Success($ShoppingCart_id)
 {
 
- $data['rowshow']=$this->ShoppingCart_Model->read($ShoppingCart_id);
+$data['rowshow']=$this->ShoppingCart_Model->read($ShoppingCart_id);
 $data['query']=$this->ShoppingCart_Model->get1($ShoppingCart_id);
 // echo '<pre>';
 // print_r($data);

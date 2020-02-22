@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text product-more">
-                    <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
-                    <a href="<?php echo site_url('shop'); ?>">Shop</a>
+                    <a href="<?php echo site_url('adminfont/index'); ?>"><i class="fa fa-home"></i> Home</a>
+                    <a href="<?php echo site_url('adminfont/shop'); ?>">Shop</a>
                     <span>Shopping Cart</span>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                             <i class="fa fa-shopping-cart fa-10x" aria-hidden="true" ></i>
                             <div class="empty-btn">
                               <p>Your cart is currently empty.</p>
-                                <a href="<?php echo site_url('shop'); ?>"><button type="button" class="btn btn-warning"><i class="fa fa-reply"></i>&nbsp; Return to shop</button>
+                                <a href="<?php echo site_url('adminfont/shop'); ?>"><button type="button" class="btn btn-warning"><i class="fa fa-reply"></i>&nbsp; Return to shop</button>
                                   <br>
                                   <br>
                                   <br>
@@ -87,7 +87,8 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="cart-buttons">
-                            <a href="<?php echo site_url('shop/index'); ?>" class="primary-btn up-cart">Update cart</a>
+                            <a href="#" class="primary-btn continue-shop">Continue shopping</a>
+                            <a href="#" class="primary-btn up-cart">Update cart</a>
                         </div>
                         <div class="discount-coupon">
                             <h6>Discount Codes</h6>
@@ -104,7 +105,7 @@
                                     <li class="subtotal">Discount <span>฿-00.00</li>
                                 <li class="cart-total">Total <span>฿<?php echo ($total); ?>.00</span></li>
                             </ul>
-                            <a href="<?php echo site_url('CheckOut'); ?>" class="proceed-btn">PROCEED TO CHECK OUT</a>
+                            <a href="<?php echo site_url('adminfont/checkoutadmin'); ?>" class="proceed-btn">PROCEED TO CHECK OUT</a>
                         </div>
                     </div>
                 </div>

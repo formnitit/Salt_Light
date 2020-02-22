@@ -5,8 +5,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text product-more">
-                    <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
-                    <a href="<?php echo site_url('shop'); ?>">Shop</a>
+                    <a href="<?php echo site_url('adminfont/index'); ?>"><i class="fa fa-home"></i> Home</a>
+                    <a href="<?php echo site_url('adminfont/shop'); ?>">Shop</a>
                     <span>Shopping Cart</span>
                 </div>
             </div>
@@ -29,7 +29,6 @@
                                 <th>Order</th>
                                 <th>Name</th>
                                 <th>Total</th>
-                                <th>Details</th>
                                 <th >Payment status</th>
                                 <th>Order status</th>
                                 <th></th>
@@ -41,24 +40,23 @@
                                 <td><?php echo $order['ShoppingCart_id'] ; ?></td>
                                 <td><?php echo $order['ShoppingCart_Name'] ; ?></td>
                                 <td>฿ <?php echo $order['ShoppingCart_total'] ; ?></td>
-                                <td>#<?php echo $order['ShoppingCart_Details'] ; ?></td>
                                 <td><?php if ($order['ShoppingCart_Payment_status'] == 1): ?>
                                   <style media="screen">
                                   .badge-warning {
-                                    color: #212529;
-                                    background-color: #ffc107;
-                                  }
-                                  .badge {
-                                    display: inline-block;
-                                    padding: .25em .4em;
-                                    font-size: 90%;
-                                    font-weight: 700;
-                                    line-height: 1;
-                                    text-align: center;
-                                    white-space: nowrap;
-                                    vertical-align: baseline;
-                                    border-radius: .25rem;
-                                  }
+  color: #212529;
+  background-color: #ffc107;
+}
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 90%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
                                   </style>
                                       <span class="badge badge-warning">กำลังตรวจสอบการชำระเงิน</span>
                                    <?php else: ?>
@@ -96,8 +94,7 @@
                                                 <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['product_id'] ; ?>">
                                                 <label for="recipient-name" class="col-form-label">Date:</label>
                                                 <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['ShoppingCart_date'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">Details:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="#<?php echo $order['ShoppingCart_Details'] ; ?>">
+
 
                                               </div>
 

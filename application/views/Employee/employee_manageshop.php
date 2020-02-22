@@ -3,7 +3,7 @@
     <div class="col-md-12">
         <!-- DATA TABLE -->
         <div class="table-data__tool">
-            <h3 class="title-5 m-b-35">จัดการ การสั่งซื้อ</h3>
+            <h3 class="title-5 m-b-35">จัดการการสั่งซื้อ</h3>
 
 
         </div>
@@ -15,7 +15,6 @@
                         <th>จำนวน</th>
                         <th>ราคา</th>
                         <th>ชื่อผู้สั่งซื้อ</th>
-                        <th>เพิ่มเติม</th>
                         <th>สถานะการชำระเงิน</th>
                         <th>สถานะการรับออเดอร์</th>
 
@@ -33,9 +32,6 @@
                             <?php echo $row->ShoppingCart_total; ?></span>
                         </td>
                         <td><span class="status--process"><?php echo $row->ShoppingCart_Name; ?></td>
-                          <td>
-                              <?php echo $row->ShoppingCart_Details; ?></span>
-                          </td>
                           <td><?php if ($row->ShoppingCart_Payment_status == 1): ?>
                                <span class="badge badge-warning">กำลังตรวจสอบการชำระเงิน</span>
                              <?php else: ?>
@@ -52,13 +48,13 @@
                         <td>
                             <div class="table-data-feature">
                               <button class="item" data-toggle="tooltip" data-placement="top" title="">
-                                  <a href="<?php echo site_url('AdminShoppingCart/Success/').$row->ShoppingCart_id; ?>"><i class="zmdi zmdi-check-circle"></i>
+                                  <a href="<?php echo site_url('Employee/shop_employ_success/').$row->ShoppingCart_id; ?>"><i class="zmdi zmdi-check-circle"></i>
                               </button>
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="View">
-                                    <a href="<?php echo site_url('AdminShoppingCart/show/').$row->ShoppingCart_id; ?>"><i class="zmdi zmdi-eye"></i>
+                                    <a href="<?php echo site_url('Employee/show_manage_employ/').$row->ShoppingCart_id; ?>"><i class="zmdi zmdi-eye"></i>
                                 </button>
                                 <button  class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                      <a href="<?php echo site_url('AdminShoppingCart/delete/').$row->ShoppingCart_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
+                                      <a href="<?php echo site_url('Employee/del_manage_employ/').$row->ShoppingCart_id;?>" onclick="return confirm('confirm to delete');"><i class="zmdi zmdi-delete"></i></a>
                                 </button>
                             </div>
                         </td>

@@ -40,7 +40,7 @@
                             <h4>Recent Post</h4>
                                   <?php foreach ($query as $row) {?>
                             <div class="recent-blog">
-                                <a href="<?php echo site_url('register'); ?>">
+                                <a href="<?php echo site_url('blogdetails/show1/').$row->blog_id; ?>">
                                     <div class="rb-pic">
                                         <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->blog_img; ?>">
                                     </div>
@@ -71,7 +71,7 @@
                                     <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $row->blog_img; ?>" height="300px" width="600px" alt="">
                                 </div>
                                 <div class="bi-text">
-                                    <a href="<?php echo site_url('register'); ?>">
+                                    <a href="<?php echo site_url('blogdetails/show1/').$row->blog_id; ?>">
                                         <h4><?php echo $row->blog_name; ?></h4>
                                     </a>
                                     <p><?php echo $row->blog_type_name; ?> <br><span><?php echo $row->blog_date; ?></span></p>

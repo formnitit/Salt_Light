@@ -34,7 +34,7 @@
                               <input type="password" id="member_cpass" name="member_cpass" required>
                           </div>
                             <div class="group-input">
-                                <label for="member_name">Username</label>
+                                <label for="member_name">Profile Name </label>
                                 <input type="text" id="member_name"  name="member_name" required>
                             </div>
                             <div class="group-input">
@@ -55,7 +55,7 @@
                             </div>
                             <button type="submit" class="site-btn register-btn">Register</button>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>

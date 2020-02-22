@@ -9,9 +9,12 @@ class Employee extends CI_Controller {
 												$this->load->model('adminshop_model');
 												$this->load->model('adminpromotion_model');
 												$this->load->model('adminblog_model');
+												$this->load->model('admincourse_model');
+												$this->load->model('Adminrecourse_model');
+												$this->load->model('ShoppingCart_Model');
 								}
 
-
+//---------------------------หน้าหลัก--------------------------------//
 	public function index()
 	{
     $this->load->view('Employee/header_employ');
@@ -23,6 +26,7 @@ class Employee extends CI_Controller {
 
 	}
 
+//---------------------------หน้าสมาชิก--------------------------------//
 	public function member_employ()
 	{
 		$data['query']=$this->adminmember_model->get();
@@ -34,6 +38,7 @@ class Employee extends CI_Controller {
     $this->load->view('Employee/js_employ');
 	}
 
+//---------------------------หน้าช็อป--------------------------------//
 	public function shop_employ()
 	{
 		$data['query']=$this->adminshop_model->jointableshop();
@@ -44,6 +49,74 @@ class Employee extends CI_Controller {
     $this->load->view('Employee/footer_employ');
     $this->load->view('Employee/js_employ');
 	}
+
+	public function manageshop_employ()
+	{
+		$data['query']=$this->ShoppingCart_Model->get();
+		$this->load->view('Employee/header_employ');
+		$this->load->view('Employee/css_employ');
+		$this->load->view('Employee/banner_employ');
+		$this->load->view('Employee/employee_manageshop',$data);
+		$this->load->view('Employee/footer_employ');
+		$this->load->view('Employee/js_employ');
+	}
+
+	public function shop_employ_success($ShoppingCart_id)
+	{
+		$data['rowshow']=$this->ShoppingCart_Model->read($ShoppingCart_id);
+		$data['query']=$this->ShoppingCart_Model->get1($ShoppingCart_id);
+		$this->load->view('Employee/header_employ');
+		$this->load->view('Employee/css_employ');
+		$this->load->view('Employee/banner_employ');
+		$this->load->view('Employee/employee_employ_success',$data);
+		$this->load->view('Employee/footer_employ');
+		$this->load->view('Employee/js_employ');
+	}
+
+	public function edit_employ_success()
+	{
+		// echo '<pre>';
+		// print_r($_POST);
+		// echo '</pre>';
+		// exit;
+		$data = array(
+			'ShoppingCart_Payment_status' => $this->input->post('Success1'),
+			'ShoppingCart_Order_status' => $this->input->post('Success2'),
+		);
+		// echo '<pre>';
+		// print_r($data);
+		// echo '</pre>';
+		// exit;
+		$this->db->where('ShoppingCart_id', $this->input->post('ShoppingCart_id'));
+		$query=$this->db->update('shoppingcart',$data);
+
+		if($query){
+			redirect('Employee/manageshop_employ','refresh');
+		}else {
+			echo 'false';
+			}
+				}
+
+
+		public function del_manage_employ($ShoppingCart_id)
+		{
+			$this->ShoppingCart_Model->deldata($ShoppingCart_id);
+			redirect('Employee/manageshop_employ','refresh');
+		}
+
+
+		public function show_manage_employ($ShoppingCart_id)
+		{
+			$data['rowshow']=$this->ShoppingCart_Model->read($ShoppingCart_id);
+			$this->load->view('Employee/header_employ');
+			$this->load->view('Employee/css_employ');
+			$this->load->view('Employee/banner_employ');
+			$this->load->view('Employee/employee_employ_details',$data);
+			$this->load->view('Employee/footer_employ');
+			$this->load->view('Employee/js_employ');
+		}
+
+	//---------------------------หน้าโปโมชั่น--------------------------------//
 
 	public function promotion_employ()
 	{
@@ -56,6 +129,7 @@ class Employee extends CI_Controller {
     $this->load->view('Employee/js_employ');
 	}
 
+//---------------------------หน้าบทความ--------------------------------//
 	public function blog_employ()
 	{
 		$data['query']=$this->adminblog_model->jointableblog();
@@ -125,13 +199,13 @@ class Employee extends CI_Controller {
 
 
 
-		public function edit_blog_employ()
+		public function edit_blog_employ($blog_id)
 		{
-
+			$data['rowedit']=$this->adminblog_model->read($blog_id);
 			$this->load->view('Employee/header_employ');
 			$this->load->view('Employee/css_employ');
 			$this->load->view('Employee/banner_employ');
-			$this->load->view('Employee/edit_employee_blog');
+			$this->load->view('Employee/edit_employee_blog',$data);
 			$this->load->view('Employee/footer_employ');
 			$this->load->view('Employee/js_employ');
 		}
@@ -177,6 +251,72 @@ class Employee extends CI_Controller {
 					}
 		}
 	}
+
+	//---------------------------หน้าคอร์ส--------------------------------//
+
+					public function course_employ()
+					{
+						$data['query']=$this->admincourse_model->get();
+						$this->load->view('Employee/header_employ');
+						$this->load->view('Employee/css_employ');
+						$this->load->view('Employee/banner_employ');
+						$this->load->view('Employee/employee_course',$data);
+						$this->load->view('Employee/footer_employ');
+						$this->load->view('Employee/js_employ');
+					}
+
+
+					public function recourse_employ()
+					{
+						$data['query']=$this->Adminrecourse_model->jointablerecourse();
+						$this->load->view('Employee/header_employ');
+						$this->load->view('Employee/css_employ');
+						$this->load->view('Employee/banner_employ');
+						$this->load->view('Employee/employee_recourse',$data);
+						$this->load->view('Employee/footer_employ');
+						$this->load->view('Employee/js_employ');
+					}
+
+					public function edit_recourse_employ($recourse_id)
+					{
+						$data['rowedit']=$this->Adminrecourse_model->read($recourse_id);
+						$this->load->view('Employee/header_employ');
+						$this->load->view('Employee/css_employ');
+						$this->load->view('Employee/banner_employ');
+						$this->load->view('Employee/edit_employee_recourse',$data);
+						$this->load->view('Employee/footer_employ');
+						$this->load->view('Employee/js_employ');
+					}
+
+					public function edit_recourse_employ1()
+					{
+				    $data = array(
+				      'recourse_name' => $this->input->post('recourse_name'),
+				      'recourse_surname' => $this->input->post('recourse_surname'),
+				      'recourse_address' => $this->input->post('recourse_address'),
+				      'recourse_email' => $this->input->post('recourse_email'),
+				      'recourse_phone' => $this->input->post('recourse_phone'),
+				    );
+				    // echo '<pre>';
+				    // print_r($data);
+				    // echo '</pre>';
+				    // exit;
+				    $this->db->where('recourse_id', $this->input->post('recourse_id'));
+				    $query=$this->db->update('recourse',$data);
+
+				    if($query){
+				      redirect('adminrecourse','refresh');
+				    }else {
+				      echo 'false';
+				      }
+								}
+
+						public function del_recourse_employ($recourse_id)
+						{
+							$this->Adminrecourse_model->deldata($recourse_id);
+							redirect('Employee/employee_recourse','refresh');
+						}
+
 
 
 

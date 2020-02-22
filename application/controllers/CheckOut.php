@@ -47,6 +47,7 @@ class CheckOut extends CI_Controller {
 				'ShoppingCart_slip' => $filename,
 				'ShoppingCart_Email' => $this->input->post('ShoppingCart_Email'),
 				'ShoppingCart_Phone' => $this->input->post('ShoppingCart_Phone'),
+				'ShoppingCart_Details' => $this->input->post('ShoppingCart_Details'),
 				'product_id' => $items['id'],
 				'ShoppingCart_Quantity' => $items['qty'],
 				'ShoppingCart_total' => $this->cart->total,

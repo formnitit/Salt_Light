@@ -22,7 +22,11 @@
                     <h2>Edit Profile</h2>
                     <form action="<?php echo site_url('Editprofile/editphoto'); ?>" method="post" enctype="multipart/form-data">
                       <div class="group-input">
-                          <label for="member_name">Username (email)  </label>
+                          <label for="member_email">Username (email)  </label>
+                          <input type="text" id="member_email" name="member_email" value="<?php echo $rowedit->member_email;?>" required>
+                      </div>
+                      <div class="group-input">
+                          <label for="member_name">Profile Name </label>
                           <input type="text" id="member_name" name="member_name" value="<?php echo $rowedit->member_name;?>" required>
                       </div>
                       <div class="group-input">

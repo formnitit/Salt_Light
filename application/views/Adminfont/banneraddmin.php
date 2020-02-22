@@ -27,7 +27,7 @@
                     </div>
                     <div class="col-lg-4 text-right col-md-3">
                       <div class="ht-right">
-                        <button type="button" class="site-btn">
+                        <a href="<?php echo site_url('adminindex/index'); ?>"><button type="button" class="site-btn">
                                           <i class="fa fa-star"></i>&nbsp; <?php echo $_SESSION['member_name'] ;?></button>
                           <a href="<?php echo site_url('login/logout'); ?>"><button type="button" class="site-btn">
                                             <i class="fa fa-sign-out"></i>&nbsp; Logout</button>
@@ -55,8 +55,8 @@
                 </div>
                 <nav class="nav-menu mobile-menu">
                     <ul>
-                        <li ><a href="<?php echo site_url('welcome/index1'); ?>">Home</a></li>
-                        <li><a href="<?php echo site_url('shop/index1'); ?>">Product</a></li>
+                        <li ><a href="<?php echo site_url('adminfont/index'); ?>">Home</a></li>
+                        <li><a href="<?php echo site_url('adminfont/shop'); ?>">Product</a></li>
                         <li><a href="<?php echo site_url('blog/index1'); ?>">Blog</a></li>
                         <li><a href="<?php echo site_url('cousre/index1'); ?>">Cousre</a></li>
                         <li><a href="<?php echo site_url('promotion/index1'); ?>">Promotion</a></li>

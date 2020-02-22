@@ -5,8 +5,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text product-more">
-                    <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
-                    <a href="<?php echo site_url('shop'); ?>">Shop</a>
+                    <a href="<?php echo site_url('adminfont/index'); ?>"><i class="fa fa-home"></i> Home</a>
+                    <a href="<?php echo site_url('adminfont/shop'); ?>">Shop</a>
                     <span>Check Out</span>
                 </div>
             </div>
@@ -18,7 +18,7 @@
 <!-- Shopping Cart Section Begin -->
 <section class="checkout-section spad">
     <div class="container">
-        <form action="<?php echo site_url('ShoppingCart/Add_order'); ?>" class="checkout-form" enctype="multipart/form-data" method="post">
+        <form action="<?php echo site_url('adminfont/add_orderadmin'); ?>" class="checkout-form" enctype="multipart/form-data" method="post">
             <div class="row">
                 <div class="col-lg-6">
 
@@ -41,10 +41,6 @@
                         <div class="col-lg-6 form-group">
                           <label for="exampleFormControlFile1">Upload Slip</label>
                           <input type="file" class="form-control-file btn btn-outline-light text-dark" id="ShoppingCart_slip" name="ShoppingCart_slip" accept="img/*" required>
-                        </div>
-                        <div class="col-lg-6">
-                            <label for="Details">Details<span></span></label>
-                            <input type="Details" id="Details" name="ShoppingCart_Details" required>
                         </div>
 
                         <div class="cart-table">

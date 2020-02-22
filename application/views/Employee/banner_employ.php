@@ -161,7 +161,7 @@
                                 <i class="fas fa-user"></i>บทความ</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url('Employee/blog_employ'); ?>">ดูข้อมูลบทความ</a>
+                                    <a href="<?php echo site_url('Employee/blog_employ'); ?>">จัดการข้อมูลบทความ</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo site_url('Employee/add_blog_employ'); ?>">เพิ่มข้อมูลบทความ</a>
@@ -173,7 +173,7 @@
                                 <i class="fas fa-coffee"></i>คอร์ส</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
-                                    <a href="<?php echo site_url('Employee/course_employ'); ?>">จัดการข้อมูลคอร์ส</a>
+                                    <a href="<?php echo site_url('Employee/course_employ'); ?>">ดูข้อมูลคอร์ส</a>
                                 </li>
                                 <li>
                                     <a href="<?php echo site_url('Employee/recourse_employ'); ?>">จัดการข้อมูลผู้สมัครคอร์ส</a>

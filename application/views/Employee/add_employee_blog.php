@@ -39,6 +39,13 @@
                                 </div>
                                 <div class="col-12 col-md-9">
                                     <textarea id="blog_details" name="blog_details" rows="9"  class="form-control" ></textarea>
+                                    <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#blog_details' ) )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script>
                                 </div>
                             </div>
                                   </div>

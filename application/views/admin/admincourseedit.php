@@ -47,6 +47,13 @@
                                 </div>
                                 <div class="col-12 col-md-9">
                                     <textarea id="course_detail" name="course_detail" rows="9"  class="form-control" ><?php echo $rowedit->course_detail;?></textarea>
+                                    <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#course_detail' ) )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script>
                                 </div>
                             </div>
                                   </div>

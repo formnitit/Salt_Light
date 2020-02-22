@@ -61,6 +61,13 @@
                                 </div>
                                 <div class="col-12 col-md-9">
                                     <textarea id="product_detail" name="product_detail" rows="9"  class="form-control" ></textarea>
+                                    <script>
+                                        ClassicEditor
+                                            .create( document.querySelector( '#product_detail' ) )
+                                            .catch( error => {
+                                                console.error( error );
+                                            } );
+                                    </script>
                                 </div>
                             </div>
                           </div>

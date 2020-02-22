@@ -23,8 +23,12 @@
                                 <input id="recourse_email" name="recourse_email" type="text" class="form-control" value="<?php echo $rowedit->recourse_email;?>">
                             </div>
                             <div class="form-group">
-                                <label for="recourse_phone" class="control-label mb-1">อีเมล</label>
+                                <label for="recourse_phone" class="control-label mb-1">เบอร์โทรศัพท์</label>
                                 <input id="recourse_phone" name="recourse_phone" type="text" class="form-control" value="<?php echo $rowedit->recourse_phone;?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="course_name" class="control-label mb-1">คอร์สที่สมัคร</label>
+                                <input id="course_name" name="course_name" type="text" class="form-control" value="<?php echo $rowedit->course_name;?>">
                             </div>
                               <div align="center">
                                 <input type="hidden" name="recourse_id" value="<?php echo $rowedit->recourse_id;?>">

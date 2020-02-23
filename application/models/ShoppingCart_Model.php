@@ -31,8 +31,9 @@
 
 
                       public function read($ShoppingCart_id){
-                            $this->db->select('*');
+                            $this->db->select('shoppingcart.*,product.*');
                             $this->db->from('shoppingcart');
+                            $this->db->join('product','shoppingcart.product_id = shoppingcart.product_id');
                             $this->db->where('ShoppingCart_id',$ShoppingCart_id);
                             $query = $this->db->get();
                             if($query->num_rows() > 0){

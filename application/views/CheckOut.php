@@ -101,15 +101,20 @@
       <?php foreach ($this->cart->contents() as $items): ?>
 
               <?php echo form_hidden($i.'[rowid]', $items['rowid']); ?>
+              <?php $prototel=$items['pro']*$items['qty'];?>
                                 <li class="fw-normal"><?php echo $items['name']; ?> x <?php echo $items['qty']; ?> <span>฿ <?php echo $this->cart->format_number($items['subtotal']); ?></span></li>
 
                                 <?php $total += $items['subtotal'];
-                                 $i++; ?>
+                                 $i++;
+                                 $pro += $prototel;
+                                 $net = $total - $pro;
+                                 ?>
 <?php endforeach; ?>
 <br>
-                                <li class="fw-normal">Subtotal <span>฿ <?php echo ($total); ?>.00</span></li>
-                                <li class="fw-normal">Subtotal <span>฿ .00</span></li>
-                                <li class="total-price">Total <span>฿ <?php echo $this->cart->format_number($this->cart->total()); ?></span></li>
+                                <li class="fw-normal">Subtotal <span>฿<?php echo ($total); ?>.00</span></li>
+                                <li class="fw-normal">Discount <span>฿-<?php echo ($pro); ?>.00</span></li>
+                                <li class="total-price" >Total <span >฿<?php echo ($net); ?>.00</span></li>
+                                <input type="text" name="net" value="<?php echo $net; ?>" hidden>
 
                             </ul>
 

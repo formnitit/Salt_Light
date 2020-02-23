@@ -33,6 +33,7 @@
                                 <th >Payment status</th>
                                 <th>Order status</th>
                                 <th></th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -72,43 +73,29 @@
                                      <span class="badge badge-success">ออเดอร์สำเร็จ</span>
                                 <?php endif; ?></td>
                                 <td>
-                                    <button type="button" class="site-btn" data-toggle="modal" data-target="#bd-example-modal-lg<?php echo $order['ShoppingCart_id'] ;?>"><i class="fa fa-eye"></i>&nbsp;View</button>
+                                    <button type="button" class="site-btn" data-toggle="modal" data-target="#bd-example-modal-lg<?php echo $order['ShoppingCart_id'] ;?>"><i class="fa fa-eye"></i>&nbsp; Slip</button>
 
 
                                     <div class="modal fade bd-example-modal-lg" id="bd-example-modal-lg<?php echo $order['ShoppingCart_id'] ;?>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                                       <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
+                                        <div class="modal-content" style="width: 300px;">
                                           <div class="modal-body">
                                             <form>
                                               <div class="row">
 
-
-                                               <div class="form-group col-lg-6">
-                                                <label for="recipient-name" class="col-form-label">Name:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['ShoppingCart_Name'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">Email:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['ShoppingCart_Email'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">Phone:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['ShoppingCart_Phone'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">ID Order:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['ShoppingCart_id'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">ID Product:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['product_id'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">Date:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['ShoppingCart_date'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">Details:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="#<?php echo $order['ShoppingCart_Details'] ; ?>">
-
+                                              <div class="col-12 border border-dark">
+                                                  <img src="<?php echo base_url('assets/img'); ?>/footter.jpg" width="200px" height="80px" />
+                                                  <h4>Salt&Light</h4>
+                                                  <p class="lead">ID Order: <?php echo $order['ShoppingCart_id'] ; ?></p>
+                                                  <p>ID Product: <?php echo $order['product_id'] ; ?></p>
+                                                  <p>Name: <?php echo $order['ShoppingCart_Name'] ; ?></p>
+                                                  <p>Email: <?php echo $order['ShoppingCart_Email'] ; ?></p>
+                                                  <p>Phone: <?php echo $order['ShoppingCart_Phone'] ; ?></p>
+                                                  <p>Date: <?php echo $order['ShoppingCart_date'] ; ?></p>
+                                                  <p>Quantity: <?php echo $order['ShoppingCart_Quantity'] ; ?></p>
+                                                  <p>Total: ฿ <?php echo $order['ShoppingCart_total'] ; ?>.00</p>
                                               </div>
 
-                                              <div class="form-group col-lg-6">
-                                                <label for="recipient-name" class="col-form-label">Quantity:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="<?php echo $order['ShoppingCart_Quantity'] ; ?>">
-                                                <label for="recipient-name" class="col-form-label">Total:</label>
-                                                <input type="text" class="form-control" id="recipient-name" value="฿<?php echo $order['ShoppingCart_total'] ; ?>.00">
-                                                <label for="recipient-name" class="col-form-label">Slip:</label>
-                                                <img src="<?php echo base_url('assets/img/Slip'); ?>/<?php echo $order['ShoppingCart_slip'] ; ?>" height="400px" width="600px">
-                                              </div>
                                               </div>
 
                                             </form>
@@ -120,6 +107,10 @@
 
 
                                 </td>
+                                <td class="close-td first-row"><a href="<?php echo site_url('Order/delete/').$order['ShoppingCart_id'] ;?>" onclick="return confirm('confirm to delete');">
+                                  <i class="ti-close"></i></a>
+                                </td>
+
                             </tr>
 
                         </tbody>

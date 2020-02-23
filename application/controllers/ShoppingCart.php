@@ -26,7 +26,9 @@ class ShoppingCart extends CI_Controller {
 				        'qty'     => $qty,
 				        'price'   => $cart->product_price,
 				        'name'    => $cart->product_name,
+								'pro'    => $cart->product_promotion,
 				        'img' => $cart->product_img
+
 
 						);
 
@@ -120,6 +122,7 @@ class ShoppingCart extends CI_Controller {
 
 							$data = array(
 								'member_ID'         => $this->input->post('id'),
+								'ShoppingCart_total' => $this->input->post('net'),
 								'ShoppingCart_Name' => $this->input->post('ShoppingCart_Name'),
 								'ShoppingCart_slip' => $filename,
 								'ShoppingCart_Email' => $this->input->post('ShoppingCart_Email'),
@@ -127,7 +130,6 @@ class ShoppingCart extends CI_Controller {
 								'ShoppingCart_Details' => $this->input->post('ShoppingCart_Details'),
 								'product_id' => $itemAs['id'],
 								'ShoppingCart_Quantity' => $itemAs['qty'],
-								'ShoppingCart_total' => $this->cart->total(),
 								'ShoppingCart_pricec' => $itemAs['price'] * $itemAs['qty'],
 								'ShoppingCart_img' => $itemAs['img'],
 								'ShoppingCart_Payment_status' => '1',

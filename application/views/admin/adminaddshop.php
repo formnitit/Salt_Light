@@ -50,7 +50,10 @@
                                 <label for="product_qty" class="control-label mb-1">จำนวนสินค้า</label>
                                 <input id="product_qty" name="product_qty" type="text" class="form-control" value="">
                             </div>
-
+                            <div class="form-group">
+                                <label for="product_promotion" class="control-label mb-1">ส่วนลด</label>
+                                <input id="product_promotion" name="product_promotion" type="text" class="form-control" value="">
+                            </div>
 
                               <div class="col-lg-12">
                                 <div class="card">

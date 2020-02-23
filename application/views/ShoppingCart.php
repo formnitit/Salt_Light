@@ -48,7 +48,9 @@
                                 <th>Image</th>
                                 <th class="p-name">Product Name</th>
                                 <th>Price</th>
+                                <th>Discount</th>
                                 <th>Quantity</th>
+                                <th>Total Discount</th>
                                 <th>Total</th>
                                 <th><i class="ti-close"></i></th>
                             </tr>
@@ -66,20 +68,32 @@
                                     <h5><?php echo $items['name']; ?></h5>
                                 </td>
                                 <td class="p-price first-row">฿ <?php echo $items['price']; ?>.00</td>
+                                <td class="p-price first-row">฿ <?php echo $items['pro']; ?>.00</td>
                                 <td class="qua-col first-row">
                                     <div class="quantity">
                                         <div class="pro-qty">
                                             <input type="text" value="<?php echo $items['qty']; ?>">
                                         </div>
                                     </div>
+                                    <?php $prototel=$items['pro']*$items['qty'];?>
                                 </td>
+                                <td class="total-price first-row">฿<?php echo $prototel; ?>.00</td>
                                 <td class="total-price first-row">฿<?php echo $this->cart->format_number($items['subtotal']); ?></td>
+
                                 <td class="close-td first-row"><a href="cart_remove?id=<?php echo $items['rowid']; ?>"><i class="ti-close"></i></a></td>
                             </tr>
+
                             <?php $total += $items['subtotal'];
-                             $i++; ?>
+
+
+                             $i++;
+                             $pro += $prototel;
+                             $net = $total - $pro;
+                             ?>
+
 
                             <?php endforeach; ?>
+
 
                         </tbody>
                     </table>
@@ -89,20 +103,14 @@
                         <div class="cart-buttons">
                             <a href="<?php echo site_url('shop/index'); ?>" class="primary-btn up-cart">Update cart</a>
                         </div>
-                        <div class="discount-coupon">
-                            <h6>Discount Codes</h6>
-                            <form action="<?php echo site_url('ShoppingCart/Promotion'); ?>" class="coupon-form">
-                                <input type="text" placeholder="Enter your codes" value="">
-                                <button type="submit" class="site-btn coupon-btn">Apply</button>
-                            </form>
-                        </div>
+                      
                     </div>
                     <div class="col-lg-4 offset-lg-4">
                         <div class="proceed-checkout">
                             <ul>
                                 <li class="subtotal">Subtotal <span>฿<?php echo ($total); ?>.00</li>
-                                    <li class="subtotal">Discount <span>฿-00.00</li>
-                                <li class="cart-total">Total <span>฿<?php echo ($total); ?>.00</span></li>
+                                    <li class="subtotal">Discount <span>฿-<?php echo $pro; ?>.00</li>
+                                <li class="cart-total">Total <span>฿<?php echo ($net); ?>.00</span></li>
                             </ul>
                             <a href="<?php echo site_url('CheckOut'); ?>" class="proceed-btn">PROCEED TO CHECK OUT</a>
                         </div>

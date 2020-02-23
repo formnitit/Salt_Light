@@ -44,6 +44,7 @@
                         <th>หมวดหมู่สินค้า</th>
                         <th>ราคาสินค้า</th>
                         <th>จำนวนสินค้า</th>
+                        <th>ส่วนลด</th>
 
                     </tr>
                 </thead>
@@ -68,7 +69,9 @@
                         <td>
                             <?php echo $row->product_qty; ?></span>
                         </td>
-
+                        <td>
+                            <?php echo $row->product_promotion; ?></span>
+                        </td>
                         <td>
                             <div class="table-data-feature">
                                 <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">

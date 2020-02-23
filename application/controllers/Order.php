@@ -8,9 +8,13 @@ class Order extends CI_Controller {
 												parent::__construct();
 												$this->load->model('ShoppingCart_Model');
 								}
-
-
-
+//ลบข้อมูล
+								public function delete($ShoppingCart_id)
+								{
+									$this->ShoppingCart_Model->deldata($ShoppingCart_id);
+									redirect('Order','refresh');
+								}
+//จบลบ
 	public function index()
 	{
    if ($this->session->userdata('member_email') != '')

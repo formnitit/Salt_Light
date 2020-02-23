@@ -34,12 +34,9 @@
                           <p><?php echo $rowshow->promotion_detail ?></p>
                       </div>
                           <div class="container">
-                            <!-- Button to Open the Modal -->
-                            <a href="<?php echo site_url('login/index1'); ?>"><button type="button" class="site-btn" data-toggle="modal" data-target="#myModal">
+                            <!-- <a href="<?php echo site_url('login/index1'); ?>"><button type="button" class="site-btn" data-toggle="modal" data-target="#myModal">
                               รับโค้ด
-                            </button>
-                            <!-- The Modal -->
-
+                            </button> -->
                           </div>
                   </div>
               </div>

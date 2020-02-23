@@ -37,7 +37,7 @@
                     <div class="single-banner">
                         <img src="<?php echo base_url('assets/img/index'); ?>/Product1.jpg" alt="">
                         <div class="inner-text">
-                            <a href="<?php echo site_url('product'); ?>"><h4>Product</h4>
+                            <a href="<?php echo site_url('shop'); ?>"><h4>Product</h4>
                         </div>
                     </div>
                 </div>

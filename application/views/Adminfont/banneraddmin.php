@@ -57,10 +57,10 @@
                     <ul>
                         <li ><a href="<?php echo site_url('adminfont/index'); ?>">Home</a></li>
                         <li><a href="<?php echo site_url('adminfont/shop'); ?>">Product</a></li>
-                        <li><a href="<?php echo site_url('blog/index1'); ?>">Blog</a></li>
-                        <li><a href="<?php echo site_url('cousre/index1'); ?>">Cousre</a></li>
-                        <li><a href="<?php echo site_url('promotion/index1'); ?>">Promotion</a></li>
-                        <li><a href="<?php echo site_url('contact/index1'); ?>">Contact</a></li>
+                        <li><a href="<?php echo site_url('adminfont/blogadmin'); ?>">Blog</a></li>
+                        <li><a href="<?php echo site_url('adminfont/courseadmin'); ?>">Cousre</a></li>
+                        <li><a href="<?php echo site_url('adminfont/promotionadmin'); ?>">Promotion</a></li>
+                        <li><a href="<?php echo site_url('adminfont/contactadmin'); ?>">Contact</a></li>
                     </ul>
                 </nav>
                 <div id="mobile-menu-wrap"></div>

@@ -17,10 +17,15 @@ class Employee extends CI_Controller {
 //---------------------------หน้าหลัก--------------------------------//
 	public function index()
 	{
+		$data['query']=$this->adminshop_model->jointableshop();
+		$data['member']=$this->adminmember_model->get();
+		$data['course']=$this->admincourse_model->get();
+		$data['recourse']=$this->Adminrecourse_model->jointablerecourse();
+		$data['cart']=$this->ShoppingCart_Model->get();
     $this->load->view('Employee/header_employ');
     $this->load->view('Employee/css_employ');
     $this->load->view('Employee/banner_employ');
-    $this->load->view('Employee/employee_index');
+    $this->load->view('Employee/employee_index',$data);
     $this->load->view('Employee/footer_employ');
     $this->load->view('Employee/js_employ');
 

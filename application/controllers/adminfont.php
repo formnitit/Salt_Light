@@ -9,6 +9,9 @@ class Adminfont extends CI_Controller {
 		$this->load->model('adminshop_model');
     $this->load->model('ShoppingCart_Model');
 		$this->load->library('cart');
+    $this->load->model('adminblog_model');
+    $this->load->model('admincourse_model');
+    $this->load->model('adminpromotion_model');
 	}
 
 
@@ -248,6 +251,151 @@ class Adminfont extends CI_Controller {
 
           	}
 
+//------------------------------------หน้าบทความ--------------------------------------//
+            public function blogadmin()
+              {
+                $data['query'] = $this->adminblog_model->jointableblog();
+                $this->load->view('header_view');
+                $this->load->view('css');
+                $this->load->view('Adminfont/banneraddmin');
+                $this->load->view('Adminfont/adminfont_blogadmin',$data);
+                $this->load->view('footer');
+                $this->load->view('js');
+              }
 
+              public function blogadmin_details($blog_id)
+                {
+                  $data['rowshow']=$this->adminblog_model->read($blog_id);
+                  $this->load->view('header_view');
+                  $this->load->view('css');
+                  $this->load->view('Adminfont/banneraddmin');
+                  $this->load->view('Adminfont/adminfont_blogdetails',$data);
+                  $this->load->view('footer');
+                  $this->load->view('js');
+                }
+
+  //-----------------------------------หน้าคอร์ส--------------------------------------------//
+
+
+              public function courseadmin()
+                {
+                  $data['query'] = $this->admincourse_model->get();
+                  $this->load->view('header_view');
+                  $this->load->view('css');
+                  $this->load->view('Adminfont/banneraddmin');
+                  $this->load->view('Adminfont/adminfont_courseadmin',$data);
+                  $this->load->view('footer');
+                  $this->load->view('js');
+                }
+
+                public function courseadmin_details($course_id)
+                  {
+                    $data['rowshow']=$this->admincourse_model->read($course_id);
+                    $this->load->view('header_view');
+                    $this->load->view('css');
+                    $this->load->view('Adminfont/banneraddmin');
+                    $this->load->view('Adminfont/adminfont_coursedetails',$data);
+                    $this->load->view('footer');
+                    $this->load->view('js');
+                  }
+
+                  public function recourseadmin($course_id)
+                    {
+                      $data['rowshow']=$this->admincourse_model->read($course_id);
+                      $this->load->view('header_view');
+                      $this->load->view('css');
+                      $this->load->view('Adminfont/banneraddmin');
+                      $this->load->view('Adminfont/adminfont_recourseadmin',$data);
+                      $this->load->view('footer');
+                      $this->load->view('js');
+                    }
+
+                    public function add_recourse()
+                  	{
+                  		$course_id  = $this->input->post('course_id');
+                  		$data = array(
+                  			'recourse_name' => $this->input->post('recourse_name'),
+                  			'recourse_surname' => $this->input->post('recourse_surname'),
+                  			'recourse_address' => $this->input->post('recourse_address'),
+                  			'recourse_email' => $this->input->post('recourse_email'),
+                  			'recourse_phone' => $this->input->post('recourse_phone'),
+                  			'course_id'=> $this->input->post('course_id')
+                  		);
+                  	 	// echo '<pre>';
+                  		// print_r($data);
+                  		// echo '</pre>';
+                  		// exit;
+
+                  		$query=$this->db->insert('recourse',$data);
+                  		if($query){
+                  			redirect('adminfont/cfcourse/'.$course_id);
+                  		}else {
+                  			echo 'false';
+                  			}
+                  	}
+
+                    public function cfcourse($course_id)
+                      {
+                        $data['rowshow']=$this->admincourse_model->read($course_id);
+                        $this->load->view('header_view');
+                        $this->load->view('css');
+                        $this->load->view('Adminfont/banneraddmin');
+                        $this->load->view('Adminfont/adminfont_cfcourse',$data);
+                        $this->load->view('footer');
+                        $this->load->view('js');
+                      }
+
+//-------------------------------------หน้าโปรโมชั่น---------------------------------------------------///
+
+                    public function promotionadmin()
+                      {
+                        $data['query'] = $this->adminpromotion_model->get();
+                        $this->load->view('header_view');
+                        $this->load->view('css');
+                        $this->load->view('Adminfont/banneraddmin');
+                        $this->load->view('Adminfont/adminfont_promotionadmin',$data);
+                        $this->load->view('footer');
+                        $this->load->view('js');
+                      }
+
+                    public function proadmin_details($promotion_id)
+                      {
+                        $data['rowshow']=$this->adminpromotion_model->read($promotion_id);
+                        $this->load->view('header_view');
+                        $this->load->view('css');
+                        $this->load->view('Adminfont/banneraddmin');
+                        $this->load->view('Adminfont/adminfont_promotiondetails',$data);
+                        $this->load->view('footer');
+                        $this->load->view('js');
+                      }
+
+//---------------------------------------หน้าติดต่อ--------------------------------------------------//
+                    public function contactadmin()
+                      {
+
+                        $this->load->view('header_view');
+                        $this->load->view('css');
+                        $this->load->view('Adminfont/banneraddmin');
+                        $this->load->view('Adminfont/adminfont_contactadmin');
+                        $this->load->view('footer');
+                        $this->load->view('js');
+                      }
+
+                      public function add_contact()
+                    	{
+                    		$data = array(
+                    			'contact_name' => $this->input->post('contact_name'),
+                    			'contact_email' => $this->input->post('contact_email'),
+                    			'contact_phone' => $this->input->post('contact_phone'),
+                    			'contact_message' => $this->input->post('contact_message')
+                    		);
+
+                    		$query=$this->db->insert('contact',$data);
+                    		if($query){
+                    			redirect('adminfont/contactadmin','refresh');
+                    		}else {
+                    			echo 'false';
+                    			}
+                    }
 }
 ?>

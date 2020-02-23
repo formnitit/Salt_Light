@@ -51,30 +51,8 @@
                         </div>
                         <div class="blog-post">
                             <div class="row">
-                                <div class="col-lg-5 col-md-6">
-                                    <a href="<?php echo site_url('blogdetails'); ?>" class="prev-blog">
-                                        <div class="pb-pic">
-                                            <i class="ti-arrow-left"></i>
-                                            <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $rowshow->blog_img; ?>" alt="">
-                                        </div>
-                                        <div class="pb-text">
-                                            <span>Previous Post:</span>
-                                            <h5>อราบิก้า (Arabica) กับ โรบัสต้า (Robusta) แตกต่างกันอย่างไร</h5>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-lg-5 offset-lg-2 col-md-6">
-                                    <a href="#" class="next-blog">
-                                        <div class="nb-pic">
-                                            <img src="<?php echo base_url('assets/img/uploadimg'); ?>/<?php echo $rowshow->blog_img; ?>" alt="">
-                                            <i class="ti-arrow-right"></i>
-                                        </div>
-                                        <div class="nb-text">
-                                            <span>Next Post:</span>
-                                            <h5>วิธีการสตีมนม | How to Steam Milk</h5>
-                                        </div>
-                                    </a>
-                                </div>
+                          
+
                             </div>
                         </div>
                     </div>

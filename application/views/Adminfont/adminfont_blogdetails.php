@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-text">
-                    <a href="<?php echo site_url('welcome'); ?>"><i class="fa fa-home"></i> Home</a>
-                    <a href="<?php echo site_url('blog'); ?>"><span>blog</span></a>
+                    <a href="<?php echo site_url('adminfont/index'); ?>"><i class="fa fa-home"></i> Home</a>
+                    <a href="<?php echo site_url('adminfont/blogadmin'); ?>"><span>blog</span></a>
                     <a href="#"><span>Blogdetails</span></a>
                 </div>
             </div>

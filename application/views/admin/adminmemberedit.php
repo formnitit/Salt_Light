@@ -40,7 +40,7 @@
                                         <option >กรุณาเลือก</option>
                                         <option value="1">แอดมิน</option>
                                         <option value="2">พนักงาน</option>
-                                        <option value="3">ผู้ใช้งานสมาชิก</option>
+                                        <option value="0">ผู้ใช้งานสมาชิก</option>
                                     </select>
                                 </div>
                             </div>
